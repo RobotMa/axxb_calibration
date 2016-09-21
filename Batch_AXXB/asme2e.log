@@ -1,0 +1,31 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2013.12.27)  27 DEC 2013 01:00
+entering extended mode
+**C:/Users/Martin/Google*Drive/Research/AXXB/Kendal*(Private)/(Not*Submitted*-*
+JDSMC)*The*Batch*Method*and*Noise/asme2e.bib
+
+("C:/Users/Martin/Google Drive/Research/AXXB/Kendal (Private)/(Not Submitted - 
+JDSMC) The Batch Method and Noise/asme2e.bib"
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Overfull \hbox (17.67558pt too wide) in paragraph at lines 1--160
+\tenrm ume=18, num-ber=3, pages=286--298, year=1999, pub-lisher=SAGE Pub-li-ca-
+tions  @in-pro-ceed-ingsan-dr-eff1999line,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm u
+.\tenrm m
+.\tenrm e
+.\tenrm =
+.\tenrm 1
+.etc.
+
+)
+*
+! Emergency stop.
+<*> ...DSMC)*The*Batch*Method*and*Noise/asme2e.bib
+                                                  
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

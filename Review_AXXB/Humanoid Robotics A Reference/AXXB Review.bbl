@@ -1,0 +1,420 @@
+\begin{thebibliography}{10}
+
+\bibitem{ars}
+ARS.
+\newblock https://ars-project.readthedocs.org.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{Koenig-2004-394}
+Koenig, N., and Howard, A., 2004.
+\newblock ``Design and use paradigms for gazebo, an open-source multi-robot
+  simulator''.
+\newblock In IEEE/RSJ International Conference on Intelligent Robots and
+  Systems, pp.~2149--2154.
+
+\bibitem{Aguero-2015-VRC}
+Aguero, C., Koenig, N., Chen, I., Boyer, H., Peters, S., Hsu, J., Gerkey, B.,
+  Paepcke, S., Rivero, J., Manzo, J., Krotkov, E., and Pratt, G., 2015.
+\newblock ``Inside the virtual robotics challenge: Simulating real-time robotic
+  disaster response''.
+\newblock {\em IEEE Transactions on Automation Science and Engineering, {\bf
+  12}}(2), April, pp.~494--506.
+
+\bibitem{morse_simpar_2012}
+Echeverria, G., Lemaignan, S., Degroote, A., Lacroix, S., Karg, M., Koch, P.,
+  Lesire, C., and Stinckwich, S., 2012.
+\newblock ``Simulating complex robotic scenarios with morse''.
+\newblock In SIMPAR, pp.~197--208.
+
+\bibitem{Webots}
+Webots.
+\newblock http://www.cyberbotics.com.
+\newblock Commercial Mobile Robot Simulation Software.
+
+\bibitem{Webots04}
+Michel, O., 2004.
+\newblock ``Webots: Professional mobile robot simulation''.
+\newblock {\em Journal of Advanced Robotics Systems, {\bf 1}}(1), pp.~39--42.
+
+\bibitem{vrep}
+E.~Rohmer, S. P. N.~Singh, M.~F., 2013.
+\newblock ``V-rep: a versatile and scalable robot simulation framework''.
+\newblock In Proc. of The International Conference on Intelligent Robots and
+  Systems (IROS).
+
+\bibitem{RoboDK}
+RoboDK.
+\newblock http://www.robodk.com.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{simspark}
+SimSpark.
+\newblock http://simspark.sourceforge.net/.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{carmaker}
+CarMaker.
+\newblock http://ipg.de/simulationsolutions/carmaker.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{prescan}
+PreScan.
+\newblock https://www.tassinternational.com/prescan.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{adasworks}
+AdasWorks.
+\newblock https://adasworks.com.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{googlecar}
+Google.
+\newblock https://www.google.com/selfdrivingcar.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{BMW}
+BMW.
+\newblock http://www.bmw.com.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{autopilot}
+Tesla.
+\newblock https://www.teslamotors.com/presskit/autopilot.
+\newblock Accessed: 2015-12-19.
+
+\bibitem{tsai1989new}
+Tsai, R., and Lenz, Y., 1989.
+\newblock ``A new technique for fully autonomous and efficient 3d robotics
+  hand/eye calibration''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 5}}(3),
+  pp.~345--358.
+
+\bibitem{darius1}
+Mair, E., Fleps, M., Suppa, M., and Burschka, D., 2011.
+\newblock ``Spatio-temporal initialization for imu to camera registration''.
+\newblock In IEEE International Conference on Robotics and Biomimetics, IEEE,
+  pp.~557--564.
+
+\bibitem{schmidt2003robust}
+Schmidt, J., Vogt, F., and Niemann, H., 2003.
+\newblock ``Robust hand--eye calibration of an endoscopic surgery robot using
+  dual quaternions''.
+\newblock In {\em Pattern Recognition}. Springer, pp.~548--556.
+
+\bibitem{malm2000new}
+Malm, H., and Heyden, A., 2000.
+\newblock ``A new approach to hand-eye calibration''.
+\newblock In International Conference on Pattern Recognition, Vol.~1, IEEE,
+  pp.~525--529.
+
+\bibitem{heller2012branch}
+Heller, J., Havlena, M., and Pajdla, T., 2012.
+\newblock ``A branch-and-bound algorithm for globally optimal hand-eye
+  calibration''.
+\newblock In IEEE Conference on Computer Vision and Pattern Recognition, IEEE,
+  pp.~1608--1615.
+
+\bibitem{ruland2012globally}
+Ruland, T., Pajdla, T., and Kruger, L., 2012.
+\newblock ``Globally optimal hand-eye calibration''.
+\newblock In IEEE Conference on Computer Vision and Pattern Recognition, IEEE,
+  pp.~1035--1042.
+
+\bibitem{wu2014hand}
+Wu, H., Tizzano, W., Andersen, T.~T., Andersen, N.~A., and Ravn, O., 2014.
+\newblock ``Hand-eye calibration and inverse kinematics of robot arm using
+  neural network''.
+\newblock In {\em Robot Intelligence Technology and Applications 2}. Springer,
+  pp.~581--591.
+
+\bibitem{kim}
+Kim, S.-J., Jeong, M., Lee, J., Lee, J., Kim, K., You, B., and Oh, S.
+\newblock ``Robot head-eye calibration using the minimum variance method''.
+\newblock pp.~1446 -- 1451.
+
+\bibitem{liu2015calibration}
+Liu, Y., Wang, Q., and Li, Y., 2015.
+\newblock ``Calibration of a robot hand-eye system with a concentric circles
+  target''.
+\newblock In International Bhurban Conference on Applied Sciences and
+  Technology, IEEE, pp.~204--209.
+
+\bibitem{manewprob}
+Ma, Q., Li, H., and Chirikjian, G.
+\newblock ``New probabilistic approaches to the ax = xb hand-eye calibration
+  without correspondence''.
+\newblock In IEEE International Conference on Robotics and Automation, IEEE.
+
+\bibitem{zhuang1994simultaneous}
+Zhuang, H., Roth, Z.~S., and Sudhakar, R., 1994.
+\newblock ``Simultaneous robot/world and tool/flange calibration by solving
+  homogeneous transformation equations of the form {AX = YB}''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 10}}(4),
+  pp.~549--554.
+
+\bibitem{dornaika1998simultaneous}
+Dornaika, F., and Horaud, R., 1998.
+\newblock ``Simultaneous robot-world and hand-eye calibration''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 14}}(4),
+  pp.~617--622.
+
+\bibitem{hirsh2001iterative}
+Hirsh, R.~L., DeSouza, G.~N., and Kak, A.~C., 2001.
+\newblock ``An iterative approach to the hand-eye and base-world calibration
+  problem''.
+\newblock In IEEE International Conference on Robotics and Automation, Vol.~3,
+  IEEE, pp.~2171--2176.
+
+\bibitem{li2010simultaneous}
+Li, A., Wang, L., and Wu, D., 2010.
+\newblock ``Simultaneous robot-world and hand-eye calibration using
+  dual-quaternions and kronecker product''.
+\newblock {\em International Journal of Physical Science, {\bf 5}}(10),
+  pp.~1530--1536.
+
+\bibitem{ernst2012non}
+Ernst, F., Richter, L., Matth{\"a}us, L., Martens, V., Bruder, R., Schlaefer,
+  A., and Schweikard, A., 2012.
+\newblock ``Non-orthogonal tool/flange and robot/world calibration''.
+\newblock {\em The International Journal of Medical Robotics and Computer
+  Assisted Surgery, {\bf 8}}(4), pp.~407--420.
+
+\bibitem{heller2014hand}
+Heller, J., Henrion, D., and Pajdla, T., 2014.
+\newblock ``Hand-eye and robot-world calibration by global polynomial
+  optimization''.
+\newblock In IEEE International Conference on Robotics and Automation, IEEE,
+  pp.~3157--3164.
+
+\bibitem{lisimultaneous}
+Li, H., Ma, Q., Wang, T., and Chirikjian, G.
+\newblock ``Simultaneous hand-eye and robot-world calibration by solving the
+  ax= yb problem without correspondence''.
+
+\bibitem{wang2014towards}
+Wang, J., Wu, L., Meng, M. Q.-H., and Ren, H., 2014.
+\newblock ``Towards simultaneous coordinate calibrations for cooperative
+  multiple robots''.
+\newblock In IEEE/RSJ International Conference on Intelligent Robots and
+  Systems, IEEE, pp.~410--415.
+
+\bibitem{maaxbyczprob}
+Ma, Q., Goh, Z., and Chirikjian, G.
+\newblock ``New probabilistic approaches to the ax = xb hand-eye calibration
+  without correspondence''.
+\newblock In Robotics: Science and Systems.
+
+\bibitem{chen91}
+Chen, H.
+\newblock ``A screw motion approach to uniqueness analysis of head-eye
+  geometry''.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition},
+  pp.~145--151.
+
+\bibitem{park1994robot}
+Park, F., and Martin, B., 1994.
+\newblock ``Robot sensor calibration: solving {AX = XB} on the euclidean
+  group''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 10}}(5),
+  pp.~717--721.
+
+\bibitem{shiu1989calibration}
+Shiu, Y., and Ahmad, S., 1989.
+\newblock ``Calibration of wrist-mounted robotic sensors by solving homogeneous
+  transform equations of the form {AX = XB}''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 5}}(1),
+  pp.~16--29.
+
+\bibitem{chou1991finding}
+Chou, J., and Kamel, M., 1991.
+\newblock ``Finding the position and orientation of a sensor on a robot
+  manipulator using quaternions''.
+\newblock {\em The International Journal of Robotics Research, {\bf 10}}(3),
+  pp.~240--254.
+
+\bibitem{shiu1987finding}
+Shiu, Y., and Ahmad, S., 1987.
+\newblock ``Finding the mounting position of a sensor by solving a homogeneous
+  transform equation of the form {AX = XB}''.
+\newblock In IEEE International Conference on Robotics and Automation, Vol.~4,
+  IEEE, pp.~1666--1671.
+
+\bibitem{dai}
+Dai, Y., Trumpf, J., Li, H., Barnes, N., and Hartley, R., 2010.
+\newblock ``Rotation averaging with application to camera-rig calibration''.
+\newblock In {\em Computer Vision--ACCV 2009}. Springer, pp.~335--346.
+
+\bibitem{shah2012overview}
+Shah, M., Eastman, R., and Hong, T., 2012.
+\newblock ``An overview of robot-sensor calibration methods for evaluation of
+  perception systems''.
+\newblock In Proceedings of the Workshop on Performance Metrics for Intelligent
+  Systems, ACM, pp.~15--20.
+
+\bibitem{fassi2005hand}
+Fassi, I., and Legnani, G., 2005.
+\newblock ``Hand to sensor calibration: A geometrical interpretation of the
+  matrix equation {AX = XB}''.
+\newblock {\em Journal of Robotic Systems, {\bf 22}}(9), pp.~497--506.
+
+\bibitem{zhao2006hand}
+Zhao, Z., and Liu, Y., 2006.
+\newblock ``Hand-eye calibration based on screw motions''.
+\newblock In International Conference on Pattern Recognition, Vol.~3, IEEE,
+  pp.~1022--1026.
+
+\bibitem{gwak2003numerical}
+Gwak, S., Kim, J., and Park, F.~C., 2003.
+\newblock ``Numerical optimization on the euclidean group with applications to
+  camera calibration''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 19}}(1),
+  pp.~65--74.
+
+\bibitem{chou1988quaternions}
+Chou, J.~C., and Kamel, M., 1988.
+\newblock ``Quaternions approach to solve the kinematic equation of rotation,
+  {AX = XB}, of a sensor-mounted robotic manipulator''.
+\newblock In IEEE International Conference on Robotics and Automation, IEEE,
+  pp.~656--662.
+
+\bibitem{horaud1995hand}
+Horaud, R., and Dornaika, F., 1995.
+\newblock ``Hand-eye calibration''.
+\newblock {\em The International Journal of Robotics Research, {\bf 14}}(3),
+  pp.~195--210.
+
+\bibitem{daniilidis1996dual}
+Daniilidis, K., and Bayro-Corrochano, E., 1996.
+\newblock ``The dual quaternion approach to hand-eye calibration''.
+\newblock In International Conference on Pattern Recognitoin, Vol.~1, IEEE,
+  pp.~318--322.
+
+\bibitem{daniilidis1999hand}
+Daniilidis, K., 1999.
+\newblock ``Hand-eye calibration using dual quaternions''.
+\newblock {\em The International Journal of Robotics Research, {\bf 18}}(3),
+  pp.~286--298.
+
+\bibitem{andreff1999line}
+Andreff, N., Horaud, R., and Espiau, B., 1999.
+\newblock ``On-line hand-eye calibration''.
+\newblock In International Conference on 3D Digital Imaging and Modeling, IEEE,
+  pp.~430--436.
+
+\bibitem{andreff2001robot}
+Andreff, N., Horaud, R., and Espiau, B., 2001.
+\newblock ``Robot hand-eye calibration using structure-from-motion''.
+\newblock {\em The International Journal of Robotics Research, {\bf 20}}(3),
+  pp.~228--248.
+
+\bibitem{zhao2011hand}
+Zhao, Z., 2011.
+\newblock ``Hand-eye calibration using convex optimization''.
+\newblock In IEEE International Conference on Robotics and Automation, IEEE,
+  pp.~2947--2952.
+
+\bibitem{seo2009branch}
+Seo, Y., Choi, Y.-J., and Lee, S.~W., 2009.
+\newblock ``A branch-and-bound algorithm for globally optimal calibration of a
+  camera-and-rotation-sensor system''.
+\newblock In International Conference on Computer Vision, IEEE, pp.~1173--1178.
+
+\bibitem{schmidt2005calibration}
+Schmidt, J., Vogt, F., and Niemann, H., 2005.
+\newblock ``Calibration--free hand--eye calibration: a structure--from--motion
+  approach''.
+\newblock In {\em Pattern Recognition}. Springer, pp.~67--74.
+
+\bibitem{angeles2000online}
+Angeles, J., Soucy, G., and Ferrie, F.~P., 2000.
+\newblock ``The online solution of the hand-eye problem''.
+\newblock {\em IEEE Transactions on Robotics and Automation, {\bf 16}}(6),
+  pp.~720--731.
+
+\bibitem{ackerman2014online}
+Ackerman, M.~K., Cheng, A., Boctor, E., and Chirikjian, G., 2014.
+\newblock ``Online ultrasound sensor calibration using gradient descent on the
+  euclidean group''.
+\newblock In IEEE International Conference on Robotics and Automation, IEEE,
+  pp.~4900--4905.
+
+\bibitem{ackermanGSI}
+Ackerman, M.~K., and Chirikjian, G.~S., 2013.
+\newblock ``A probabilistic solution to the {AX = XB} problem: Sensor
+  calibration without correspondence''.
+\newblock In {\em Geometric Science of Information}. Springer, pp.~693--701.
+
+\bibitem{ackerman2014information}
+Ackerman, M.~K., Cheng, A., and Chirikjian, G., 2014.
+\newblock ``An information-theoretic approach to the correspondence-free {AX =
+  XB} sensor calibration problem''.
+\newblock In IEEE International Conference on Robotics and Automation, IEEE,
+  pp.~4893--4899.
+
+\bibitem{horn1986robot}
+Horn, B., 1986.
+\newblock ``Robot vision''.
+
+\bibitem{lepetit2009epnp}
+Lepetit, V., Moreno-Noguer, F., and Fua, P., 2009.
+\newblock ``Epnp: An accurate o (n) solution to the pnp problem''.
+\newblock {\em International Journal of Computer Vision, {\bf 81}}(2),
+  pp.~155--166.
+
+\bibitem{myoldbook}
+Chirikjian, G.~S., and Kyatkin, A.~B., 2001.
+\newblock {\em Engineering applications of noncommutative harmonic analysis:
+  with emphasis on rotation and motion groups}.
+\newblock CRC Press.
+
+\bibitem{Wang08}
+Wang, Y., and Chirikjian, G.~S., 2008.
+\newblock ``Nonparametric second-order theory of error propagation on motion
+  groups''.
+\newblock {\em International Journal of Robotics Research}, p.~1258–1273.
+
+\bibitem{ackermanIROS2013}
+Ackerman, M., Cheng, A., Shiffman, B., Boctor, E., and Chirikjian, G.~S., 2013.
+\newblock ``Sensor calibration with unknown correspondence: Solving {$AX=XB$}
+  using euclidean-group invariants''.
+\newblock In IEEE/RSJ International Conference on Intelligent Robots and
+  Systems, IEEE, pp.~1308--1313.
+
+\bibitem{vogt2004vector}
+Vogt, J. S.~F., and Niemann, H., 2004.
+\newblock ``Vector quantization based data selection for hand-eye
+  calibration''.
+\newblock In Vision, Modeling, and Visualization 2004: Proceedings, November
+  16-18, 2004, Standford, USA, IOS Press, p.~21.
+
+\bibitem{schmidt2008data}
+Schmidt, J., and Niemann, H., 2008.
+\newblock ``Data selection for hand-eye calibration: a vector quantization
+  approach''.
+\newblock {\em The International Journal of Robotics Research, {\bf 27}}(9),
+  pp.~1027--1053.
+
+\bibitem{shi2005approach}
+Shi, F., Wang, J., and Liu, Y., 2005.
+\newblock ``An approach to improve online hand-eye calibration''.
+\newblock In {\em Pattern Recognition and Image Analysis}. Springer,
+  pp.~647--655.
+
+\bibitem{zhang2005adaptive}
+Zhang, J., Shi, F., and Liu, Y., 2005.
+\newblock ``An adaptive selection of motion for online hand-eye calibration''.
+\newblock In {\em Advances in Artificial Intelligence}. Springer, pp.~520--529.
+
+\bibitem{strobl2006optimal}
+Strobl, K.~H., and Hirzinger, G., 2006.
+\newblock ``Optimal hand-eye calibration''.
+\newblock In IEEE/RSJ International Conference on Intelligent Robots and
+  Systems, IEEE, pp.~4647--4653.
+
+\bibitem{vol2}
+Chirikjian, G.~S., 2011.
+\newblock {\em Stochastic Models, Information Theory, and Lie Groups: Vol.
+  \textbf{2}}.
+\newblock Birkauser, Boston.
+
+\end{thebibliography}

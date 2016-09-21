@@ -1,0 +1,15 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		mean_convl_2nd;
+		emlrt_marshallOut;
+		emxEnsureCapacity;
+		emxFree_real_T;
+		emxInit_real_T;
+		mean_convl_2nd_initialize;
+		mean_convl_2nd_terminate;
+		mean_convl_2nd_atexit;
+	local:
+		*;
+};

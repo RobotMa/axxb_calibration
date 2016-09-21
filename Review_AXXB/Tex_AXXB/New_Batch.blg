@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: New_Batch.aux
+The style file: asmems4.bst
+Database file #1: New_Batch.bib
+I was expecting a `,' or a `}'---line 6 of file New_Batch.bib
+ : 
+ : year={1987}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 13 of file New_Batch.bib
+ : 
+ : year={1991}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 40 of file New_Batch.bib
+ : 
+ : year={2011}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 47 of file New_Batch.bib
+ : 
+ : year={2010}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 54 of file New_Batch.bib
+ : 
+ : year={2010}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 288 of file New_Batch.bib
+ : 
+ : year={2010}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 1 entry,
+            1984 wiz_defined-function locations,
+            491 strings with 3621 characters,
+and the built_in function-call counts, 404 in all, are:
+= -- 45
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 13
+:= -- 48
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 30
+empty$ -- 30
+format.name$ -- 2
+if$ -- 105
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 1
+pop$ -- 3
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 35
+stack$ -- 0
+substring$ -- 22
+swap$ -- 24
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 13
+(There were 6 error messages)

@@ -1,0 +1,758 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.19)  10 MAY 2015 21:35
+entering extended mode
+ %&-line parsing enabled.
+**"Research Writing.tex"
+(./Research Writing.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(./asme2ej.cls
+
+LaTeX Warning: You have requested document class `asme2ej',
+               but the document class provides `asme2e'.
+
+Document Class: asme2e 2001/2/14 v2.0 Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/mathptm.sty
+Package: mathptm 2005/04/12 PSNFSS-v9.2a Times w/ Math (SPQR, WaS) 
+
+
+Package mathptm Warning: This package is to be regarded as obsolete.
+(mathptm)                See the PSNFSS documentation.
+
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
+) (/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+Twelve Point
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 301.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\tempbox=\box26
+\c@figure=\count85
+\c@table=\count86
+\@authcnt=\count87
+\@tmpcnt=\count88
+\bibindent=\dimen102
+\tempbox=\box27
+\minute=\count89
+\hour=\count90
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip41
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen107
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks17
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks18
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks19
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen116
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/relsize.sty
+Package: relsize 2003/07/04 ver 3.1
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+\c@theorem=\count104
+\c@corollary=\count105
+\c@proposition=\count106
+\c@conjecture=\count107
+\c@remark=\count108
+ (./Research Writing.aux)
+\openout1 = `"Research Writing.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 131.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen117
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen118
+\MPnumerator=\count113
+\everyMPtoPDFconversion=\toks22
+)
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 13
+3.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 13
+3.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 13
+3.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 13
+3.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Try loading font information for U+msa on input line 133.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 133.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Underfull \hbox (badness 10000) detected at line 133
+[]
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 133.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 133.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsphv.fd
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+
+Overfull \hbox (39.74762pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+
+Overfull \vbox (3.34154pt too high) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 3792) in paragraph at lines 148--148
+$\OML/ptmcm/m/it/12 se\OT1/ptmcm/m/n/12 (3)$ $\OML/ptmcm/m/it/12 se\OT1/ptmcm/m
+/n/12 (3) [] \OMS/pzccm/m/n/12 f\OT1/ptmcm/m/n/12 ^^D\OMS/pzccm/m/n/12 j\OML/pt
+mcm/m/it/12 H \OT1/ptmcm/m/n/12 = \OML/ptmcm/m/it/12 exp\OT1/ptmcm/m/n/12 (^^D)
+$\OT1/ptm/m/n/12 , where $\OT1/ptmcm/m/n/12 ^^D =
+ []
+
+LaTeX Font Info:    Try loading font information for U+euf on input line 152.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+)
+Underfull \hbox (badness 3635) in paragraph at lines 156--156
+$[]$ \OT1/ptm/m/n/12 The ``vee" op-er-a-tor is de-fined such that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+$\OML/ptmcm/m/it/12 vec$ \OT1/ptm/m/n/12 The ``vec'' op-er-a-tor is de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+\OT1/ptm/m/n/12 fined such that $\OML/ptmcm/m/it/12 vec\OT1/ptmcm/m/n/12 (\OML/
+ptmcm/m/it/12 A\OT1/ptmcm/m/n/12 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+\OT1/ptmcm/m/n/12 [\OML/ptmcm/m/it/12 a[]; :::; a[]; a[]; :::; a[]; :::; a[]; :
+::; a[]\OT1/ptmcm/m/n/12 ][]$
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+$\OML/ptmcm/m/it/12 Ad\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 H\OT1/ptmcm/m/n/12 
+)$ \OT1/ptm/m/n/12 The ad-joint ma-trix with columns
+ []
+
+
+LaTeX Warning: Citation `' on page 3 undefined on input line 182.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 3780) in paragraph at lines 192--193
+\OT1/ptm/m/n/12 Any (proper) rigid-body mo-tion in a three-
+ []
+
+<figure/AX=XB(ASME)_v1.png, id=23, 876.27374pt x 466.74374pt>
+File: figure/AX=XB(ASME)_v1.png Graphic file (type png)
+
+<use figure/AX=XB(ASME)_v1.png> [4 <./figure/AX=XB(ASME)_v1.png>]
+Underfull \vbox (badness 5403) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+[6]
+Underfull \hbox (badness 1024) in paragraph at lines 279--280
+\OT1/ptm/m/n/12 and $\OML/ptmcm/m/it/12 ^^L$ \OT1/ptm/m/n/12 is an ar-bi-trary 
+an-gle. Given a vec-tor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
+\OT1/ptm/m/n/12 In Eq.(8[]), $\OML/ptmcm/m/it/12 Y \OT1/ptmcm/m/n/12 =
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 360.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 360.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 360.
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
+
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 428--430
+\OT1/ptm/m/n/12 To ob-tain $\OML/ptmcm/m/it/12 V[]$ \OT1/ptm/m/n/12 and $\OML/p
+tmcm/m/it/12 y[]$\OT1/ptm/m/n/12 , $\OML/ptmcm/m/it/12 E$ \OT1/ptm/m/n/12 is fi
+rst writ-ten as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
+
+ []
+
+[9]
+Underfull \hbox (badness 2261) in paragraph at lines 457--458
+\OT1/ptm/m/n/12 min-i-miz-ing an er-ror ob-jec-tive func-tion as in
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--625
+
+ []
+
+[12] [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (12.67776pt too wide) detected at line 714
+\OML/ptmcm/m/it/12 f[]\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 H\OT1/ptmcm/m/n/12 
+) = [] [] \OML/ptmcm/m/it/12 ^^N\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 A[]H\OT1/
+ptmcm/m/n/12 )   []   \OML/ptmcm/m/it/12 f[]\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/
+12 H\OT1/ptmcm/m/n/12 ) = [] [] \OML/ptmcm/m/it/12 ^^N\OT1/ptmcm/m/n/12 (\OML/p
+tmcm/m/it/12 B[]H\OT1/ptmcm/m/n/12 )\OML/ptmcm/m/it/12 :
+ []
+
+[15]
+Overfull \hbox (2.28003pt too wide) detected at line 726
+ []
+ []
+
+
+Overfull \hbox (23.33614pt too wide) detected at line 732
+\OML/ptmcm/m/it/12 M[] \OT1/ptmcm/m/n/12 = \OML/ptmcm/m/it/12 M[] M[]   []   \O
+T1/ptmcm/m/n/12 ^^F[] = \OML/ptmcm/m/it/12 Ad\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it
+/12 M[]\OT1/ptmcm/m/n/12 ) ^^F[] \OML/ptmcm/m/it/12 Ad[]\OT1/ptmcm/m/n/12 (\OML
+/ptmcm/m/it/12 M[]\OT1/ptmcm/m/n/12 ) + ^^F[]
+ []
+
+[16]
+Overfull \hbox (18.91603pt too wide) detected at line 836
+\OML/ptmcm/m/it/12 R\OT1/ptmcm/m/n/12 (\OT1/ptm/b/n/12 n[]\OML/ptmcm/m/it/12 ; 
+\OT1/ptm/b/n/12 n[]\OT1/ptmcm/m/n/12 )  =  \U/msb/m/n/12 I  \OT1/ptmcm/m/n/12 +
+  []  +  []  [][] \OML/ptmcm/m/it/12 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 840--841
+[]\OT1/ptm/m/n/12 Substituting $\OML/ptmcm/m/it/12 R[] \OT1/ptmcm/m/n/12 = \OML
+/ptmcm/m/it/12 R\OT1/ptmcm/m/n/12 (\OT1/ptm/b/n/12 n[]\OML/ptmcm/m/it/12 ; \OT1
+/ptm/b/n/12 n[]\OT1/ptmcm/m/n/12 )\OML/ptmcm/m/it/12 R\OT1/ptmcm/m/n/12 (\OT1/p
+tm/b/n/12 n[]\OML/ptmcm/m/it/12 ; ^^^\OT1/ptmcm/m/n/12 )$ \OT1/ptm/m/n/12 into
+ []
+
+
+Overfull \hbox (21.0305pt too wide) detected at line 859
+\OML/ptmcm/m/it/12 a \OT1/ptmcm/m/n/12 = \OMS/pzccm/m/n/12 ^^@ [] ^^A []  []
+ []
+
+[17]
+Underfull \hbox (badness 2080) in paragraph at lines 881--882
+[]\OT1/ptm/m/n/12 Calculate the eigen-de-com-po-si-tion as $\OT1/ptmcm/m/n/12 ^
+^F[] =
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 925--927
+\OT1/ptm/m/n/12 si-bil-ity that min-i-mizes a cost func-tion, such
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 925--927
+\OT1/ptm/m/n/12 as $\OMS/pzccm/m/n/12 k\OT1/ptm/b/n/12 n[] \OMS/pzccm/m/n/12 ^^
+@ \OML/ptmcm/m/it/12 R[]\OT1/ptm/b/n/12 n[]\OMS/pzccm/m/n/12 k \OT1/ptmcm/m/n/1
+2 + \OML/ptmcm/m/it/12 w\OMS/pzccm/m/n/12 k\OT1/ptm/b/n/12 v[] \OMS/pzccm/m/n/1
+2 ^^@ \OML/ptmcm/m/it/12 ^^R[][]R[]\OT1/ptm/b/n/12 n[] \OT1/ptmcm/m/n/12 +
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 925--927
+\OML/ptmcm/m/it/12 R[]\OT1/ptm/b/n/12 v[]\OMS/pzccm/m/n/12 k$ \OT1/ptm/m/n/12 w
+here $\OML/ptmcm/m/it/12 w$ \OT1/ptm/m/n/12 is an ap-pro-pri-ately cho-sen
+ []
+
+[18] [19] [20] <figure/rotErrorRand.png, id=82, 418.66759pt x 314.00069pt>
+File: figure/rotErrorRand.png Graphic file (type png)
+
+<use figure/rotErrorRand.png>
+Underfull \hbox (badness 1005) in paragraph at lines 1012--1013
+\OT1/ptm/m/n/12 the num-ber of fil-tered pairs and cer-tain ways
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+
+ []
+
+<figure/tranErrorRand.png, id=83, 505.89pt x 379.4175pt>
+File: figure/tranErrorRand.png Graphic file (type png)
+
+<use figure/tranErrorRand.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figure/traceCovRand.png, id=84, 418.66759pt x 314.00069pt>
+File: figure/traceCovRand.png Graphic file (type png)
+
+<use figure/traceCovRand.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./figure/rotErrorRand.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./figure/tranErrorRand.png> <./figure/traceCovRand.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (34.71309pt too wide) detected at line 1346
+\OML/ptmcm/m/it/12 J\OT1/ptmcm/m/n/12 (\OT1/ptm/b/n/12 q\OT1/ptmcm/m/n/12 ) = [
+] \OML/ptmcm/m/it/12 :
+ []
+
+[23]
+Overfull \hbox (47.41338pt too wide) detected at line 1359
+[][] \OML/ptmcm/m/it/12 f\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 H[] \OMS/pzccm/m
+/n/12 ^^N \OML/ptmcm/m/it/12 H\OT1/ptmcm/m/n/12 )\OML/ptmcm/m/it/12 dH \OT1/ptm
+cm/m/n/12 = [][] \OML/ptmcm/m/it/12 f\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 H \O
+MS/pzccm/m/n/12 ^^N \OML/ptmcm/m/it/12 H[]\OT1/ptmcm/m/n/12 )\OML/ptmcm/m/it/12
+ dH \OT1/ptmcm/m/n/12 = [][] \OML/ptmcm/m/it/12 f\OT1/ptmcm/m/n/12 (\OML/ptmcm/
+m/it/12 H\OT1/ptmcm/m/n/12 )\OML/ptmcm/m/it/12 dH:
+ []
+
+
+Overfull \vbox (10.9284pt too high) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1372--1373
+[]\OT1/ptm/m/n/12 Given two func-tions, $\OML/ptmcm/m/it/12 f[]; f[] \OMS/pzccm
+/m/n/12 2 \OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 L[] \OMS/pzccm/m/n/12 \
+ []
+
+[24]
+Underfull \hbox (badness 1147) in paragraph at lines 1383--1386
+\OT1/ptm/m/n/12 con-sid-ered be-yond $\OT1/ptmcm/m/n/12 (\OML/ptmcm/m/it/12 L[]
+ \OMS/pzccm/m/n/12 \ \OML/ptmcm/m/it/12 L[]\OT1/ptmcm/m/n/12 )(\OML/ptmcm/m/it/
+12 SE\OT1/ptmcm/m/n/12 (3)$ \OT1/ptm/m/n/12 to in-clude
+ []
+
+
+Overfull \hbox (17.85616pt too wide) in paragraph at lines 1399--1399
+[] 
+ []
+
+
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+
+(./Research Writing.bbl
+Underfull \hbox (badness 4084) in paragraph at lines 11--14
+[]\OT1/ptm/m/n/12 Mair, E., Fleps, M., Suppa, M., and
+ []
+
+[25]
+Underfull \hbox (badness 1014) in paragraph at lines 34--39
+\OT1/ptm/m/it/12 tel-li-gence Tech-nol-ogy and Ap-pli-ca-tions 2\OT1/ptm/m/n/12
+ .
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 54--59
+[]\OT1/ptm/m/n/12 Zhuang, H., Roth, Z. S., and Sud-hakar,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
+[]\OT1/ptm/m/n/12 Ernst, F., Richter, L., Matth[]aus, L.,
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 80--85
+\OT1/ptm/m/n/12 Martens, V., Bruder, R., Schlae-fer, A.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
+\OT1/ptm/m/it/12 and Com-puter As-sisted Surgery, \OT1/ptm/b/n/12 8\OT1/ptm/m/n
+/12 (4),
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 139--144
+\OT1/ptm/m/n/12 ``An overview of robot-sensor cal-i-bra-tion
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 189--193
+\OT1/ptm/m/n/12 2001.  ``Robot hand-eye cal-i-bra-tion us-
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 195--199
+[]\OT1/ptm/m/n/12 Schmidt, J., Vogt, F., and Nie-mann, H.,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \hbox (badness 1406) in paragraph at lines 207--212
+\OT1/ptm/m/n/12 ``A branch-and-bound al-go-rithm for glob-
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 207--212
+\OT1/ptm/m/n/12 ally op-ti-mal cal-i-bra-tion of a camera-and-
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 220--225
+[]\OT1/ptm/m/n/12 Heller, J., Havlena, M., and Pa-jdla, T.,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 240--245
+\OT1/ptm/m/n/12 ``A prob-a-bilis-tic so-lu-tion to the $[]$
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 240--245
+\OT1/ptm/m/n/12 prob-lem sen-sor cal-i-bra-tion with-out cor-re-
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 247--252
+\OT1/ptm/m/n/12 Boc-tor, E., and Chirikjian, G. S., 2013.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+
+Underfull \hbox (badness 1418) in paragraph at lines 283--287
+[]\OT1/ptm/m/n/12 Vogt, J. S. F., and Nie-mann, H., 2004.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 316.
+) [30]
+(./Research Writing.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2592 strings out of 493848
+ 31729 string characters out of 1152822
+ 88235 words of memory out of 3000000
+ 5777 multiletter control sequences out of 15000+50000
+ 75141 words of font info for 158 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 32i,22n,24p,1757b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eufm10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/f
+onts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/sy
+mbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/
+share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive
+/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
+es/utmri8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on "Research Writing.pdf" (30 pages, 310158 bytes).
+PDF statistics:
+ 168 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,19 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="56,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T25U3">w</span> = skewcoords(<span class="var type1" id="S3T4U6">R</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="56,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">%SKEWCOORDS  generates a vector w given a skew-symmetric matrix R</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,3" id="srcline3"> 3</a></span><span class="line"><span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">%   w = SKEWCOORDS(R)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,5" id="srcline5"> 5</a></span><span class="line"><span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,6" id="srcline6"> 6</a></span><span class="line"><span class="comment">% See also: ROTAXIS, SKEWEXP, SKEW.</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,7" id="srcline7"> 7</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="56,8" id="srcline8"> 8</a></span><span class="line"><span class="comment">% $Id: skewcoords.m,v 1.1 2009-03-17 16:40:18 bradleyk Exp $</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,9" id="srcline9"> 9</a></span><span class="line"><span class="comment">% Copyright (C) 2005, by Brad Kratochvil</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,10" id="srcline10">10</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="56,11" id="srcline11">11</a></span><span class="line">  <span class="keyword">if</span> <span class="mxinfo " id="T3:U3">~<span class="mxinfo " id="T3:U4"><span class="fcn" id="F98N6:B11">isskew</span>(<span class="var type1" id="S3T4U12">R</span>)</span></span>,</span></span>
+<span class="srcline"><span class="lineno"><a href="56,12" id="srcline12">12</a></span><span class="line">    error(<span class="string">'SCREWS:skewcoords'</span>,<span class="string">'R must be a 3x3 skew-symmetric matrix'</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="56,13" id="srcline13">13</a></span><span class="line">  <span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="56,14" id="srcline14">14</a></span><span class="line"> </span></span>
+<span class="srcline"><span class="lineno"><a href="56,15" id="srcline15">15</a></span><span class="line">  <span class="mxinfo " id="T25:U6"><span class="var type1" id="S2T25U20">w</span> = <span class="mxinfo " id="T25:U8">[<span class="mxinfo " id="T2:U9"><span class="var type1" id="S3T4U24">R</span>(<span class="mxinfo " id="T9:U11">3</span>,<span class="mxinfo " id="T9:U12">2</span>)</span>;<span class="mxinfo " id="T2:U13"><span class="var type1" id="S3T4U29">R</span>(<span class="mxinfo " id="T9:U15">1</span>,<span class="mxinfo " id="T9:U16">3</span>)</span>;<span class="mxinfo " id="T2:U17"><span class="var type1" id="S3T4U34">R</span>(<span class="mxinfo " id="T9:U19">2</span>,<span class="mxinfo " id="T9:U20">1</span>)</span>]</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="56,16" id="srcline16">16</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="56,17" id="srcline17">17</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>

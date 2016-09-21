@@ -1,0 +1,6 @@
+function [g] = TruePose(a0,Xinital,v,T,S)
+
+NumInt = 1;
+[Twist]=GenerateTwist2(NumInt,Xinital,v,T,S);
+
+g = expm(Twist) + [1 0 0 

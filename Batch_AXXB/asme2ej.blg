@@ -1,0 +1,44 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: asme2ej.aux
+The style file: asmems4.bst
+Database file #1: asme2e.bib
+I was expecting a `,' or a `}'---line 6 of file asme2e.bib
+ : 
+ : year={1987}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 13 of file asme2e.bib
+ : 
+ : year={1991}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 46 of file asme2e.bib
+ : 
+ : year={2011}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 53 of file asme2e.bib
+ : 
+ : year={2010}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 60 of file asme2e.bib
+ : 
+ : year={2010}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 67 of file asme2e.bib
+ : 
+ : year={2010}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "tsai"
+Warning--I didn't find a database entry for "park"
+Warning--I didn't find a database entry for "shiu"
+Warning--I didn't find a database entry for "chou"
+Warning--I didn't find a database entry for "axxb11"
+Warning--I didn't find a database entry for "axxb1"
+Warning--I didn't find a database entry for "axxb12"
+Warning--empty year in darius1
+Warning--empty year in chen91
+Warning--empty year in arun
+(There were 6 error messages)

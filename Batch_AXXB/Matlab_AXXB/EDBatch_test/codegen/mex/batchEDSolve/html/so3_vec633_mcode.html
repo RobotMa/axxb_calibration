@@ -1,0 +1,21 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="167,1" id="srcline1"> 1</a></span><span class="line"><span class="comment">%Function to vectorize or hat an element in so(3)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="167,2" id="srcline2"> 2</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="167,3" id="srcline3"> 3</a></span><span class="line"><span class="comment">%files needed:</span></span></span>
+<span class="srcline"><span class="lineno"><a href="167,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">%none</span></span></span>
+<span class="srcline"><span class="lineno"><a href="167,5" id="srcline5"> 5</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="167,6" id="srcline6"> 6</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="167,7" id="srcline7"> 7</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T25U3">g</span> = so3_vec(<span class="var type1" id="S3T4U6">X</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="167,8" id="srcline8"> 8</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="167,9" id="srcline9"> 9</a></span><span class="line"><span class="keyword">if</span> (size(<span class="var type1" id="S3T4U13">X</span>,2)==3) <span class="comment">%If input is skew-sym change to vector</span></span></span>
+<span class="srcline"><span class="lineno"><a href="167,10" id="srcline10">10</a></span><span class="line">    </span></span>
+<span class="srcline"><span class="lineno"><a href="167,11" id="srcline11">11</a></span><span class="line">    <span class="mxinfo " id="T25:U4"><span class="var type1" id="S2T25U18">g</span> = <span class="mxinfo " id="T25:U6">[<span class="mxinfo " id="T2:U7">-<span class="mxinfo " id="T2:U8"><span class="var type1" id="S3T4U23">X</span>(<span class="mxinfo " id="T9:U10">2</span>,<span class="mxinfo " id="T9:U11">3</span>)</span></span>; <span class="mxinfo " id="T2:U12"><span class="var type1" id="S3T4U28">X</span>(<span class="mxinfo " id="T9:U14">1</span>,<span class="mxinfo " id="T9:U15">3</span>)</span>; <span class="mxinfo " id="T2:U16">-<span class="mxinfo " id="T2:U17"><span class="var type1" id="S3T4U34">X</span>(<span class="mxinfo " id="T2:U19">1</span>,<span class="mxinfo " id="T2:U20">2</span>)</span></span>]</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="167,12" id="srcline12">12</a></span><span class="line">    </span></span>
+<span class="srcline"><span class="lineno"><a href="167,13" id="srcline13">13</a></span><span class="line"><span class="keyword">else</span> <span class="comment">%If input is vector change to skew-sym </span></span></span>
+<span class="srcline"><span class="lineno"><a href="167,14" id="srcline14">14</a></span><span class="line">    </span></span>
+<span class="srcline"><span class="lineno"><a href="167,15" id="srcline15">15</a></span><span class="line">    <span class="var type0" id="S2T0U40">g</span> = [0      -<span class="var type0" id="S3T0U46">X</span>(3)   <span class="var type0" id="S3T0U49">X</span>(2)</span></span>
+<span class="srcline"><span class="lineno"><a href="167,16" id="srcline16">16</a></span><span class="line">        <span class="var type0" id="S3T0U53">X</span>(3)    0       -<span class="var type0" id="S3T0U58">X</span>(1)</span></span>
+<span class="srcline"><span class="lineno"><a href="167,17" id="srcline17">17</a></span><span class="line">        -<span class="var type0" id="S3T0U63">X</span>(2)   <span class="var type0" id="S3T0U66">X</span>(1)    0];</span></span>
+<span class="srcline"><span class="lineno"><a href="167,18" id="srcline18">18</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="167,19" id="srcline19">19</a></span><span class="line"><span class="keyword"><span class="keyword">end</span></span></span></span>
+</pre>

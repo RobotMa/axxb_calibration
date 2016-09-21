@@ -1,0 +1,18 @@
+function [v] = SymMat2Vec(S)
+
+S1 = size(S,1);
+S2 = size(S,2);
+
+n = S1*(S1+1)/2; %number of degrees of freedom
+
+v = zeros(n,1);
+
+count = 0;
+for ii = 1 : S1
+    v(ii) = S(ii,ii);
+    count = count + 1;
+end
+
+for ii = 2 : S1
+    count = count + 1;
+    

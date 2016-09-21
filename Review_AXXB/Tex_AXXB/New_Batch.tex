@@ -1,0 +1,308 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%% asme2ej.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for producing ASME-format journal articles using LaTeX    %
+% Written by   Harry H. Cheng, Professor and Director                %
+%              Integration Engineering Laboratory                    %
+%              Department of Mechanical and Aeronautical Engineering %
+%              University of California                              %
+%              Davis, CA 95616                                       %
+%              Tel: (530) 752-5020 (office)                          %
+%                   (530) 752-1028 (lab)                             %
+%              Fax: (530) 752-4158                                   %
+%              Email: hhcheng@ucdavis.edu                            %
+%              WWW:   http://iel.ucdavis.edu/people/cheng.html       %
+%              May 7, 1994                                           %
+% Modified: February 16, 2001 by Harry H. Cheng                      %
+% Modified: January  01, 2003 by Geoffrey R. Shiflett                %
+% Use at your own risk, send complaints to /dev/null                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% use twocolumn and 10pt options with the asme2ej format
+\documentclass[twocolumn,10pt]{asme2ej}
+%%\documentclass[twocolumn,15pt]
+
+
+\usepackage{epsfig} %% for loading postscript figures
+\usepackage{mathtools}   % loads »amsmath«
+\usepackage{amssymb,amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+%\usepackage{natbib}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{comment}
+%\usepackage{algorithm2e}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}
+\newtheorem*{main}{Main Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem*{problem}{Problem}
+%\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem*{notation}{Notation}
+
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand{\ttt}{{\bf t}}
+
+
+
+
+
+\title{New Batch Method}
+
+\author{Qianli Ma\thanks{Address all correspondence to this author.}\\
+		\textbf{M. Kendal, Ackerman}\\ 
+		\textbf{Gregory S. Chirikjian}
+    \affiliation{
+	Robot and Protein Kinematics Laboratory\\
+	Laboratory for Computational Sensing and Robotics\\
+	Department of Mechanical Engineering\\
+	The Johns Hopkins University\\
+	Baltimore, Maryland, 21218\\
+    Email: \{mqianli1, gchirik1\}@jhu.edu
+    }	
+}
+
+
+\begin{document}
+
+\maketitle    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\it
+Abstract to be added.
+ 
+\end{abstract}
+
+We begin by defining a Gaussian probability distribution on $SE(3)$ (assuming the norm $\norm{\Sigma}$ is small) as
+$$ \rho(H; M, \Sigma) = \frac{1}{(2\pi)^3 |\Sigma|^{\frac{1}{2	}}} e^{-\frac{1}{2}F(M^{-1}H)}$$
+where $\norm{\Sigma}$ denotes the determinant of $\Sigma$ and
+$$ F(H) = [\log^{\vee}(H)]^T \Sigma^{-1} [\log^{\vee}(H)].$$
+
+Previously, in order to determine the mean of the convolution of two PDFs, Baker-Campbell-Hausdorff formula is used given the assumption that function $f_1$ and $f_2$ are both highly focused. If $X, Y \in se(3)$, 
+\begin{equation} 
+log(e^X e^Y) = X + Y + \dfrac{1}{2}[X,Y] + \dfrac{1}{12}\left([X, [X,Y]] + [Y,[Y,X]]\right) + ...
+\label{BCH}
+\end{equation}
+If $X$ and $Y$ are further constrained to be small so that $\norm{X} \ll 1$ and $\norm{Y} \ll 1$, then the first approximation of Eq.(\ref{BCH}) can be written as:
+\begin{equation}
+\log(e^X e^Y) = X + Y
+\end{equation}
+As shown in \cite{Wang08}, the mean of covariance of the convolution of two highly focused functions are: 
+\begin{equation}
+M_{1*2} = M_1 \, M_2 \,\,\, {\rm and} \,\,\, \Sigma_{1*2} = Ad(M_2^{-1}) \,\Sigma_{1}\, Ad^T(M_2^{-1}) + \Sigma_{2}
+\label{meancovconvdef} \end{equation}
+where
+\begin{equation} 
+Ad(H) = \left(\begin{array}{ccc}
+R && \mathbb{O} \\
+\widehat{{\bf x}} R && R \end{array}\right) 
+\label{adjdef} \end{equation}
+\section{First Order Approximation of $M$}
+Though this approximation works well when the distribution of $X$ is treated as a Delta function, it fails to extend to the case where its distribution is a general PDF $f(X)$. In an alternative to the first order approximation using Baker-Campbell-Hausdorff formula, it is possible to only assume $M^{-1}H$ is small so that $\norm{M^{-1}H - \II} \ll 1$. Given the Taylor expansion of the matrix logarithm described as:
+\begin{equation}
+\log(\II + X) = X - \dfrac{1}{2}X^2 + \dfrac{1}{3}X^3 - ...
+\end{equation}
+Then it is straight forward to have:
+\begin{equation}
+\begin{split}
+&\log(M^{-1}H) \\ 
+= &\log(\II + (M^{-1}H - \II)) \\ 
+= &\left(M^{-1}H - \II \right) - \left(M^{-1}H - \II \right)^2/2 + \left(M^{-1}H - \II \right)^3/3 - ...
+\end{split}
+\end{equation}
+Given the definition of the mean $M$ of a probability density $f(H)$ as:
+\begin{equation} 
+\int_{SE(3)} \log(M^{-1} H) f(H) dH = \mathbb{O}  
+\label{meandef} 
+\end{equation}
+The first order approximation of Eq.(\ref{meandef}) is:
+\begin{equation}
+\int_{SE(3)} (M^{-1}H - \II) f(H)dH \approx \mathbb{O}
+\end{equation}
+
+\begin{equation}
+M^{-1}\int_{SE(3)} H f(H)dH \approx \II
+\end{equation}
+Define the first order approximation of $M$ as $\widehat{M}$:
+\begin{equation}
+\widehat{M} \doteq \int_{SE(3)}Hf(H)dH
+\label{1st}
+\end{equation}
+
+ $$ f_A(H) = \frac{1}{n} \sum_{i=1}^{n} \delta(A_i^{-1} H) \,\,\, {\rm and} \,\,\, f_B(H) = \frac{1}{n} \sum_{i=1}^{n} \delta(B_i^{-1} H). $$
+ If $f(H)$ is of the form of $f_A(H)$ given above, then
+\begin{equation} \
+\begin{split} &\sum_{i=1}^{n} \log(M_A^{-1} A_i) = \mathbb{O} {\rm \,\,\,\,\, and} \\
+&\Sigma_A = \frac{1}{n} \sum_{i=1}^{n} \log^{\vee}(M_A^{-1} A_i) [\log^{\vee}(M_A^{-1} A_i)]^T.  \label{datameancovconvdef} \end{split}
+\end{equation}
+Discrete version will be:
+\begin{equation}
+\widehat{M_{A}} \doteq \sum_{i=1}^{n} A_{i} \left( \frac{1}{n} \sum_{j=1}^{n}  \delta(A_j^{-1} A_{i})dH \right) = \dfrac{1}{n}\sum_{i=1}^{n}A_{i}
+\end{equation}
+Note that $\widehat{M}$ is generally not a group element in $SE(3)$, and the corresponding $SE(3)$ version can be obtained by projecting $\widehat{M}$ into $SE(3)$ using singular value decomposition (SVD) technique.:
+\begin{equation}
+R_{\widehat{M}} = U \Sigma V^{T}
+\label{proj}
+\end{equation}
+The rotation part of the projected $\widehat{M}$ (named as $\widehat{M}_{proj}$) is:
+\begin{equation}
+R_{\widehat{M}_{proj}} = UV^{T}
+\end{equation}
+More details are needed to actually project $\widehat{M}$ into $SE(3)$.
+
+\section{Second Order Approximation of $M$}
+Take the second order approximation in Eq.(\ref{meandef}):
+\begin{equation}
+\int_{SE(3)} \left((M^{-1}H - \II) - \dfrac{1}{2}(M^{-1}H - \II)^2 \right)f(H)dH \approx \mathbb{O}
+\label{2nd1}
+\end{equation}
+\begin{equation}
+\int_{SE(3)} \left( 2M^{-1}H - \dfrac{1}{2}HM^{-1}H - \dfrac{3}{2} \II \right)f(H)dH \approx \mathbb{O}
+\label{2nd2}
+\end{equation}
+Multiply $M$ on both side of Eq.(\ref{2nd2}):
+\begin{equation}
+\int_{SE(3)} \left( 2H - \dfrac{1}{2}HM^{-1}H -\dfrac{3}{2}M \right)f(H)dH \approx \mathbb{O}
+\label{2nd3}
+\end{equation}
+Substituting Eq.(\ref{1st}) into Eq.(\ref{2nd3}), we have:
+\begin{equation}
+2\widehat{M} - \dfrac{1}{2}\int_{SE(3)}HM^{-1}Hf(H)dH - \dfrac{3}{2}M \approx \mathbb{O}
+\end{equation}
+The 2nd order approximation of $M$ is denoted by $\overbar{M}$ defined as:
+\begin{equation}
+2\widehat{M} - \dfrac{1}{2}\int_{SE(3)}H\overbar{M}^{-1}Hf(H)dH - \dfrac{3}{2}\overbar{M} = \mathbb{O}
+\end{equation}
+
+\begin{equation}
+2\widehat{M} - \overbar{M}\dfrac{1}{2}\int_{SE(3)}\overbar{M}^{-1}H\overbar{M}^{-1}Hf(H)dH - \dfrac{3}{2}\overbar{M} = \mathbb{O}
+\label{2ndm}
+\end{equation}
+
+\begin{equation}
+2\widehat{M} - \dfrac{1}{2n}\sum_{i=1}^{n}A_{i}\overbar{M}^{-1}A_{i} - \dfrac{3}{2}\overbar{M} = \mathbb{O}
+\label{2ndm}
+\end{equation}
+The second term of Eq.(\ref{2ndm}) is very similar to the definition of the covariance of $f(H)$, and maybe  $\overbar{M}$ can be updated using the information of the covariance. Also, take a look at the cubness of variance in the first volume. 
+The same technique as in Eq.(\ref{proj}) can be employed to project $\widehat{M}$ into $SE(3)$.
+
+\section{First Order Approximation of $\Sigma$}
+Given the definition of the covariance $\Sigma$ of a PDF $f(H)$ as:
+\begin{equation} 
+\Sigma = \int_{SE(3)} \log^{\vee}(M^{-1} H) [\log^{\vee}(M^{-1} H)]^T  f(H) dH \label{meancovdef} \end{equation}
+Its first order approximation $\widehat{\Sigma}$ can be written as:
+\begin{equation}
+\widehat{\Sigma} \doteq \int_{SE(3)} (M^{-1} H - \II)^{\vee} [(M^{-1} H - \II)^{\vee}]^T  f(H) dH
+\label{1stCov}
+\end{equation}
+The discrete version for $\Sigma_{A}$ will be:
+\begin{equation}
+\Sigma_A = \frac{1}{n} \sum_{i=1}^{n} (M_A^{-1} A_i- \II)^{\vee} [(M_A^{-1} A_i- \II)^{\vee}]^T.  
+\end{equation}
+By defining $Q = M^{-1}H$, Eq.(\ref{1stCov}) can be written as:
+\begin{equation}
+\widehat{\Sigma} \doteq \int_{SE(3)} (Q - \II)^{\vee} [(Q - \II)^{\vee}]^T  f(Q) dQ
+\end{equation}
+If $\norm{G - \II} \ll 1$, then $\Sigma = \widehat{\Sigma}$
+\begin{equation}
+(Q - \II)^{\vee} =
+\left( 
+\begin{matrix}
+\dfrac{1}{2}(R -R^{T}) \\
+\ttt
+\end{matrix}
+\right)
+\end{equation}
+
+\section{Second Order Approximation of $\Sigma$}
+
+\section{First Order Approximation of $M_{1*2}$}
+Given two functions, $f_1, f_2 \in (L^1 \cap L^2)(SE(3))$, the convolution is defined as:
+\begin{equation}
+(f_1 * f_2)(H) \doteq \int_{SE(3)} f_1(K) f_2(K^{-1} H) dK. 
+\label{convdef}
+\end{equation}
+The corresponding mean $M_{1*2}$ will be given as:
+\begin{equation}
+\int_{SE(3)} \log(M_{1*2}^{-1}H) (f_1*f_2)(H)dH = \mathbb{O}
+\end{equation}
+If both $\Sigma_1$ and $\Sigma_2$ are very small, then $M_{1*2} \approx M_1 M_2$. Without using this approximation, take the assumption that $M^{-1}H$ is small and we will have:
+\begin{equation}
+\int_{SE(3)}\int_{SE(3)} \left(M_{1*2}^{-1}H - \II \right)f_{1}(K)f_{2}(K^{-1}H)dKdH \approx \mathbb{O}
+\end{equation}
+Define $L = K^{-1}H$,
+\begin{equation}
+\int_{SE(3)}\int_{SE(3)} \left(M_{1*2}^{-1}KL - \II \right)f_{1}(K)f_{2}(L)dKdL \approx \mathbb{O}
+\end{equation}
+By using Eq.(\ref{1st}) twice,
+\begin{equation}
+M_{1*2}^{-1} \widehat{M_1}\widehat{M_2} \approx \II
+\end{equation}
+Define $\widehat{M}_{1*2}$ as:
+\begin{equation}
+\widehat{M}_{1*2} = \widehat{M_1}\widehat{M_2}
+\end{equation}
+There are two ways to solve for $M_{1*2}^{proj}$.
+\begin{equation}
+M_{1*2}^{proj}=
+\begin{cases}
+\left(\widehat{M_1}\widehat{M_2}\right)_{proj}\\
+\widehat{M_{1}}_{proj}\widehat{M_{2}}_{proj}
+\end{cases}
+\label{b_old}
+\end{equation}
+
+
+\section{Second Order Approximation of $M_{1*2}$}
+For simplicity, we drop the domain of integral $SE(3)$,
+\begin{equation}
+\int\int\left(2M_{1*2}^{-1}H - \dfrac{1}{2}M_{1*2}^{-1}HM_{1*2}^{-1}H - \dfrac{3}{2}\II \right)f_{1}(K)f_{2}(K^{-1}H)dKdH \approx \mathbb{O}
+\end{equation}
+Substitute $L = K^{-1}H$,
+\begin{equation}
+\int\int \left(2M_{1*2}^{-1}KL - \dfrac{1}{2}M_{1*2}^{-1}KLM_{1*2}^{-1}KL - \dfrac{3}{2}\II \right)f_{1}(K)f_{2}(L)dKdL \approx \mathbb{O}
+\end{equation}
+Employing the definition of $\widehat{M}$,
+\begin{equation}
+M_{1*2}^{-1}\widehat{M_{1}}\widehat{M_{2}} \approx \dfrac{1}{4} \int\int \left(\dfrac{1}{2}M_{1*2}^{-1}KLM_{1*2}^{-1}KL \right)f_{1}(K)f_{2}(L)dKdL + \dfrac{3}{4}\II 
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Here's where you specify the bibliography style file.
+% The full file name for the bibliography style file 
+% used for an ASME paper is asmems4.bst.
+\bibliographystyle{asmems4}
+
+% Here's where you specify the bibliography database file.
+% The full file name of the bibliography database for this
+% article is asme2e.bib. The name for your database is up
+% to you.
+\bibliography{New_Batch}
+\end{document}

@@ -1,0 +1,14 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		mean_double_convl_2nd;
+		b_emlrt_marshallIn;
+		emlrt_marshallIn;
+		i_emlrt_marshallIn;
+		mean_double_convl_2nd_initialize;
+		mean_double_convl_2nd_terminate;
+		mean_double_convl_2nd_atexit;
+	local:
+		*;
+};

@@ -1,0 +1,17 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		mean_Taylor_2nd;
+		b_emlrt_marshallIn;
+		emlrt_marshallIn;
+		g_emlrt_marshallIn;
+		emxEnsureCapacity;
+		emxFree_real_T;
+		emxInit_real_T;
+		mean_Taylor_2nd_initialize;
+		mean_Taylor_2nd_terminate;
+		mean_Taylor_2nd_atexit;
+	local:
+		*;
+};

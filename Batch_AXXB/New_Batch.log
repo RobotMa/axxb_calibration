@@ -1,0 +1,1201 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.17)  24 AUG 2015 17:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**New_Batch.tex
+(./New_Batch.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(./asme2ej.cls
+
+LaTeX Warning: You have requested document class `asme2ej',
+               but the document class provides `asme2e'.
+
+Document Class: asme2e 2001/2/14 v2.0 Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptm.sty
+Package: mathptm 2005/04/12 PSNFSS-v9.2a Times w/ Math (SPQR, WaS) 
+
+
+Package mathptm Warning: This package is to be regarded as obsolete.
+(mathptm)                See the PSNFSS documentation.
+
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Ten Point
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 301.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\tempbox=\box26
+\c@figure=\count85
+\c@table=\count86
+\@authcnt=\count87
+\@tmpcnt=\count88
+\bibindent=\dimen102
+\tempbox=\box27
+\minute=\count89
+\hour=\count90
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count92
+\calc@Bcount=\count93
+\calc@Adimen=\dimen107
+\calc@Bdimen=\dimen108
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count94
+\calc@Cskip=\skip43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen109
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen110
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks16
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks17
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks18
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count107
+\l_MT_multwidth_dim=\dimen118
+\origjot=\skip47
+\l_MT_shortvdotswithinadjustabove_dim=\dimen119
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen120
+\l_MT_above_intertext_sep=\dimen121
+\l_MT_below_intertext_sep=\dimen122
+\l_MT_above_shortintertext_sep=\dimen123
+\l_MT_below_shortintertext_sep=\dimen124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen125
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+\c@theorem=\count108
+\c@corollary=\count109
+\c@proposition=\count110
+\c@conjecture=\count111
+\c@remark=\count112
+ (./New_Batch.aux)
+\openout1 = `New_Batch.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 74.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen126
+\scratchbox=\box30
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen127
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 76
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 76
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 76
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 76
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) detected at line 76
+[]
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 76.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+
+Overfull \hbox (39.74762pt too wide) in paragraph at lines 76--76
+ [] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+
+Overfull \hbox (7.8884pt too wide) detected at line 95
+\OML/ptmcm/m/it/10 log\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 e[]e[]\OT1/ptmcm/m/
+n/10 ) = \OML/ptmcm/m/it/10 X \OT1/ptmcm/m/n/10 + \OML/ptmcm/m/it/10 Y \OT1/ptm
+cm/m/n/10 + [][\OML/ptmcm/m/it/10 X; Y\OT1/ptmcm/m/n/10 ] + [] [] + \OML/ptmcm/
+m/it/10 :::
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Overfull \hbox (1.90002pt too wide) detected at line 156
+ []
+ []
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_rot_rel_10.ep
+s>
+(epstopdf)                    date: 2015-07-05 22:09:08
+(epstopdf)                    size: 185438 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_rot_rel_10-ep
+s-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_rot_rel_10-eps-converted-to.pdf Mean_Definition_Figures/mean_rot_rel_10.eps>
+
+(epstopdf)             \includegraphics on input line 229.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_rot_rel_10-eps-conve
+rted-to.pdf Mean_Definition_Figures/mean_rot_rel_10.eps)...executed safely (all
+owed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_rot_rel_10-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:12
+(epstopdf)                    size: 15528 bytes.
+
+<Mean_Definition_Figures/mean_rot_rel_10-eps-converted-to.pdf, id=18, 433.62pt 
+x 321.2pt>
+File: Mean_Definition_Figures/mean_rot_rel_10-eps-converted-to.pdf Graphic file
+ (type pdf)
+ <use Mean_Definition_Figures/mean_rot_rel_10-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_rot_rel_10-eps-converted-
+to.pdf used on input line 229.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 229--230
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_trans_rel_10.
+eps>
+(epstopdf)                    date: 2015-07-05 22:08:42
+(epstopdf)                    size: 205313 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_trans_rel_10-
+eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_trans_rel_10-eps-converted-to.pdf Mean_Definition_Figures/mean_trans_rel_10.
+eps>
+(epstopdf)             \includegraphics on input line 235.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_trans_rel_10-eps-con
+verted-to.pdf Mean_Definition_Figures/mean_trans_rel_10.eps)...executed safely 
+(allowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_trans_rel_10-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:12
+(epstopdf)                    size: 16274 bytes.
+
+<Mean_Definition_Figures/mean_trans_rel_10-eps-converted-to.pdf, id=19, 433.62p
+t x 321.2pt>
+File: Mean_Definition_Figures/mean_trans_rel_10-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use Mean_Definition_Figures/mean_trans_rel_10-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_trans_rel_10-eps-converte
+d-to.pdf used on input line 235.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 235--236
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_rot_rel_5.eps
+>
+(epstopdf)                    date: 2015-07-05 22:42:28
+(epstopdf)                    size: 159205 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_rot_rel_5-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_rot_rel_5-eps-converted-to.pdf Mean_Definition_Figures/mean_rot_rel_5.eps>
+(epstopdf)             \includegraphics on input line 241.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_rot_rel_5-eps-conver
+ted-to.pdf Mean_Definition_Figures/mean_rot_rel_5.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_rot_rel_5-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:12
+(epstopdf)                    size: 13106 bytes.
+
+<Mean_Definition_Figures/mean_rot_rel_5-eps-converted-to.pdf, id=20, 433.62pt x
+ 321.2pt>
+File: Mean_Definition_Figures/mean_rot_rel_5-eps-converted-to.pdf Graphic file 
+(type pdf)
+ <use Mean_Definition_Figures/mean_rot_rel_5-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_rot_rel_5-eps-converted-t
+o.pdf used on input line 241.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 241--242
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_trans_rel_5.e
+ps>
+(epstopdf)                    date: 2015-07-05 22:41:57
+(epstopdf)                    size: 225496 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_trans_rel_5-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_trans_rel_5-eps-converted-to.pdf Mean_Definition_Figures/mean_trans_rel_5.ep
+s>
+(epstopdf)             \includegraphics on input line 247.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_trans_rel_5-eps-conv
+erted-to.pdf Mean_Definition_Figures/mean_trans_rel_5.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_trans_rel_5-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:13
+(epstopdf)                    size: 14296 bytes.
+
+<Mean_Definition_Figures/mean_trans_rel_5-eps-converted-to.pdf, id=21, 433.62pt
+ x 321.2pt>
+File: Mean_Definition_Figures/mean_trans_rel_5-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use Mean_Definition_Figures/mean_trans_rel_5-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_trans_rel_5-eps-converted
+-to.pdf used on input line 247.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 247--248
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_rot_abs_10.ep
+s>
+(epstopdf)                    date: 2015-07-05 22:27:34
+(epstopdf)                    size: 208581 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_rot_abs_10-ep
+s-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_rot_abs_10-eps-converted-to.pdf Mean_Definition_Figures/mean_rot_abs_10.eps>
+
+(epstopdf)             \includegraphics on input line 254.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_rot_abs_10-eps-conve
+rted-to.pdf Mean_Definition_Figures/mean_rot_abs_10.eps)...executed safely (all
+owed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_rot_abs_10-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:13
+(epstopdf)                    size: 17260 bytes.
+
+<Mean_Definition_Figures/mean_rot_abs_10-eps-converted-to.pdf, id=22, 425.59pt 
+x 319.1925pt>
+File: Mean_Definition_Figures/mean_rot_abs_10-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use Mean_Definition_Figures/mean_rot_abs_10-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_rot_abs_10-eps-converted-
+to.pdf used on input line 254.
+(pdftex.def)             Requested size: 255.35596pt x 191.51697pt.
+
+Overfull \hbox (13.97388pt too wide) in paragraph at lines 254--255
+[][] 
+ []
+
+[2]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_trans_abs_10.
+eps>
+(epstopdf)                    date: 2015-07-05 22:07:54
+(epstopdf)                    size: 212553 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_trans_abs_10-
+eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_trans_abs_10-eps-converted-to.pdf Mean_Definition_Figures/mean_trans_abs_10.
+eps>
+(epstopdf)             \includegraphics on input line 261.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_trans_abs_10-eps-con
+verted-to.pdf Mean_Definition_Figures/mean_trans_abs_10.eps)...executed safely 
+(allowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_trans_abs_10-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:14
+(epstopdf)                    size: 17640 bytes.
+
+<Mean_Definition_Figures/mean_trans_abs_10-eps-converted-to.pdf, id=26, 433.62p
+t x 321.2pt>
+File: Mean_Definition_Figures/mean_trans_abs_10-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use Mean_Definition_Figures/mean_trans_abs_10-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_trans_abs_10-eps-converte
+d-to.pdf used on input line 261.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 261--262
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_rot_abs_5.eps
+>
+(epstopdf)                    date: 2015-07-05 22:41:09
+(epstopdf)                    size: 168270 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_rot_abs_5-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_rot_abs_5-eps-converted-to.pdf Mean_Definition_Figures/mean_rot_abs_5.eps>
+(epstopdf)             \includegraphics on input line 268.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_rot_abs_5-eps-conver
+ted-to.pdf Mean_Definition_Figures/mean_rot_abs_5.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_rot_abs_5-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:14
+(epstopdf)                    size: 13825 bytes.
+
+<Mean_Definition_Figures/mean_rot_abs_5-eps-converted-to.pdf, id=27, 433.62pt x
+ 321.2pt>
+File: Mean_Definition_Figures/mean_rot_abs_5-eps-converted-to.pdf Graphic file 
+(type pdf)
+ <use Mean_Definition_Figures/mean_rot_abs_5-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_rot_abs_5-eps-converted-t
+o.pdf used on input line 268.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 268--269
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_rot_abs_5.eps
+>
+(epstopdf)                    date: 2015-07-05 22:41:09
+(epstopdf)                    size: 168270 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_rot_abs_5-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:14
+(epstopdf)                    size: 13825 bytes
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_rot_abs_5-eps-converted-to.pdf Mean_Definition_Figures/mean_rot_abs_5.eps>
+(epstopdf)             \includegraphics on input line 274.
+Package epstopdf Info: Output file is already uptodate.
+File: Mean_Definition_Figures/mean_rot_abs_5-eps-converted-to.pdf Graphic file 
+(type pdf)
+<use Mean_Definition_Figures/mean_rot_abs_5-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_rot_abs_5-eps-converted-t
+o.pdf used on input line 274.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 274--275
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./Mean_Definition_Figures/mean_rot_rel_10-eps-converted-to.pdf> <./Mean_De
+finition_Figures/mean_trans_rel_10-eps-converted-to.pdf> <./Mean_Definition_Fig
+ures/mean_rot_rel_5-eps-converted-to.pdf> <./Mean_Definition_Figures/mean_trans
+_rel_5-eps-converted-to.pdf>]
+Underfull \vbox (badness 3019) has occurred while \output is active []
+
+ [4 <./Mean_Definition_Figures/mean_rot_abs_10-eps-converted-to.pdf> <./Mean_De
+finition_Figures/mean_trans_abs_10-eps-converted-to.pdf> <./Mean_Definition_Fig
+ures/mean_rot_abs_5-eps-converted-to.pdf>]
+Overfull \hbox (33.8135pt too wide) detected at line 390
+[] [] [] \OML/ptmcm/m/it/10 f[]\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 K\OT1/ptmc
+m/m/n/10 )\OML/ptmcm/m/it/10 f[]\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 K[]H\OT1/
+ptmcm/m/n/10 )\OML/ptmcm/m/it/10 dKdH \OMS/pzccm/m/n/10 ^^Y \U/msb/m/n/10 O
+ []
+
+
+Overfull \hbox (26.65308pt too wide) detected at line 394
+[] [] [] \OML/ptmcm/m/it/10 f[]\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 K\OT1/ptmc
+m/m/n/10 )\OML/ptmcm/m/it/10 f[]\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 L\OT1/ptm
+cm/m/n/10 )\OML/ptmcm/m/it/10 dKdL \OMS/pzccm/m/n/10 ^^Y \U/msb/m/n/10 O
+ []
+
+
+Overfull \hbox (10.01785pt too wide) detected at line 399
+\OML/ptmcm/m/it/10 M[][][] \OMS/pzccm/m/n/10 ^^Y [] [] [] [] \OML/ptmcm/m/it/10
+ f[]\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 K\OT1/ptmcm/m/n/10 )\OML/ptmcm/m/it/1
+0 f[]\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 L\OT1/ptmcm/m/n/10 )\OML/ptmcm/m/it/
+10 dKdL \OT1/ptmcm/m/n/10 + []\U/msb/m/n/10 I
+ []
+
+Package epstopdf Info: Source file: <col_mean_rot_error_1_10.eps>
+(epstopdf)                    date: 2015-06-17 11:50:51
+(epstopdf)                    size: 159355 bytes
+(epstopdf)             Output file: <col_mean_rot_error_1_10-eps-converted-to.p
+df>
+(epstopdf)                    date: 2015-06-17 14:02:08
+(epstopdf)                    size: 13644 bytes
+(epstopdf)             Command: <repstopdf --outfile=col_mean_rot_error_1_10-ep
+s-converted-to.pdf col_mean_rot_error_1_10.eps>
+(epstopdf)             \includegraphics on input line 410.
+Package epstopdf Info: Output file is already uptodate.
+<col_mean_rot_error_1_10-eps-converted-to.pdf, id=94, 433.62pt x 321.2pt>
+File: col_mean_rot_error_1_10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use col_mean_rot_error_1_10-eps-converted-to.pdf>
+Package pdftex.def Info: col_mean_rot_error_1_10-eps-converted-to.pdf used on i
+nput line 410.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 410--411
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <col_mean_trans_error_1_10.eps>
+(epstopdf)                    date: 2015-06-17 11:51:30
+(epstopdf)                    size: 158946 bytes
+(epstopdf)             Output file: <col_mean_trans_error_1_10-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2015-06-17 14:02:11
+(epstopdf)                    size: 13549 bytes
+(epstopdf)             Command: <repstopdf --outfile=col_mean_trans_error_1_10-
+eps-converted-to.pdf col_mean_trans_error_1_10.eps>
+(epstopdf)             \includegraphics on input line 417.
+Package epstopdf Info: Output file is already uptodate.
+<col_mean_trans_error_1_10-eps-converted-to.pdf, id=95, 433.62pt x 321.2pt>
+File: col_mean_trans_error_1_10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use col_mean_trans_error_1_10-eps-converted-to.pdf>
+Package pdftex.def Info: col_mean_trans_error_1_10-eps-converted-to.pdf used on
+ input line 417.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 417--418
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <col_mean_rot_error_1_6.eps>
+(epstopdf)                    date: 2015-06-17 11:52:07
+(epstopdf)                    size: 142167 bytes
+(epstopdf)             Output file: <col_mean_rot_error_1_6-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-06-17 14:02:13
+(epstopdf)                    size: 11834 bytes
+(epstopdf)             Command: <repstopdf --outfile=col_mean_rot_error_1_6-eps
+-converted-to.pdf col_mean_rot_error_1_6.eps>
+(epstopdf)             \includegraphics on input line 424.
+Package epstopdf Info: Output file is already uptodate.
+<col_mean_rot_error_1_6-eps-converted-to.pdf, id=96, 433.62pt x 342.27875pt>
+File: col_mean_rot_error_1_6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use col_mean_rot_error_1_6-eps-converted-to.pdf>
+Package pdftex.def Info: col_mean_rot_error_1_6-eps-converted-to.pdf used on in
+put line 424.
+(pdftex.def)             Requested size: 260.17401pt x 205.36882pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 424--425
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <col_mean_trans_error_1_6.eps>
+(epstopdf)                    date: 2015-06-15 16:04:59
+(epstopdf)                    size: 144540 bytes
+(epstopdf)             Output file: <col_mean_trans_error_1_6-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-06-17 11:39:35
+(epstopdf)                    size: 11973 bytes
+(epstopdf)             Command: <repstopdf --outfile=col_mean_trans_error_1_6-e
+ps-converted-to.pdf col_mean_trans_error_1_6.eps>
+(epstopdf)             \includegraphics on input line 430.
+Package epstopdf Info: Output file is already uptodate.
+
+<col_mean_trans_error_1_6-eps-converted-to.pdf, id=97, 433.62pt x 342.27875pt>
+File: col_mean_trans_error_1_6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use col_mean_trans_error_1_6-eps-converted-to.pdf>
+Package pdftex.def Info: col_mean_trans_error_1_6-eps-converted-to.pdf used on 
+input line 430.
+(pdftex.def)             Requested size: 260.17401pt x 205.36882pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 430--431
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_conv_rot_rel_
+10.eps>
+(epstopdf)                    date: 2015-07-15 14:49:05
+(epstopdf)                    size: 139687 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_conv_rot_rel_
+10-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_conv_rot_rel_10-eps-converted-to.pdf Mean_Definition_Figures/mean_conv_rot_r
+el_10.eps>
+(epstopdf)             \includegraphics on input line 437.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_conv_rot_rel_10-eps-
+converted-to.pdf Mean_Definition_Figures/mean_conv_rot_rel_10.eps)...executed s
+afely (allowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_conv_rot_rel_
+10-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:14
+(epstopdf)                    size: 12101 bytes.
+
+<Mean_Definition_Figures/mean_conv_rot_rel_10-eps-converted-to.pdf, id=98, 405.
+515pt x 342.27875pt>
+File: Mean_Definition_Figures/mean_conv_rot_rel_10-eps-converted-to.pdf Graphic
+ file (type pdf)
+
+<use Mean_Definition_Figures/mean_conv_rot_rel_10-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_conv_rot_rel_10-eps-conve
+rted-to.pdf used on input line 437.
+(pdftex.def)             Requested size: 243.31087pt x 205.36882pt.
+
+Overfull \hbox (1.92879pt too wide) in paragraph at lines 437--438
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_conv_trans_re
+l_10.eps>
+(epstopdf)                    date: 2015-07-15 14:49:38
+(epstopdf)                    size: 138470 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_conv_trans_re
+l_10-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_conv_trans_rel_10-eps-converted-to.pdf Mean_Definition_Figures/mean_conv_tra
+ns_rel_10.eps>
+(epstopdf)             \includegraphics on input line 443.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_conv_trans_rel_10-ep
+s-converted-to.pdf Mean_Definition_Figures/mean_conv_trans_rel_10.eps)...execut
+ed safely (allowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_conv_trans_re
+l_10-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:15
+(epstopdf)                    size: 12125 bytes.
+
+<Mean_Definition_Figures/mean_conv_trans_rel_10-eps-converted-to.pdf, id=99, 43
+3.62pt x 342.27875pt>
+File: Mean_Definition_Figures/mean_conv_trans_rel_10-eps-converted-to.pdf Graph
+ic file (type pdf)
+
+<use Mean_Definition_Figures/mean_conv_trans_rel_10-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_conv_trans_rel_10-eps-con
+verted-to.pdf used on input line 443.
+(pdftex.def)             Requested size: 260.17401pt x 205.36882pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 443--444
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_conv_rot_rel_
+5.eps>
+(epstopdf)                    date: 2015-07-15 14:51:44
+(epstopdf)                    size: 129642 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_conv_rot_rel_
+5-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_conv_rot_rel_5-eps-converted-to.pdf Mean_Definition_Figures/mean_conv_rot_re
+l_5.eps>
+(epstopdf)             \includegraphics on input line 449.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_conv_rot_rel_5-eps-c
+onverted-to.pdf Mean_Definition_Figures/mean_conv_rot_rel_5.eps)...executed saf
+ely (allowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_conv_rot_rel_
+5-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:15
+(epstopdf)                    size: 10816 bytes.
+
+<Mean_Definition_Figures/mean_conv_rot_rel_5-eps-converted-to.pdf, id=100, 425.
+59pt x 319.1925pt>
+File: Mean_Definition_Figures/mean_conv_rot_rel_5-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use Mean_Definition_Figures/mean_conv_rot_rel_5-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_conv_rot_rel_5-eps-conver
+ted-to.pdf used on input line 449.
+(pdftex.def)             Requested size: 255.35596pt x 191.51697pt.
+
+Overfull \hbox (13.97388pt too wide) in paragraph at lines 449--450
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Mean_Definition_Figures/mean_conv_trans_re
+l_5.eps>
+(epstopdf)                    date: 2015-07-15 14:52:03
+(epstopdf)                    size: 127795 bytes
+(epstopdf)             Output file: <Mean_Definition_Figures/mean_conv_trans_re
+l_5-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Mean_Definition_Figures/me
+an_conv_trans_rel_5-eps-converted-to.pdf Mean_Definition_Figures/mean_conv_tran
+s_rel_5.eps>
+(epstopdf)             \includegraphics on input line 455.
+runsystem(repstopdf --outfile=Mean_Definition_Figures/mean_conv_trans_rel_5-eps
+-converted-to.pdf Mean_Definition_Figures/mean_conv_trans_rel_5.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <Mean_Definition_Figures/mean_conv_trans_re
+l_5-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:16
+(epstopdf)                    size: 10926 bytes.
+
+<Mean_Definition_Figures/mean_conv_trans_rel_5-eps-converted-to.pdf, id=101, 43
+3.62pt x 342.27875pt>
+File: Mean_Definition_Figures/mean_conv_trans_rel_5-eps-converted-to.pdf Graphi
+c file (type pdf)
+
+<use Mean_Definition_Figures/mean_conv_trans_rel_5-eps-converted-to.pdf>
+Package pdftex.def Info: Mean_Definition_Figures/mean_conv_trans_rel_5-eps-conv
+erted-to.pdf used on input line 455.
+(pdftex.def)             Requested size: 260.17401pt x 205.36882pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 455--456
+[][] 
+ []
+
+
+LaTeX Warning: Reference `mean_comv_approx_rot' on page 5 undefined on input li
+ne 456.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <ax_xb_mean_rot_error_1_10.eps>
+(epstopdf)                    date: 2015-06-17 17:44:37
+(epstopdf)                    size: 154566 bytes
+(epstopdf)             Output file: <ax_xb_mean_rot_error_1_10-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2015-06-17 14:03:12
+(epstopdf)                    size: 12320 bytes
+(epstopdf)             Command: <repstopdf --outfile=ax_xb_mean_rot_error_1_10-
+eps-converted-to.pdf ax_xb_mean_rot_error_1_10.eps>
+(epstopdf)             \includegraphics on input line 463.
+runsystem(repstopdf --outfile=ax_xb_mean_rot_error_1_10-eps-converted-to.pdf ax
+_xb_mean_rot_error_1_10.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <ax_xb_mean_rot_error_1_10-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:16
+(epstopdf)                    size: 12907 bytes.
+<ax_xb_mean_rot_error_1_10-eps-converted-to.pdf, id=102, 433.62pt x 321.2pt>
+File: ax_xb_mean_rot_error_1_10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ax_xb_mean_rot_error_1_10-eps-converted-to.pdf>
+Package pdftex.def Info: ax_xb_mean_rot_error_1_10-eps-converted-to.pdf used on
+ input line 463.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 463--464
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <ax_xb_mean_trans_error_1_10.eps>
+(epstopdf)                    date: 2015-06-17 17:44:56
+(epstopdf)                    size: 154596 bytes
+(epstopdf)             Output file: <ax_xb_mean_trans_error_1_10-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2015-06-17 14:03:14
+(epstopdf)                    size: 12538 bytes
+(epstopdf)             Command: <repstopdf --outfile=ax_xb_mean_trans_error_1_1
+0-eps-converted-to.pdf ax_xb_mean_trans_error_1_10.eps>
+(epstopdf)             \includegraphics on input line 470.
+runsystem(repstopdf --outfile=ax_xb_mean_trans_error_1_10-eps-converted-to.pdf 
+ax_xb_mean_trans_error_1_10.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <ax_xb_mean_trans_error_1_10-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:16
+(epstopdf)                    size: 12892 bytes.
+
+<ax_xb_mean_trans_error_1_10-eps-converted-to.pdf, id=103, 433.62pt x 321.2pt>
+File: ax_xb_mean_trans_error_1_10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ax_xb_mean_trans_error_1_10-eps-converted-to.pdf>
+Package pdftex.def Info: ax_xb_mean_trans_error_1_10-eps-converted-to.pdf used 
+on input line 470.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 470--471
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <ax_xb_mean_rot_error_1_6.eps>
+(epstopdf)                    date: 2015-06-17 17:55:50
+(epstopdf)                    size: 138158 bytes
+(epstopdf)             Output file: <ax_xb_mean_rot_error_1_6-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-06-17 14:03:17
+(epstopdf)                    size: 10939 bytes
+(epstopdf)             Command: <repstopdf --outfile=ax_xb_mean_rot_error_1_6-e
+ps-converted-to.pdf ax_xb_mean_rot_error_1_6.eps>
+(epstopdf)             \includegraphics on input line 477.
+runsystem(repstopdf --outfile=ax_xb_mean_rot_error_1_6-eps-converted-to.pdf ax_
+xb_mean_rot_error_1_6.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <ax_xb_mean_rot_error_1_6-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-08-24 17:21:17
+(epstopdf)                    size: 11013 bytes.
+
+<ax_xb_mean_rot_error_1_6-eps-converted-to.pdf, id=104, 425.59pt x 319.1925pt>
+File: ax_xb_mean_rot_error_1_6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ax_xb_mean_rot_error_1_6-eps-converted-to.pdf>
+Package pdftex.def Info: ax_xb_mean_rot_error_1_6-eps-converted-to.pdf used on 
+input line 477.
+(pdftex.def)             Requested size: 255.35596pt x 191.51697pt.
+
+Overfull \hbox (13.97388pt too wide) in paragraph at lines 477--478
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <ax_xb_mean_trans_error_1_6.eps>
+(epstopdf)                    date: 2015-06-17 17:56:23
+(epstopdf)                    size: 136745 bytes
+(epstopdf)             Output file: <ax_xb_mean_trans_error_1_6-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2015-06-17 14:03:19
+(epstopdf)                    size: 10914 bytes
+(epstopdf)             Command: <repstopdf --outfile=ax_xb_mean_trans_error_1_6
+-eps-converted-to.pdf ax_xb_mean_trans_error_1_6.eps>
+(epstopdf)             \includegraphics on input line 483.
+runsystem(repstopdf --outfile=ax_xb_mean_trans_error_1_6-eps-converted-to.pdf a
+x_xb_mean_trans_error_1_6.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <ax_xb_mean_trans_error_1_6-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2015-08-24 17:21:17
+(epstopdf)                    size: 10943 bytes.
+<ax_xb_mean_trans_error_1_6-eps-converted-to.pdf, id=105, 433.62pt x 321.2pt>
+File: ax_xb_mean_trans_error_1_6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ax_xb_mean_trans_error_1_6-eps-converted-to.pdf>
+Package pdftex.def Info: ax_xb_mean_trans_error_1_6-eps-converted-to.pdf used o
+n input line 483.
+(pdftex.def)             Requested size: 260.17401pt x 192.72148pt.
+
+Overfull \hbox (18.79193pt too wide) in paragraph at lines 483--484
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+Overfull \hbox (65.12402pt too wide) detected at line 508
+[][][][] \OT1/ptmcm/m/n/10 = [] [] [][][][]\OML/ptmcm/m/it/10 X[][][][][]X[] \O
+T1/ptmcm/m/n/10 + []\U/msb/m/n/10 I
+ []
+
+
+Overfull \hbox (5.712pt too wide) in paragraph at lines 517--517
+[] 
+ []
+
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [6 <./col_mean_rot_error_1_10-eps-converted-to.pdf> <./col_mean_trans_error_1_
+10-eps-converted-to.pdf> <./col_mean_rot_error_1_6-eps-converted-to.pdf> <./col
+_mean_trans_error_1_6-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <mean_rot_error.eps>
+(epstopdf)                    date: 2015-06-08 12:02:12
+(epstopdf)                    size: 154477 bytes
+(epstopdf)             Output file: <mean_rot_error-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-06-08 12:22:53
+(epstopdf)                    size: 13275 bytes
+(epstopdf)             Command: <repstopdf --outfile=mean_rot_error-eps-convert
+ed-to.pdf mean_rot_error.eps>
+(epstopdf)             \includegraphics on input line 539.
+Package epstopdf Info: Output file is already uptodate.
+
+<mean_rot_error-eps-converted-to.pdf, id=144, 512.91624pt x 515.9275pt>
+File: mean_rot_error-eps-converted-to.pdf Graphic file (type pdf)
+
+<use mean_rot_error-eps-converted-to.pdf>
+Package pdftex.def Info: mean_rot_error-eps-converted-to.pdf used on input line
+ 539.
+(pdftex.def)             Requested size: 256.45749pt x 257.96312pt.
+
+Overfull \hbox (15.07541pt too wide) in paragraph at lines 539--540
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <mean_trans_error.eps>
+(epstopdf)                    date: 2015-06-08 12:02:28
+(epstopdf)                    size: 154066 bytes
+(epstopdf)             Output file: <mean_trans_error-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-06-08 12:23:00
+(epstopdf)                    size: 13118 bytes
+(epstopdf)             Command: <repstopdf --outfile=mean_trans_error-eps-conve
+rted-to.pdf mean_trans_error.eps>
+(epstopdf)             \includegraphics on input line 546.
+Package epstopdf Info: Output file is already uptodate.
+<mean_trans_error-eps-converted-to.pdf, id=145, 505.89pt x 500.87125pt>
+File: mean_trans_error-eps-converted-to.pdf Graphic file (type pdf)
+
+<use mean_trans_error-eps-converted-to.pdf>
+Package pdftex.def Info: mean_trans_error-eps-converted-to.pdf used on input li
+ne 546.
+(pdftex.def)             Requested size: 252.94437pt x 250.435pt.
+
+Overfull \hbox (11.56229pt too wide) in paragraph at lines 546--547
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./Mean_Definition_Figures/mean_conv_rot_rel_10-eps-converted-to.pdf> <./Mea
+n_Definition_Figures/mean_conv_trans_rel_10-eps-converted-to.pdf> <./Mean_Defin
+ition_Figures/mean_conv_rot_rel_5-eps-converted-to.pdf> <./Mean_Definition_Figu
+res/mean_conv_trans_rel_5-eps-converted-to.pdf>] (./New_Batch.bbl
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+) [8 <./ax_xb_mean_rot_error_1_10-eps-converted-to.pdf> <./ax_xb_mean_trans_err
+or_1_10-eps-converted-to.pdf> <./ax_xb_mean_rot_error_1_6-eps-converted-to.pdf>
+ <./ax_xb_mean_trans_error_1_6-eps-converted-to.pdf>] [9
+
+ <./mean_rot_error-eps-converted-to.pdf> <./mean_trans_error-eps-converted-to.p
+df>] (./New_Batch.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3624 strings out of 493304
+ 53948 string characters out of 6139871
+ 122198 words of memory out of 5000000
+ 6950 multiletter control sequences out of 15000+600000
+ 47281 words of font info for 98 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,19n,26p,532b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
+vr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on New_Batch.pdf (9 pages, 343021 bytes).
+PDF statistics:
+ 277 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+

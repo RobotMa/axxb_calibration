@@ -1,0 +1,14 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		distibutionPropsMex;
+		emxEnsureCapacity;
+		emxFree_real_T;
+		emxInit_real_T;
+		distibutionPropsMex_initialize;
+		distibutionPropsMex_terminate;
+		distibutionPropsMex_atexit;
+	local:
+		*;
+};

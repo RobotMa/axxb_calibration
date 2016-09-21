@@ -1,0 +1,17 @@
+function [v] = SE2toR3(G)
+n = size(G,3);
+v = zeros(3,n);
+
+
+R = G(1:2,1:2,:);
+
+st = G(2,1,:);
+ct = G(1,1,:);
+v(3,:) = atan2(st,ct);
+
+a = v(3,:)
+
+(a*t2)/2 - (a*t1*sin(a))/(2*(cos(a) - 1))
+
+   
+   - (a*t1)/2 - (a*t2*sin(a))/(2*(cos(a) - 1))

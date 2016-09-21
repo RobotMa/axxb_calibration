@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="file:////home/roma/Dropbox/2015Spring/AXXB Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/html/index.css" />
+
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/coder/coder/resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015a/toolbox/rtw/rtw/+coder/+report/resources/rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected compile-time constant:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "distibutionPropsMex1_mcode.html",
+ fpath1: "/home/roma/Dropbox/2015Spring/AXXB Journal/Batch_AXXB/Matlab_AXXB/distibutionPropsMex.m",
+ lines1: [1, 1, 112],
+ watch1: "distibutionPropsMex1_watch.html",
+ title1: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2015Spring/AXXB&nbsp;Journal/Batch_AXXB/Matlab_AXXB/distibutionPropsMex.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2015Spring/AXXB Journal/Batch_AXXB/Matlab_AXXB/distibutionPropsMex.m')\">distibutionPropsMex</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 23 to twistlog", "189#srcline1" ], [ "From line 73 to twistlog", "189#srcline1" ], [ "From line 74 to twistlog", "189#srcline1" ], [ "From line 105 to twistlog", "189#srcline1" ], [ "From line 105 to se3_vec", "491#srcline6" ], [ "From line 105 to twistlog", "189#srcline1" ], [ "From line 105 to se3_vec", "491#srcline6" ] ],
+ MATLABcode77: "isequalf77_mcode.html",
+ fpath77: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/util/isequalf.m",
+ lines77: [1, 1, 32],
+ watch77: "isequalf77_watch.html",
+ title77: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2014Summer/Robotics&nbsp;Research/kinematics/kinematics/util/isequalf.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/util/isequalf.m')\">isequalf &gt; 1</a></span>",
+ tcall77: [ [ "From skewlog line 23", "92#F77N4:B10" ] ],
+ scall77: [  ],
+ MATLABcode92: "skewlog92_mcode.html",
+ fpath92: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/skewlog.m",
+ lines92: [1, 1, 50],
+ watch92: "skewlog92_watch.html",
+ title92: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2014Summer/Robotics&nbsp;Research/kinematics/kinematics/screws/skewlog.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/skewlog.m')\">skewlog</a></span>",
+ tcall92: [ [ "From twistlog line 22", "189#F92N9:B11" ] ],
+ scall92: [ [ "From line 23 to isequalf > 1", "77#srcline1" ] ],
+ MATLABcode98: "isskew98_mcode.html",
+ fpath98: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/isskew.m",
+ lines98: [1, 1, 35],
+ watch98: "isskew98_watch.html",
+ title98: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2014Summer/Robotics&nbsp;Research/kinematics/kinematics/screws/isskew.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/isskew.m')\">isskew</a></span>",
+ tcall98: [ [ "From skewcoords line 11", "100#F98N5:B11" ] ],
+ scall98: [  ],
+ MATLABcode100: "skewcoords100_mcode.html",
+ fpath100: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/skewcoords.m",
+ lines100: [1, 1, 18],
+ watch100: "skewcoords100_watch.html",
+ title100: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2014Summer/Robotics&nbsp;Research/kinematics/kinematics/screws/skewcoords.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/skewcoords.m')\">skewcoords</a></span>",
+ tcall100: [ [ "From twistlog line 23", "189#F100N8:B24" ] ],
+ scall100: [ [ "From line 11 to isskew", "98#srcline1" ] ],
+ MATLABcode141: "isequalf141_mcode.html",
+ fpath141: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/util/isequalf.m",
+ lines141: [1, 1, 32],
+ watch141: "isequalf141_watch.html",
+ title141: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2014Summer/Robotics&nbsp;Research/kinematics/kinematics/util/isequalf.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/util/isequalf.m')\">isequalf &gt; 2</a></span>",
+ tcall141: [ [ "From twistlog line 28", "189#F141N4:B44" ] ],
+ scall141: [  ],
+ MATLABcode189: "twistlog189_mcode.html",
+ fpath189: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/twistlog.m",
+ lines189: [1, 1, 42],
+ watch189: "twistlog189_watch.html",
+ title189: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2014Summer/Robotics&nbsp;Research/kinematics/kinematics/screws/twistlog.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/twistlog.m')\">twistlog</a></span>",
+ tcall189: [ [ "From distibutionPropsMex line 23", "1#F189N11:B62" ], [ "From distibutionPropsMex line 73", "1#F189N11:B470" ], [ "From distibutionPropsMex line 74", "1#F189N11:B486" ], [ "From distibutionPropsMex line 105", "1#F189N11:B599" ], [ "From distibutionPropsMex line 105", "1#F189N11:B616" ] ],
+ scall189: [ [ "From line 22 to skewlog", "92#srcline1" ], [ "From line 23 to skewcoords", "100#srcline1" ], [ "From line 28 to isequalf > 2", "141#srcline1" ] ],
+ MATLABcode491: "se3_vec491_mcode.html",
+ fpath491: "/home/roma/Dropbox/2015Spring/AXXB Journal/Review_AXXB/Matlab_AXXB/Batch Method (ED - GSI)/se3_vec.m",
+ lines491: [1, 6, 31],
+ watch491: "se3_vec491_watch.html",
+ title491: "Function: <span class='functionname'><a title='/home/roma/Dropbox/2015Spring/AXXB&nbsp;Journal/Review_AXXB/Matlab_AXXB/Batch&nbsp;Method&nbsp;(ED&nbsp;-&nbsp;GSI)/se3_vec.m' class='functionlink' href=\"matlab: open('/home/roma/Dropbox/2015Spring/AXXB Journal/Review_AXXB/Matlab_AXXB/Batch Method (ED - GSI)/se3_vec.m')\">se3_vec</a></span>",
+ tcall491: [ [ "From distibutionPropsMex line 105", "1#F491N7:B597" ], [ "From distibutionPropsMex line 105", "1#F491N7:B614" ] ],
+ scall491: [  ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "/home/roma/Dropbox/2015Spring/AXXB%20Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/html/"
+};
+var scriptInfoTable = {
+ fpath1: "/home/roma/Dropbox/2015Spring/AXXB Journal/Batch_AXXB/Matlab_AXXB/distibutionPropsMex.m",
+ fpath2: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/isBuiltInNumeric.m",
+ fpath3: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_scalexp_compatible.m",
+ fpath4: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/div.p",
+ fpath5: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_div.m",
+ fpath6: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath7: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath8: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_floor.m",
+ fpath9: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath10: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/narginchk.m",
+ fpath11: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath12: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_switch_helper.m",
+ fpath13: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath14: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath15: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath16: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_float_model.m",
+ fpath17: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_index_class.m",
+ fpath18: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/fixedpoint/isnumerictype.m",
+ fpath19: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/fixedpoint/isfi.m",
+ fpath20: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath21: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/eye.m",
+ fpath22: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_abs.m",
+ fpath23: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/abs.m",
+ fpath24: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/constNonSingletonDim.m",
+ fpath25: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_const_nonsingleton_dim.m",
+ fpath26: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/scalarEg.p",
+ fpath27: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_scalar_eg.m",
+ fpath28: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/prodsize.m",
+ fpath29: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_matrix_vstride.m",
+ fpath30: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/indexMinus.m",
+ fpath31: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_index_minus.m",
+ fpath32: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/indexTimes.m",
+ fpath33: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_index_times.m",
+ fpath34: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_matrix_npages.m",
+ fpath35: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/indexPlus.m",
+ fpath36: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_index_plus.m",
+ fpath37: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath38: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_relop.m",
+ fpath39: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_min_or_max.m",
+ fpath40: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/datafun/max.m",
+ fpath41: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_isequal_core.m",
+ fpath42: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath43: "/usr/local/MATLAB/R2015a/toolbox/shared/coder/coder/+coder/+internal/allOrAny.m",
+ fpath44: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/any.m",
+ fpath45: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/util/isequalf.m",
+ fpath46: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/matfun/trace.m",
+ fpath47: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_error.m",
+ fpath48: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_acos.m",
+ fpath49: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/acos.m",
+ fpath50: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_sin.m",
+ fpath51: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/sin.m",
+ fpath52: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/eml_mtimes_helper.m",
+ fpath53: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/skewlog.m",
+ fpath54: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/isskew.m",
+ fpath55: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/lang/error.m",
+ fpath56: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/skewcoords.m",
+ fpath57: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/inline.p",
+ fpath58: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/use_refblas.p",
+ fpath59: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/threshold.p",
+ fpath60: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xnrm2.p",
+ fpath61: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_realmin.m",
+ fpath62: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/realmin.m",
+ fpath63: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xnrm2.p",
+ fpath64: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xnrm2.m",
+ fpath65: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/matfun/norm.m",
+ fpath66: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_eps.m",
+ fpath67: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/eps.m",
+ fpath68: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_cos.m",
+ fpath69: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/cos.m",
+ fpath70: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/ismatrix.m",
+ fpath71: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/scalexpAllocNoCheck.p",
+ fpath72: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/scalexpAlloc.p",
+ fpath73: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_scalexp_alloc.m",
+ fpath74: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/power.m",
+ fpath75: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/mpower.m",
+ fpath76: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xgemm.p",
+ fpath77: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xgemm.p",
+ fpath78: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xgemm.m",
+ fpath79: "/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws/twistlog.m",
+ fpath80: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_is_float_class.m",
+ fpath81: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/datafun/min.m",
+ fpath82: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/colon.m",
+ fpath83: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/isaUint.p",
+ fpath84: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_isa_uint.m",
+ fpath85: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/unsignedClass.p",
+ fpath86: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_unsigned_class.m",
+ fpath87: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/length.m",
+ fpath88: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/ixamax.p",
+ fpath89: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xcabs1.p",
+ fpath90: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/ixamax.p",
+ fpath91: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_ixamax.m",
+ fpath92: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xswap.p",
+ fpath93: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xswap.p",
+ fpath94: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xswap.m",
+ fpath95: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/int.p",
+ fpath96: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xger.p",
+ fpath97: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xgerx.p",
+ fpath98: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xger.p",
+ fpath99: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xgeru.p",
+ fpath100: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xgeru.m",
+ fpath101: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/lapack/matlab/eml_matlab_zgetrf.m",
+ fpath102: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/lapack/internal/eml_lapack_xgetrf.m",
+ fpath103: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/lapack/eml_xgetrf.m",
+ fpath104: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_warning.m",
+ fpath105: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_lusolve.m",
+ fpath106: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xtrsm.p",
+ fpath107: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xtrsm.p",
+ fpath108: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xtrsm.m",
+ fpath109: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/mldivide.p",
+ fpath110: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/matfun/expm.m",
+ fpath111: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elmat/isfinite.m",
+ fpath112: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/log2.m",
+ fpath113: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_pow2.m",
+ fpath114: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/pow2.m",
+ fpath115: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/ops/private/matrix_to_integer_power.m",
+ fpath116: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_ipiv2perm.m",
+ fpath117: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/matfun/inv.m",
+ fpath118: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/strfun/char.m",
+ fpath119: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/eml_flt2str.m",
+ fpath120: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/size_ptr.p",
+ fpath121: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/c_cast.p",
+ fpath122: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/lapack/matlab/eml_matlab_zsvdc.m",
+ fpath123: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xscal.p",
+ fpath124: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xscal.p",
+ fpath125: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/scaleVectorByRecip.p",
+ fpath126: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xdot.p",
+ fpath127: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xdotx.p",
+ fpath128: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xdot.p",
+ fpath129: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xdotc.p",
+ fpath130: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xdotc.m",
+ fpath131: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xaxpy.p",
+ fpath132: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xaxpy.p",
+ fpath133: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xaxpy.m",
+ fpath134: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/eml_scalar_sqrt.m",
+ fpath135: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/elfun/sqrt.m",
+ fpath136: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+refblas/xrotg.p",
+ fpath137: "/usr/local/MATLAB/R2015a/toolbox/coder/coder/+coder/+internal/+blas/xrotg.p",
+ fpath138: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/blas/eml_xrotg.m",
+ fpath139: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/lapack/internal/eml_lapack_xgesvd.m",
+ fpath140: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/eml/lapack/eml_xgesvd.m",
+ fpath141: "/usr/local/MATLAB/R2015a/toolbox/eml/lib/matlab/matfun/svd.m",
+ fpath142: "/home/roma/Dropbox/2015Spring/AXXB Journal/Review_AXXB/Matlab_AXXB/Batch Method (ED - GSI)/se3_vec.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1 77 92 98 141 189 491">1 x 1</option>
+<option value="77">1 x 3</option>
+<option value="100 141 189">3 x 1</option>
+<option value="77 92 98 100 189">3 x 3</option>
+<option value="1 189 491">4 x 4</option>
+<option value="1">4 x 4 x 6</option>
+<option value="1 189">4 x <b>:</b>?</option>
+<option value="491">6 x 1</option>
+<option value="1">6 x 6</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1 77 92 98 100 141 189 491">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="1 77 92 98 100 141 189 491">double</option>
+<option value="77 98 141">logical</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn " id="F1N2:F1">distibutionPropsMex</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F77N4:F2">isequalf &gt; 1</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F141N4:F3">isequalf &gt; 2</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F98N5:F4">isskew</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F491N7:F5">se3_vec</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F100N8:F6">skewcoords</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F92N9:F7">skewlog</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F189N11:F8">twistlog</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed passed"><a href="#" class="fcn " id="F1N2:L1">distibutionPropsMex</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F189N11:L2">twistlog</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F491N7:L3">se3_vec</a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F1N2:l1">distibutionPropsMex</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F189N11:l2">twistlog</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F491N7:l3">se3_vec</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode77">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F77N4:l4">isequalf &gt; 1</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode92">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F92N9:l5">skewlog</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F77N4:l6">isequalf &gt; 1</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode98">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F98N5:l7">isskew</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode100">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F100N8:l8">skewcoords</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F98N5:l9">isskew</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode141">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F141N4:l10">isequalf &gt; 2</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode189">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F189N11:l11">twistlog</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F92N9:l12">skewlog</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F100N8:l13">skewcoords</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F141N4:l14">isequalf &gt; 2</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode491">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F491N7:l15">se3_vec</a>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+<div class="grayline methodset" onclick="ccodeClick(event,1);">
+<a class="expanded">Target Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody1" class="visible">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="distibutionPropsMex_c.html"><td class="ccode"><a href="#">distibutionPropsMex.c</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_h.html"><td class="ccode"><a href="#">distibutionPropsMex.h</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_data_c.html"><td class="ccode"><a href="#">distibutionPropsMex_data.c</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_data_h.html"><td class="ccode"><a href="#">distibutionPropsMex_data.h</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_emxutil_c.html"><td class="ccode"><a href="#">distibutionPropsMex_emxutil.c</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_emxutil_h.html"><td class="ccode"><a href="#">distibutionPropsMex_emxutil.h</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_initialize_c.html"><td class="ccode"><a href="#">distibutionPropsMex_initialize.c</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_initialize_h.html"><td class="ccode"><a href="#">distibutionPropsMex_initialize.h</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_terminate_c.html"><td class="ccode"><a href="#">distibutionPropsMex_terminate.c</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_terminate_h.html"><td class="ccode"><a href="#">distibutionPropsMex_terminate.h</a></td></tr>
+<tr class="ccode" id="distibutionPropsMex_types_h.html"><td class="ccode"><a href="#">distibutionPropsMex_types.h</a></td></tr>
+<tr class="ccode" id="eml_error_c.html"><td class="ccode"><a href="#">eml_error.c</a></td></tr>
+<tr class="ccode" id="eml_error_h.html"><td class="ccode"><a href="#">eml_error.h</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_c.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.c</a></td></tr>
+<tr class="ccode" id="eml_int_forloop_overflow_check_h.html"><td class="ccode"><a href="#">eml_int_forloop_overflow_check.h</a></td></tr>
+<tr class="ccode" id="eml_warning_c.html"><td class="ccode"><a href="#">eml_warning.c</a></td></tr>
+<tr class="ccode" id="eml_warning_h.html"><td class="ccode"><a href="#">eml_warning.h</a></td></tr>
+<tr class="ccode" id="expm_c.html"><td class="ccode"><a href="#">expm.c</a></td></tr>
+<tr class="ccode" id="expm_h.html"><td class="ccode"><a href="#">expm.h</a></td></tr>
+<tr class="ccode" id="mpower_c.html"><td class="ccode"><a href="#">mpower.c</a></td></tr>
+<tr class="ccode" id="mpower_h.html"><td class="ccode"><a href="#">mpower.h</a></td></tr>
+<tr class="ccode" id="norm_c.html"><td class="ccode"><a href="#">norm.c</a></td></tr>
+<tr class="ccode" id="norm_h.html"><td class="ccode"><a href="#">norm.h</a></td></tr>
+<tr class="ccode" id="rt_nonfinite_h.html"><td class="ccode"><a href="#">rt_nonfinite.h</a></td></tr>
+<tr class="ccode" id="rtwtypes_h.html"><td class="ccode"><a href="#">rtwtypes.h</a></td></tr>
+<tr class="ccode" id="sqrt_c.html"><td class="ccode"><a href="#">sqrt.c</a></td></tr>
+<tr class="ccode" id="sqrt_h.html"><td class="ccode"><a href="#">sqrt.h</a></td></tr>
+<tr class="ccode" id="twistlog_c.html"><td class="ccode"><a href="#">twistlog.c</a></td></tr>
+<tr class="ccode" id="twistlog_h.html"><td class="ccode"><a href="#">twistlog.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+<div class="grayline methodset" onclick="ccodeClick(event,3);">
+<a class="collapsed">Interface Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody3" class="hidden">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="_coder_distibutionPropsMex_api_c.html"><td class="ccode"><a href="#">_coder_distibutionPropsMex_api.c</a></td></tr>
+<tr class="ccode" id="_coder_distibutionPropsMex_api_h.html"><td class="ccode"><a href="#">_coder_distibutionPropsMex_api.h</a></td></tr>
+<tr class="ccode" id="_coder_distibutionPropsMex_info_c.html"><td class="ccode"><a href="#">_coder_distibutionPropsMex_info.c</a></td></tr>
+<tr class="ccode" id="_coder_distibutionPropsMex_info_h.html"><td class="ccode"><a href="#">_coder_distibutionPropsMex_info.h</a></td></tr>
+<tr class="ccode" id="_coder_distibutionPropsMex_mex_c.html"><td class="ccode"><a href="#">_coder_distibutionPropsMex_mex.c</a></td></tr>
+<tr class="ccode" id="_coder_distibutionPropsMex_mex_h.html"><td class="ccode"><a href="#">_coder_distibutionPropsMex_mex.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+</div>
+<!-- End C Code -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td>4 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>3 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>4 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>5 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>1 x 31</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>4 x 4 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>1 x 14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x 14</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>1 x 33</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>6 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>6 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td>1 x 17</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td>3 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>3 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td>1 x 27</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.int</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="V1"><table class="tooltip"><tr><th>Value</th><td>     1     0     0</br>     0     1     0</br>     0     0     1</br></td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="messages"><span>All Messages (0)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="buildlog1"><span>Target Build Log</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel">
+<table cellpadding="1" cellspacing="4">
+<tr><td>C source code generated on:</td><td>05-Jul-2015 23:04:56</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of notices:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel hidden">
+<div>
+<div class="msgsuccess">Code generation successful. Click here to <a href="javaScript:selectSummaryTab();">view summary</a>.</div>
+</div>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+<!-- Target Build Log -->
+<div id="buildlog1body" class="ui-tabs-panel hidden">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('/home/roma/Dropbox/2015Spring/AXXB Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex')">/home/roma/Dropbox/2015Spring/AXXB Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">sh distibutionPropsMex_mex.sh</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "distibutionPropsMex_data.c"</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "distibutionPropsMex_initialize.c"</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "distibutionPropsMex_terminate.c"</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "distibutionPropsMex.c"</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "twistlog.c"</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "eml_int_forloop_overflow_check.c"</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "eml_error.c"</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "norm.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "mpower.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "expm.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "eml_warning.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "sqrt.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "interface/_coder_distibutionPropsMex_api.c"</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "interface/_coder_distibutionPropsMex_mex.c"</span>
+<span class="td-line-number">   15   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "distibutionPropsMex_emxutil.c"</span>
+<span class="td-line-number">   16   </span><span class="td-line-normal">/usr/bin/gcc -c -ansi -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -DMX_COMPAT_32  -O -DNDEBUG  -I "/usr/local/MATLAB/R2015a/simulink/include" -I "/usr/local/MATLAB/R2015a/toolbox/shared/simtargets" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/codegen/mex/distibutionPropsMex/interface" -I "/home/roma/Dropbox/2015Spring/AXXB" -I "/home/roma/Dropbox/2015Spring/AXXB\ Journal/Batch_AXXB/Matlab_AXXB/Journal/Batch_AXXB/Matlab_AXXB" -I "/usr/local/MATLAB/R2015a/extern/include" -I "." "interface/_coder_distibutionPropsMex_info.c"</span>
+<span class="td-line-number">   17   </span><span class="td-line-normal">/usr/bin/gcc -Wl,--version-script,distibutionPropsMex_mex_mex.map distibutionPropsMex_data.o distibutionPropsMex_initialize.o distibutionPropsMex_terminate.o distibutionPropsMex.o twistlog.o eml_int_forloop_overflow_check.o eml_error.o norm.o mpower.o expm.o eml_warning.o sqrt.o _coder_distibutionPropsMex_api.o _coder_distibutionPropsMex_mex.o distibutionPropsMex_emxutil.o _coder_distibutionPropsMex_info.o -pthread -Wl,--no-undefined -Wl,-rpath-link,/usr/local/MATLAB/R2015a/bin/glnxa64 -shared -L/usr/local/MATLAB/R2015a/bin/glnxa64 -lmx -lmex -lmat -lm -lstdc++    -o distibutionPropsMex_mex.mexa64    -lemlrt -lcovrt -lut -lmwmathutil -lmwblas </span>
+</pre>
+</td></tr></table>
+
+</div>
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

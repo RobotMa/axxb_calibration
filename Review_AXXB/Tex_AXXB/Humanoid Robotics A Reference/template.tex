@@ -1,0 +1,108 @@
+\documentclass{llncs}
+\usepackage{graphicx}
+%\usepackage{lineno}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xspace}
+%\usepackage{amsthm}
+\usepackage{url}
+\usepackage{hyperref}
+
+\newcommand\defeq{\stackrel{\mathrm{def}}{=}}
+% Add a period to the end of an abbreviation unless there's one
+% already, then \xspace.
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+
+\newcommand{\yasu}[1]{\textcolor{red}{{[Yasu: #1]}}}
+
+\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot} 
+\def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+\def\etal{\emph{et al}\onedot}
+
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\makeatother
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+%\newtheorem{prop}{Proposition}
+%\newtheorem{prf}{Proof}
+
+\def\title#1{{\noindent\Large{\bf #1}\par}}
+\def\author#1{\begin{center}{\sc #1\par}\end{center}}
+\renewcommand{\section}[1]{\vspace{0.1in}\noindent{\large\bf{#1}}\par\vspace{.05in}\par\nopagebreak}
+
+\makeatletter
+\def\thebibliography#1{\section{Recommended Readings\@mkboth
+{REFERENCES}{REFERENCES}}\list
+{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+\advance\leftmargin\labelsep
+\usecounter{enumi}}
+\def\newblock{\hskip .11em plus .33em minus .07em}
+\sloppy\clubpenalty4000\widowpenalty4000
+\sfcode`\.=1000\relax}
+\makeatother
+
+
+\begin{document}
+\pagestyle{empty}
+
+\title{Title of the entry}
+\author{Author, Affiliation}
+
+\section{Synonyms}
+\begin{itemize}
+\item{Synonym 1}
+\item{Synonym 2}
+\item{...}
+\end{itemize}
+List only acronyms and those words with exactly the same meaning. All 
+words that appear as synonyms will be directly linked back to the home 
+entry, with no additional information given.
+
+\section{Related Concepts}
+\begin{itemize}
+\item{Related concept 1}
+\item{Related concept 2}
+\item{...}
+\end{itemize}
+
+This includes keywords. All related concepts will point to other entries in the encyclopedia. 
+
+
+\section{Definition}
+
+One or two sentences summarizing the concept of the entry.
+
+\section{Background}
+
+Describe the background of the entry.
+
+\section{Theory or Application, or Both}
+
+Describe the theory (application) of the entry. It can be either 
+Theory or Application, or it could be both of them.
+
+\section{Open problems (optional)}
+
+Describe the new trends, unsolved problems related to the entry.
+
+\section{Experimental Results (optional)}
+
+Experimental results that help the understandings of the entry. It 
+can be videos, codes, etc.
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{template}
+10-20 citations to important literature.
+These references will be hyperlinked to the original source material. 
+\end{document}
+

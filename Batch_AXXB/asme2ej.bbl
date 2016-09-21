@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{darius1}
+Mair, E., Fleps, M., Suppa, M., and Burschka, D.
+\newblock ``Spatio-temporal initialization for imu to camera registration''.
+\newblock {\em IEEE ROBIO}, pp.~557--564.
+
+\bibitem{Boctor-2006}
+Boctor, E., 2006.
+\newblock ``Enabling technologies for ultrasound imaging in computer-assisted
+  intervention''.
+\newblock {\em Johns Hopkins Thesis}.
+
+\bibitem{chen91}
+Chen, H.
+\newblock ``A screw motion approach to uniqueness analysis of head-eye
+  geometry''.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition,
+  1991}, pp.~145--151.
+
+\bibitem{arun}
+Arun, K., Huang, T., and Blostein, S.
+\newblock ``Least-squares fitting of two 3-d point sets''.
+\newblock {\em IEEE Trans. on Pattern Analysis and Machine Intel.},
+  pp.~698--700.
+
+\bibitem{tsai1989new}
+Tsai, R., and Lenz, Y., 1989.
+\newblock ``A new technique for fully autonomous and efficient 3d robotics
+  hand/eye calibration''.
+\newblock {\em Robotics and Automation, IEEE Transactions on, {\bf 5}}(3),
+  pp.~345--358.
+
+\bibitem{shiu1989calibration}
+Shiu, Y., and Ahmad, S., 1989.
+\newblock ``Calibration of wrist-mounted robotic sensors by solving homogeneous
+  transform equations of the form ax = xb''.
+\newblock {\em Robotics and Automation, IEEE Transactions on, {\bf 5}}(1),
+  pp.~16--29.
+
+\bibitem{park1994robot}
+Park, F., and Martin, B., 1994.
+\newblock ``Robot sensor calibration: solving ax= xb on the euclidean group''.
+\newblock {\em Robotics and Automation, IEEE Transactions on, {\bf 10}}(5),
+  pp.~717--721.
+
+\bibitem{chou1991finding}
+Chou, J., and Kamel, M., 1991.
+\newblock ``Finding the position and orientation of a sensor on a robot
+  manipulator using quaternions''.
+\newblock {\em The international journal of robotics research, {\bf 10}}(3),
+  pp.~240--254.
+
+\bibitem{horaud1995hand}
+Horaud, R., and Dornaika, F., 1995.
+\newblock ``Hand-eye calibration''.
+\newblock {\em The international journal of robotics research, {\bf 14}}(3),
+  pp.~195--210.
+
+\bibitem{daniilidis1999hand}
+Daniilidis, K., 1999.
+\newblock ``Hand-eye calibration using dual quaternions''.
+\newblock {\em The International Journal of Robotics Research, {\bf 18}}(3),
+  pp.~286--298.
+
+\bibitem{andreff1999line}
+Andreff, N., Horaud, R., and Espiau, B., 1999.
+\newblock ``On-line hand-eye calibration''.
+\newblock In 3-D Digital Imaging and Modeling, 1999. Proceedings. Second
+  International Conference on, IEEE, pp.~430--436.
+
+\bibitem{horn1986robot}
+Horn, B., and Klaus, P., 1986.
+\newblock {\em Robot Vision (MIT Electrical Engineering and Computer Science)}.
+\newblock the MIT Press.
+
+\bibitem{alexis9}
+Mills, D.~L., 1991.
+\newblock ``Internet time synchronization: Network time protocol''.
+\newblock {\em IEEE Transactions on Communications}, pp.~1482--1493.
+
+\end{thebibliography}

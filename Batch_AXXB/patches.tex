@@ -1,0 +1,338 @@
+\documentclass[twocolumn,10pt]{asme2ej}
+
+\usepackage{epsfig} %% for loading postscript figures
+\usepackage{amssymb,amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+%\usepackage{natbib}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{color}
+
+%\usepackage{algorithm2e}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}
+\newtheorem*{main}{Main Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem*{problem}{Problem}
+%\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem*{notation}{Notation}
+
+\newcommand{\vv}{{\bf v}}
+\newcommand{\ww}{{\bf w}}
+\newcommand{\WW}{{\bf W}}
+\newcommand{\nn}{{\bf n}}
+\newcommand{\ttt}{{\bf t}}
+\newcommand{\pp}{{\bf p}}
+\newcommand{\qq}{{\bf q}}
+\newcommand{\aaa}{{\bf a}}
+\newcommand{\bbb}{{\bf b}}
+\newcommand{\yy}{{\bf y}}
+\newcommand{\xx}{{\bf x}}
+\newcommand{\OO}{\mathbb{O}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IZ}{\mathbb{Z}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+\newcommand{\bfmu}{\mbox{\boldmath $\mu$ \unboldmath} \hskip -0.05 true in}
+\newcommand{\bfphi}{\mbox{\boldmath $\phi$ \unboldmath} \hskip -0.05 true in}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bfomega}{\mbox{\boldmath $\omega$ \unboldmath} \hskip -0.05 true in}
+\newcommand{\om}{\omega}
+\newcommand{\Om}{\Omega}
+\newcommand{\bom}{\bfomega}
+\def\tab{ {\hskip 0.15 true in} }
+ \def\vtab{ {\vskip 0.1 true in} }
+ \def\htab{ {\hskip 0.1 true in} }
+  \def\ntab{ {\hskip -0.1 true in} }
+ \def\vtabb{ {\vskip 0.0 true in} }
+
+%% The class has several options
+%  onecolumn/twocolumn - format for one or two columns per page
+%  10pt/11pt/12pt - use 10, 11, or 12 point font
+%  oneside/twoside - format for oneside/twosided printing
+%  final/draft - format for final/draft copy
+%  cleanfoot - take out copyright info in footer leave page number
+%  cleanhead - take out the conference banner on the title page
+%  titlepage/notitlepage - put in titlepage or leave out titlepage
+%
+%% The default is oneside, onecolumn, 10pt, final
+
+
+\title{Algorithms that will work + other patches}
+
+\begin{document}
+
+\maketitle
+
+\section{} \section{}
+\section{} \section{}
+\section{} \section{}
+*** this is a completed version of the theorem and other material provided previously + new stuff. Please integrate. And somebody needs to
+code up the algorithms in Section 9 and 10. Let's all meet Monday morning and go over it. *** \\ \\ 
+
+\begin{theorem}
+If $f_B(H) \in (L^1 \cap L^2)(SE(3))$ is a symmetric function and $K \in SE(3)$ and $f_X \in (L^1 \cap L^2)(SE(3))$ are arbitrary, then: \\
+(a) $f_B(H)$ has its mean at the identity \\
+(b)  $(f_X * f_B* f_{X^{-1}})(H)$ has its mean at the identity \\
+(c) $f_B(K^{-1} H K)$ has its mean at the identity.
+\end{theorem}
+
+\begin{proof}
+(a) By definition,
+$$ \int_{SE(3)} \log (M_B^{-1} H) f_B(H) dH = \mathbb{O} $$
+and so
+$$ \int_{SE(3)} \log (M_B^{-1} H) f_B(H^{-1}) dH = \mathbb{O}.$$
+Letting $K = H^{-1}$, and using the same operations as in Theorem \ref{thm61}, we arrive at
+$$ \int_{SE(3)} \log (M_B K) f_B(K) dK = \mathbb{O}, $$
+indicating that if $M_B$ is unique, then $M_B = M_B^{-1}$ and so $M_B = \mathbb{I}$.
+Uniqueness can be guaranteed if $\Sigma$ is sufficiently small, which in turn can be guaranteed in our application if all samples $\{A_i\}$ and $\{B_j\}$ are replaced
+by fractional powers $\{A_i^{1/n}\}$ and $\{B_j^{1/n}\}$.
+
+(b) By definition, $M$, the mean of $(f_X * f_B* f_{X^{-1}})(H)$ must satisfy
+$$ \int_{SE(3)} \log (M^{-1} H) (f_X * f_B* f_{X^{-1}})(H) dH = \mathbb{O}. $$
+By showing that $(f_X * f_B* f_{X^{-1}})(H)$ is symmetric, the fact that $M = \mathbb{I}$ will follow from (a).
+Using the definition of the convolution integral given in the Appendix, and expanding out both convolutions,
+
+\begin{eqnarray*}
+&& (f_X * f_B* f_{X^{-1}})(H) = \\
+&& \int_{SE(3)} \int_{SE(3)}
+f_X(J) f_B(J^{-1} K) f_{X^{-1}}(K^{-1} H) dJ dK
+\\
+&=& \int_{SE(3)} \int_{SE(3)} f_{X^{-1}}(J^{-1}) f_B(K^{-1} J) f_{X}(H^{-1} K) dJ dK
+\end{eqnarray*}
+Here we have used the fact that $f_B$ is symmetric. By the same logic,
+\begin{eqnarray*}
+&& (f_X * f_B* f_{X^{-1}})(H^{-1}) = \\
+&& \int_{SE(3)} \int_{SE(3)}
+f_X(J') f_B(J'^{-1} K') f_{X^{-1}}(K'^{-1} H^{-1}) dJ' dK'
+\end{eqnarray*}
+We have the freedom to define $J'=H^{-1} K$ and $J^{-1} = K'^{-1} H^{-1}$.
+The proposition will then be true if the remaining term,
+$K^{-1} J = J'^{-1} K'$, holds. Indeed,
+$$ J'^{-1} K' = (H^{-1} K)^{-1} H^{-1} J = K^{-1} J, $$
+completing the proof of (b).
+
+Finally, (c) follows from (b) by letting $f_X(H) = \delta_K(H)$.
+\end{proof}
+
+
+
+\section{THE BATCH METHOD WITH NOISE IN A's and B's} \label{batchnoisegen}
+
+If both sensors are reliable, the noise-free method developed in Section \ref{ } is a reasonable approach.
+If one sensor has significantly more noise than the other, then the method developed in Section \ref{ } can be used.
+Here we consider how to extend these methods to the case where there is noise in both the sets $A$ and $B$ and we don't
+know which sensor is more reliable. Therefore, we introduce a continuous power, $p \in [0,1]$, and write the original $AX=XB$ equation
+as
+$$ X^p A X^{-p} = X^{p-1} B X^{1-p}.$$
+This leads to convolution equations of the form
+$$ (f_{(X,p)} * f_A * f_{(X^{-1},p)})(H) = (f_{(X^{-1},1-p)} * f_A * f_{(X,1-p)})(H). $$
+Here we will seek not only $M_X$ and $\Sigma_X$, but also $p$, which apportions the unknown amount of error to $A$ or to $B$.
+When $p=1/2$, both sensors have equivalent amounts of error, whereas when $p=0$, this is the case discussed in the previous section.
+
+We hypothesize that $f_{(X,p)}(H) = f_{X^p}(H)$ and $M_{X^p} = (M_X)^p$. This allows us to constrain $f_{(X,p)}(H)$, and hence $f_{(X,-p)}(H)$,
+by recursively solving $ f_{(X,p)}*f_{(X,p)} = f_{(X,2p)} $
+until $2p=1$, thereby relating $\Sigma_{X^p}$ and $\Sigma_{X}$.
+Note also that 
+$f_{(X,-p)} * f_{(X, p)}$ and $f_{(X,p)} * f_{(X, -p)}$ are symmetric functions (and hence have means at the identity)
+and combining the results of * and **, they have covariances * and **.
+
+\section{Relating the Covariances of a PDF and Its Symmetrized Version}
+
+Recall that given an arbitrary pdf $f(H)$ with mean $M$ and covariance $\Sigma$, a symmetrized version is defined as 
+$$ \tilde{f}(H) = \half ({f}(H) + {f}(H^{-1}) ). $$
+Let $\tilde{M}$ and $\tilde{\Sigma}$ denote the mean and covariance of $\tilde{f}(H)$. 
+Given that symmetrization of a pdf puts the mean of the result at the identity, we already know that $\tilde{M} = \mathbb{I}$.
+The remaining question to ask is what the relationship is between the covariances of the original and symmetrized versions of a pdf?
+This is answered here.
+
+From the definition of covariance and the invariance of the integral over $SE(3)$ under inversions, and the fact that $\tilde{M} = \mathbb{I}$, 
+$$ \tilde{\Sigma} = \int_{SE(3)} \log^{\vee}(H)  [\log^{\vee}(H)]^T \tilde{f}(H) dH $$
+simplifies as
+$$ \tilde{\Sigma} = \int_{SE(3)} \log^{\vee}(H)  [\log^{\vee}(H)]^T {f}(H) dH. $$
+This is not to be confused with
+$$ {\Sigma} = \int_{SE(3)} \log^{\vee}(M^{-1} H)  [\log^{\vee}(M^{-1} H)]^T {f}(H) dH. $$
+where
+$$ \int_{SE(3)} \log^{\vee}(M^{-1} H)  {f}(H) dH = \mathbb{O}. $$
+
+Though there appears to be no simple exact relationship between $\tilde{\Sigma}$ and ${\Sigma}$, in the case when $\|\Sigma\|$ and $\|M\|$ are both reasonably
+small, an approximate relationship can be constructed by using the Baker-Campbell-Hausdorf formula to expand out $\log^{\vee}(M^{-1} H)$. 
+This was done in \cite{wang08}, and the result (modulo different notation) is
+
+\begin{equation}
+\tilde{\Sigma} = \Sigma + (\log^{\vee} M)(\log^{\vee} M)^T + \half \left(\Sigma \, ad^T(\log M) + ad(\log M) \, \Sigma\right)
+\label{sigtildesig}
+\end{equation}
+If $(M,{\Sigma})$ is known a priori, this means that $\tilde{\Sigma}$ can be computed from them. 
+And since the computation of $\tilde{\Sigma}$ is exact and easy, (\ref{sigtildesig}) can be used as a consistency
+check on the accuracy of $M$ and $\Sigma$ by computing the norm of the difference of both sides.
+
+\section{An Algorithm Based on Incremental Linearization}
+
+By using the `no-noise batch method' of Section \ref{}, we obtain an initial estimate for $M_X$, called $M_{X_0}$. This can then be substituted back into
+(\ref{covprop1112}), which can be solved for an initial estimate of $\Sigma_X$, called $\Sigma_{X_0}$. Here we propose an update scheme that solves for small
+updates of the form
+\begin{equation}
+M_X = M_{X_0} (\mathbb{I} + Z) \,\,\, {\rm and} \,\,\, \Sigma_X = \Sigma_{X_0} + S 
+\label{update222}
+\end{equation}
+where $Z \in se(3)$ and $S=S^T \in \mathbb{R}^{6\times 6}$ are postulated to be small adjustments.
+Here 
+\begin{equation}
+Z = \sum_{i=1}^{6} z_i E_i \,\,\, {\rm and} \,\,\, 
+S = \sum_{k=1}^{21} s_i {\cal E}_i
+\label{szbasis}
+\end{equation}
+where $E_i$ are the natural unit basis elements for the Lie algebra $se(3)$ and
+$\{{\cal E}_i\}$ is a basis for the set of $6\times 6$ real symmetric matrices. 
+These include matrices that have a single $1$ on the diagonal and zeros elsewhere, as well as those that have a pair of $1$'s
+symmetrically located off diagonal, and zeros elsewhere. Substituting (\ref{update222}) back into (\ref{covprop2}) and (\ref{covprop1112}) and using
+the properties of $Ad(\cdot)$ respectively give\footnote{If the $A$ and $B$ data are symmetrized, then (\ref{updatealg333a}) can be ignored, as it provides
+no constraint.}
+\begin{equation}
+M_A M_{X_0} (\mathbb{I} + Z) = M_{X_0} (\mathbb{I} + Z) M_B
+\label{updatealg333a}
+\end{equation}
+and 
+\begin{equation}
+\begin{split}
+&\Sigma_{X_0} + S + Ad(M_B^{-1}) \, (\Sigma_{X_0} + S) \, Ad^T(M_B^{-1}) =\\
+& (\mathbb{I} - ad(Z)) Ad(M_{X_0}^{-1}) \, \Sigma_A \, Ad^T(M_{X_0}^{-1}) (\mathbb{I} - ad^T(Z)) - \Sigma_{B}.
+\end{split}
+\label{updatealg333} 
+\end{equation}
+where
+$$ ad(Z) = \left(\begin{array}{ccc}
+\Omega && \mathbb{O} \\
+V && \Omega \end{array} \right)
+\,\,\, {\rm when} \,\,\,
+Z = \left(\begin{array}{ccc}
+\Omega && {\bf v} \\
+{\bf 0} && {\bf 0} \end{array} \right) $$
+and ${\bf v} = V^{\vee}$. $Ad$ and $ad$ are related by the exact (and well-known) expression 
+$$ Ad(\exp Z) = \exp(ad(Z)). $$
+
+Upon substituting (\ref{szbasis}) into (\ref{updatealg333a}) and (\ref{updatealg333}), the result can be rearranged into a system of linear equations of the form
+\begin{equation} 
+J \left(\begin{array}{c}
+{\bf s} \\
+{\bf z} \end{array}\right) = {\bf c}
+\label{jaccon}
+\end{equation}
+where the matrix $J$ and the vector ${\bf c}$ are known. But typically $J$ will have more columns than rows, or will not be full rank.
+This indicates that the problem is not fully constrained. As a result, we seek the solution of smallest magnitude. This can be done, for example,
+by using the SVD to invert $J$. When the noise levels are low, this can be done a single time rather than iteratively. However, this does not provide
+the flexibility to incorporate different weights. However, if $J$ in (\ref{jaccon}) is full rank (or if both sides of (\ref{jaccon}) can be row-reduced
+to result in a full-rank sub-matrix $J$ and corresponding reduced ${\bf c}$, then it is known 
+from the field of redundant manipulator inverse kinematics \cite{Klein,Maciejewski} that a solution of the form
+$$ \left(\begin{array}{c}
+{\bf s} \\
+{\bf z} \end{array}\right) = W^{-1} J^T (J W^{-1} J^T)^{-1} {\bf c} $$
+will minimize the quadratic cost
+$$ \half \left(\begin{array}{c}
+{\bf s} \\
+{\bf z} \end{array}\right)^T W \left(\begin{array}{c}
+{\bf s} \\
+{\bf z} \end{array}\right) $$ 
+while exactly satisfying the linear constraint in (\ref{jaccon}).
+
+\section{Alternative Algorithms Based on the Lie-Group Structure of the Problem}
+
+The combination of (\ref{covprop2}) and (\ref{covprop1112}) can be thought of abstractly as a system of matrix equations
+of the form 
+\begin{equation}
+F(M_X, \Sigma_X) = \mathbb{O}
+\label{matcost}
+\end{equation}
+where $M_X, \Sigma_X$ are unknown. We have already heavily used the fact that $M_X \in SE(3)$,
+which is a Lie group. The set of symmetric positive definite $6\times 6$ matrices can be viewed as a homogeneous space on which $T \in GL(6) = GL(6,\mathbb{R})$
+acts as $T\cdot \Sigma = T \Sigma T^T$. Then, starting with an initial guess $(M_{X_0}, \Sigma_{X_0})$, the problem of finding zeros of
+(\ref{matcost}) can be reduced to one finding minima of a scalar cost function defined as the (squared) magnitude of this matrix equation.
+But since we have already observed that the equations can be degenerate, we seek solutions to 
+\begin{equation}
+c(M_X, \Sigma_X) \doteq \|F(M_X, \Sigma_X)\|_{W_0}^2 + \|M_X\|_{W_1}^2 + \|\Sigma_X\|_{W_2}^2
+\label{scalarcost}
+\end{equation}
+where $\{W_i\}$ are an appropriate set of weighting matrices. By choosing $W_1$ and $W_2$ to be large enough, $c(M_X, \Sigma_X)$ will have a unique minimum.
+This problem can be formulated as a minimization on the product space of $SE(3)$ and $GL(6)/O(6)$ (the symmetric positive-definite matrices), or
+on the product group $SE(3) \times GL(6)$ by letting 
+$$ (M_X, \Sigma_X) = (M_{X_0} H, T \Sigma_{X_0} T^T) \,\,\, {\rm where}  \,\,\, (H,T) \in SE(3) \times GL(6)
+$$
+are unknown. The benefit of this approach is that the added structure of being in a Lie group means that we can apply methods to
+$g = (H,T) \in SE(3) \times GL(6) = G$ that have been specificially formulated for minimization on Lie groups. 
+
+Alternatively, following (\cite{Pennec, leite}), the set of symmetric positive definite matrices can be endowed with
+an Abelian group operation
+$$ \Sigma_1 \circ \Sigma_2 \doteq \exp(\log \Sigma_1 + \log \Sigma_2). $$
+** actually, I'm not 100 percent sure I believe their result, since it is not clear to me that the eigenvalues of $\exp(\log \Sigma_1 + \log \Sigma_2)$
+will be positive when $[\Sigma_1, \Sigma_2] \neq \mathbb{O}$. 
+ **
+
+Regardless, the problem can be posed as a minimization on a Lie group, $G$ with group operation $\circ$. Let $\{E_i\}$ denote a basis for the corresponding Lie algebra,
+normalized so that $(E_i, E_j) = \delta_{ij}$. Then gradient descent can be formulated as follows:
+Update an initial value $g_0 \in G$ (e.g. the identity) as
+
+\begin{equation}
+g_1 = g_0 \circ \exp\left(-\epsilon \sum_{i=1}^{n} (\tilde{E}_i c)(g) \, E_i \right) 
+\label{graddesc}
+\end{equation}
+where $\epsilon$ is a small update amount and 
+$$ (\tilde{E}_i c)(g) = \frac{d}{dt} \left. c(g \circ \exp(t E_i)) \right|_{t=0} \approx \frac{c(g \circ \exp(\Delta E_i)) - c(g)}{\Delta} $$
+where the right-hand-side is a finite-difference approximation with $\Delta$ a small positive real number.
+The trouble with gradient descent is that it requires a choice of step size, $\epsilon$.
+
+Alternatively, a Newton-like algorithm akin to those described in \cite{mahony} can be used. But the added mathematical structure
+afforded by staying in the Lie-group setting makes computations a little easier than on a more general manifold. Following \cite{myvol2},
+the Taylor series of a smooth function on a Lie group can be expressed as
+$$ c(g_0 \circ \exp(Z)) = c(g_0) + \sum_{i=1}^{n} z_i (\tilde{E}_i c)(g_0) + \half \sum_{i,j=1}^{n} z_i z_j (\tilde{E}_i \tilde{E}_j c)(g_0) + \cdots $$
+where $Z = \sum_{i=1}^{n} z_i E_i$. 
+This can be written as
+$$ c({\bf z} = c_0 + {\bf v}^T {\bf z} + \half {\bf z}^T C {\bf z} $$
+where ${\bf v}$ is the gradient vector and $C$ is the Hessian matrix.
+Minimizing this quadratic cost with respect to ${\bf z}$ gives
+$$ {\bf z} = - C^{-1} {\bf v}. $$
+The benefit of this approach over gradient descent is that no choice for $\epsilon$ is required, and when iterated, the convergence is 
+supposed to be faster.
+
+*** more new refs ***
+
+\begin{thebibliography}{99}
+
+\bibitem{Pennec}
+* GC will fill
+
+\bibitem{leite}
+* GC will fill
+
+%mahony
+%myvol2
+%* cite penneck
+%* cite Leite
+
+\bibitem{noncomlog}
+* cite theorems about sum of noncommuting logs
+
+\bibitem{gwak}
+Gwak, S., Kim, J., Park, F. C., ``Numerical optimization on the Euclidean group with applications to camera calibration,''
+{\it IEEE Transactions on Robotics and Automation}, 19(1):65-74, 2003. 
+
+\bibitem{Klein}
+Klein, C. A., Huang, C. H., ``Review of pseudoinverse control for use with kinematically redundant manipulators,''
+{\it IEEE Transactions on Systems, Man and Cybernetics}, 2:245--250, 1983. 
+
+\bibitem{Maciejewski}
+Roberts, R. G., Maciejewski, A. A., ``Repeatable generalized inverse control strategies for kinematically redundant manipulators,''
+{\it  IEEE Transactions on Automatic Control}, 38(5):689--699, 1993. 
+
+\end{thebibliography}
+
+\end{document} 

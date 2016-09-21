@@ -1,0 +1,14 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		batchEDSolve;
+		emxEnsureCapacity;
+		emxFree_real_T;
+		emxInit_real_T;
+		batchEDSolve_initialize;
+		batchEDSolve_terminate;
+		batchEDSolve_atexit;
+	local:
+		*;
+};

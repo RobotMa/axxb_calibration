@@ -1,0 +1,36 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="54,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T3U3">out</span> = isskew(<span class="var type1" id="S3T4U6">r</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="54,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">% function [out, varargout] = isskew(r)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,3" id="srcline3"> 3</a></span><span class="line"><span class="comment">%ISSKEW  returns true if the matrix is a skew-semmetric matrix</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,5" id="srcline5"> 5</a></span><span class="line"><span class="comment">%   T = ISSKEW(R)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,6" id="srcline6"> 6</a></span><span class="line"><span class="comment">%   [T REASON] = ISSKEW(R)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,7" id="srcline7"> 7</a></span><span class="line"><span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,8" id="srcline8"> 8</a></span><span class="line"><span class="comment">% if REASON is supplied as an output, a text based message as to why the</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,9" id="srcline9"> 9</a></span><span class="line"><span class="comment">% test failed will be returned.</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,10" id="srcline10">10</a></span><span class="line"><span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,11" id="srcline11">11</a></span><span class="line"><span class="comment">% TODO: we should probably check the magnitude of omega  </span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,12" id="srcline12">12</a></span><span class="line"><span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,13" id="srcline13">13</a></span><span class="line"><span class="comment">% See also: ISTWIST, ISROT, ISHOM.</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,14" id="srcline14">14</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="54,15" id="srcline15">15</a></span><span class="line"><span class="comment">% $Id: isskew.m,v 1.1 2009-03-17 16:40:18 bradleyk Exp $</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,16" id="srcline16">16</a></span><span class="line"><span class="comment">% Copyright (C) 2005, by Brad Kratochvil</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,17" id="srcline17">17</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="54,18" id="srcline18">18</a></span><span class="line"><span class="comment">% Commented out for .mex</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,19" id="srcline19">19</a></span><span class="line"><span class="comment">%   global DebugLevel;</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,20" id="srcline20">20</a></span><span class="line"><span class="comment">%   </span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,21" id="srcline21">21</a></span><span class="line">   <span class="mxinfo " id="T3:U3"><span class="var type1" id="S2T3U9">out</span> = <span class="mxinfo " id="T3:U5">true</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="54,22" id="srcline22">22</a></span><span class="line"><span class="comment">%   % varargout = {'skew'};</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,23" id="srcline23">23</a></span><span class="line"><span class="comment">%   </span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,24" id="srcline24">24</a></span><span class="line"><span class="comment">%   if isempty(DebugLevel) || (DebugLevel &gt; 1)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,25" id="srcline25">25</a></span><span class="line"><span class="comment">%   </span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,26" id="srcline26">26</a></span><span class="line">    <span class="keyword">if</span> <span class="mxinfo " id="T3:U6">~<span class="mxinfo " id="T3:U7">isequal(<span class="var type1" id="S3T4U17">r</span>, <span class="mxinfo " id="T4:U9">-<span class="mxinfo " id="T4:U10"><span class="var type1" id="S3T4U20">r</span>'</span></span>)</span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,27" id="srcline27">27</a></span><span class="line">      <span class="mxinfo " id="T3:U12"><span class="var type1" id="S2T3U23">out</span> = <span class="mxinfo " id="T3:U14">false</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="54,28" id="srcline28">28</a></span><span class="line">      <span class="comment">% varargout = {'matrix not skew'};</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,29" id="srcline29">29</a></span><span class="line">      <span class="keyword">return</span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="54,30" id="srcline30">30</a></span><span class="line">    <span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,31" id="srcline31">31</a></span><span class="line"><span class="comment">%     </span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,32" id="srcline32">32</a></span><span class="line"><span class="comment">%   end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="54,33" id="srcline33">33</a></span><span class="line">  </span></span>
+<span class="srcline"><span class="lineno"><a href="54,34" id="srcline34">34</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>

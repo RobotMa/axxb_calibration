@@ -1,0 +1,165 @@
+\begin{thebibliography}{10}
+
+\bibitem{tsai1989new}
+Tsai, R., and Lenz, Y., 1989.
+\newblock ``A new technique for fully autonomous and efficient 3d robotics
+  hand/eye calibration''.
+\newblock {\em Robotics and Automation, IEEE Transactions on, {\bf 5}}(3),
+  pp.~345--358.
+
+\bibitem{darius1}
+Mair, E., Fleps, M., Suppa, M., and Burschka, D.
+\newblock ``Spatio-temporal initialization for imu to camera registration''.
+\newblock {\em IEEE ROBIO}, pp.~557--564.
+
+\bibitem{Boctor-2006}
+Boctor, E., 2006.
+\newblock ``Enabling technologies for ultrasound imaging in computer-assisted
+  intervention''.
+\newblock {\em Johns Hopkins Thesis}.
+
+\bibitem{chen91}
+Chen, H.
+\newblock ``A screw motion approach to uniqueness analysis of head-eye
+  geometry''.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition,
+  1991}, pp.~145--151.
+
+\bibitem{park1994robot}
+Park, F., and Martin, B., 1994.
+\newblock ``Robot sensor calibration: solving ax= xb on the euclidean group''.
+\newblock {\em Robotics and Automation, IEEE Transactions on, {\bf 10}}(5),
+  pp.~717--721.
+
+\bibitem{shiu1989calibration}
+Shiu, Y., and Ahmad, S., 1989.
+\newblock ``Calibration of wrist-mounted robotic sensors by solving homogeneous
+  transform equations of the form ax = xb''.
+\newblock {\em Robotics and Automation, IEEE Transactions on, {\bf 5}}(1),
+  pp.~16--29.
+
+\bibitem{arun}
+Arun, K., Huang, T., and Blostein, S.
+\newblock ``Least-squares fitting of two 3-d point sets''.
+\newblock {\em IEEE Trans. on Pattern Analysis and Machine Intel.},
+  pp.~698--700.
+
+\bibitem{chou1991finding}
+Chou, J., and Kamel, M., 1991.
+\newblock ``Finding the position and orientation of a sensor on a robot
+  manipulator using quaternions''.
+\newblock {\em The international journal of robotics research, {\bf 10}}(3),
+  pp.~240--254.
+
+\bibitem{dong}
+Dong, W., Rostoucher, D., and Gauthier, M.
+\newblock ``Kinematics parameters estimation for an afm/robot integrated
+  micro-force measurement system''.
+\newblock {\em IEEE/RSJ International Conference on Intelligent Robots and
+  Systems}, pp.~6143--6148.
+
+\bibitem{kim}
+Kim, S.-J., Jeong, M., Lee, J., Lee, J., Kim, K., You, B., and Oh, S.
+\newblock ``Robot head-eye calibration using the minimum variance method''.
+\newblock {\em IEEE International Conference on Robotics and Biomimetics},
+  pp.~1446 -- 1451.
+
+\bibitem{dai}
+Dai, Y., T., J., Li, H., Barnes, N., and Hartley, R.
+\newblock ``Rotation averaging with application to camera-rig calibration''.
+\newblock {\em ACCV 2009, Part II, LNCS 5995}, pp.~335--346.
+
+\bibitem{shah2012overview}
+Shah, M., Eastman, R., and Hong, T., 2012.
+\newblock ``An overview of robot-sensor calibration methods for evaluation of
+  perception systems''.
+\newblock In Proceedings of the Workshop on Performance Metrics for Intelligent
+  Systems, ACM, pp.~15--20.
+
+\bibitem{zhao2011hand}
+Zhao, Z., 2011.
+\newblock ``Hand-eye calibration using convex optimization''.
+\newblock In Robotics and Automation (ICRA), 2011 IEEE International Conference
+  on, IEEE, pp.~2947--2952.
+
+\bibitem{heller2014hand}
+Heller, J., Henrion, D., and Pajdla, T., 2014.
+\newblock ``Hand-eye and robot-world calibration by global polynomial
+  optimization''.
+\newblock In Robotics and Automation (ICRA), 2014 IEEE International Conference
+  on, IEEE, pp.~3157--3164.
+
+\bibitem{ackerman2014online}
+Ackerman, M.~K., Cheng, A., Boctor, E., and Chirikjian, G., 2014.
+\newblock ``Online ultrasound sensor calibration using gradient descent on the
+  euclidean group''.
+\newblock In Robotics and Automation (ICRA), 2014 IEEE International Conference
+  on, IEEE, pp.~4900--4905.
+
+\bibitem{horaud1995hand}
+Horaud, R., and Dornaika, F., 1995.
+\newblock ``Hand-eye calibration''.
+\newblock {\em The international journal of robotics research, {\bf 14}}(3),
+  pp.~195--210.
+
+\bibitem{daniilidis1999hand}
+Daniilidis, K., 1999.
+\newblock ``Hand-eye calibration using dual quaternions''.
+\newblock {\em The International Journal of Robotics Research, {\bf 18}}(3),
+  pp.~286--298.
+
+\bibitem{andreff1999line}
+Andreff, N., Horaud, R., and Espiau, B., 1999.
+\newblock ``On-line hand-eye calibration''.
+\newblock In 3-D Digital Imaging and Modeling, 1999. Proceedings. Second
+  International Conference on, IEEE, pp.~430--436.
+
+\bibitem{horn1986robot}
+Horn, B., and Klaus, P., 1986.
+\newblock {\em Robot Vision (MIT Electrical Engineering and Computer Science)}.
+\newblock the MIT Press.
+
+\bibitem{myoldbook}
+Chirikjian, G.~S., and Kyatkin, A.~B., 2001.
+\newblock {\em Engineering applications of noncommutative harmonic analysis:
+  with emphasis on rotation and motion groups}.
+\newblock CRC Press.
+
+\bibitem{alexis9}
+Mills, D.~L., 1991.
+\newblock ``Internet time synchronization: Network time protocol''.
+\newblock {\em IEEE Transactions on Communications}, pp.~1482--1493.
+
+\bibitem{Wang08}
+Wang, Y., and Chirikjian, G.~S., 2008.
+\newblock ``Nonparametric second-order theory of error propagation on motion
+  groups''.
+\newblock {\em International Journal of Robotics Research}, p.~1258–1273.
+
+\bibitem{ackermanGSI}
+Ackerman, M., and Chirikjian, G.~S., 2013.
+\newblock ``A probabilistic solution to the ${AX=XB}$ problem sensor
+  calibration without correspondence''.
+\newblock {\em Proceedings of the conference on the Geometric Science of
+  Information}.
+
+\bibitem{ackermanIROS2013}
+Ackerman, M., Cheng, A., Shiffman, B., Boctor, E., and Chirikjian, G.~S., 2013.
+\newblock ``Sensor calibration with unknown correspondence: Solving {$AX=XB$}
+  using euclidean-group invariants''.
+\newblock {\em Proceedings of the conference on the Geometric Science of
+  Information}.
+
+\bibitem{wang06}
+Wang, Y., and Chirikjian, G.~S., 2006.
+\newblock ``Error propagation on the euclidean group with applications to
+  manipulator kinematics''.
+\newblock {\em IEEE Transactions on Robotics}, pp.~591--602.
+
+\bibitem{vol2}
+Chirikjian, G.~S., 2011.
+\newblock {\em Stochastic Models, Information Theory, and Lie Groups: Vol.
+  \textbf{2}}.
+\newblock Birkauser, Boston.
+
+\end{thebibliography}
