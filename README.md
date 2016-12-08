@@ -1,6 +1,4 @@
-<snippet>
-<content><![CDATA[
-# ${1:AX=XB Hand-Eye Calibration}
+# ${AX=XB} Hand-Eye Calibration
 
 TODO: Version 0.1. Files need substantial organizing. 
 
@@ -31,6 +29,3 @@ Johns Hopkins University
 ## License
 
 BSD license
-]]></content>
-<tabTrigger>readme</tabTrigger>
-</snippet>
