@@ -3,7 +3,10 @@
 %files needed:
 %so3_vec().m
 
-function [theta, N, d, p]=param_extract(X)
+function [theta, N, d, p] = param_extract(X_in)
+
+X = zeros(4,4);
+X = X_in;
 
 %extract theta---------------------------------
 theta=acos((trace(X(1:3,1:3))-1)/2);

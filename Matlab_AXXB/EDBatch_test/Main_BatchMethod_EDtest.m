@@ -8,7 +8,7 @@ clear; clc;
 % Editable Variables
 % ------------------------------------------------------
 
-num = 9;	%Number of steps
+num = 210;	%Number of steps
 
 gmean = [0;0;0;0;0;0];	%Gaussian Noise Mean
 
@@ -23,12 +23,6 @@ ElipseParam = [10, 10, 10];
 trials = 1;
 
 % ------------------------------------------------------
-
-
-
-
-
-
 
 x = randn(6,1); X = expm(se3_vec(x));   %Generate a Random X
 
@@ -71,8 +65,12 @@ for i=1:length(noise)
         B = cat(3, B1, B2, B3);
         
         A = sensorNoise(A,[0;0;0;0;0;0],noise(i),1);
+        
+        [a1,a2,a3]  = size(A);
+        A_noise_mex = reshape(A, a1, a2*a3);
+        B_mex = reshape(B, a1, a2*a3);
 
-        [X_solved, MA, MB, SigA, SigB] = batchEDSolve(A,B);
+        [X_solved, MA, MB, SigA, SigB] = batchEDSolve_mex(A_noise_mex, B_mex);
         
         X_roterror(k,i) = roterror(X_solved,X);
         X_tranerror(k,i) = tranerror(X_solved,X);
@@ -83,8 +81,8 @@ for i=1:length(noise)
     
 end
 
- X_meanroterror=mean(X_roterror,1);
- X_meantranerror=mean(X_tranerror,1);
+ X_meanroterror  = mean(X_roterror,1);
+ X_meantranerror = mean(X_tranerror,1);
 
 
 close(h);
