@@ -12,7 +12,8 @@
 
 clear; clc; close all;
 
-
+addpath ../../../kinematics/kinematics/screws
+addpath ../../../kinematics/kinematics/util
 %% Editable Variables
 % ------------------------------------------------------
 
@@ -81,8 +82,8 @@ for j = min:skip:max
         gap_size = 1;
         [A, B] = AB_genTraj_gap(X, ElipseParam, num + shift + 1, twist, gap_size);
         
-        [MeanA, SigA] = distibutionProps(A);
-        [MeanB, SigB] = distibutionProps(B);
+        [MeanA, SigA] = distibutionProps(A, 1);
+        [MeanB, SigB] = distibutionProps(B, 1);
         
         %         PA=randperm(size(A,3));
         %         PB=randperm(size(B,3));
@@ -135,7 +136,7 @@ for j = min:skip:max
         %         A_noise=sensorNoise(A_perm,gmean,j,1);
         %         B_noise=sensorNoise(B_perm,gmean,j,1);
         %
-        A_noise2 = sensorNoise(A,gmean,j,1);
+        A_noise2 = sensorNoise(A,gmean,j,6);
         B_noise2 = B;
         
         
