@@ -1,5 +1,5 @@
 % Test for IBM method of estimation
-clc 
+clc
 clear all
 close all
 
@@ -11,21 +11,21 @@ M = zeros(3,3);
 n = 50;
 
 for i = 1:n
-        
+    
     x = 3;
     y = 3;
     z = 3;
-            while sqrt(x^2 + y^2 + z^2) > pi || sqrt(x^2 + y^2 + z^2) == pi...
-                    || x^2 + y^2 + z^2 == 0 || abs(x) > 49/50*pi || ...
-                    abs(y) > 49/50*pi || abs(z) > 49/50*pi
-
-                x = -pi + 2*pi*rand;
-                y = -pi + 2*pi*rand;
-                z = -pi + 2*pi*rand;
-            end
-
-        ai(1:3,i) = [x; y; z];    
-        bi(1:3,i) = theta_x'*ai(1:3,i);
+    while sqrt(x^2 + y^2 + z^2) > pi || sqrt(x^2 + y^2 + z^2) == pi...
+            || x^2 + y^2 + z^2 == 0 || abs(x) > 49/50*pi || ...
+            abs(y) > 49/50*pi || abs(z) > 49/50*pi
+        
+        x = -pi + 2*pi*rand;
+        y = -pi + 2*pi*rand;
+        z = -pi + 2*pi*rand;
+    end
+    
+    ai(1:3,i) = [x; y; z];
+    bi(1:3,i) = theta_x'*ai(1:3,i);
 end
 
 ai_bar = sum(ai,2)/n;
@@ -48,7 +48,7 @@ end
 theta_x
 
 
-theta_est = M*(transpose(M)*M)^(-1/2) 
+theta_est = M*(transpose(M)*M)^(-1/2)
 
 
-theta_est = (transpose(M1)*M1)^(-1/2)*M1' 
+theta_est = (transpose(M1)*M1)^(-1/2)*M1'
