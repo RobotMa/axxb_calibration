@@ -73,7 +73,6 @@ end
 SigA = SigA*(1/size(A,3));
 SigB = SigB*(1/size(B,3));
 
-
 [ VA, ~ ] = eig( SigA(1:3,1:3) );
 [ VB, ~ ] = eig( SigB(1:3,1:3) );
 
