@@ -9,11 +9,11 @@ close all
 %% ----- Add Extra Worksapce ----- %%
 addpath ../../../rvctools/robot
 addpath ../../../rvctools/common
-addpath ../../../../kinematics/kinematics/screws/
-addpath ../../../../kinematics/kinematics/util/
+addpath ../../../kinematics/kinematics/screws/
+addpath ../../../kinematics/kinematics/util/
 addpath ../../../axxb_calibration/matlab/new_mean/codegen/mex/distibutionPropsMex
 addpath ../../../axxb_calibration/matlab/new_mean/codegen/mex/mean_Taylor_1st
-addpath ../../../axxb_calibration/matlab/Batch_Method_ED_KL_BS
+addpath ../../../kinematics/kinematics/lie_group
 
 %% ---- Initilization ---- %%
 
