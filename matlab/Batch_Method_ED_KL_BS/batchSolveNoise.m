@@ -38,8 +38,8 @@ Rx_solved(:,:,6)=VA*-Q2*VB';
 Rx_solved(:,:,7)=VA*-Q3*VB';
 Rx_solved(:,:,8)=VA*-Q4*VB';
 
-[~,Na,~, ~]=param_extract(MeanA);
-[~,Nb,~, ~]=param_extract(MeanB);
+[~,Na,~, ~] = param_extract(MeanA);
+[~,Nb,~, ~] = param_extract(MeanB);
 na=so3_vec(Na);
 nb=so3_vec(Nb);
 
@@ -51,10 +51,10 @@ for i=1:8
    end
 end
 
-tx_temp=so3_vec(((Rx'*SigA(1:3,1:3)*Rx)^-1*(SigB(1:3,4:6)-Rx'*SigA(1:3,4:6)*Rx))');
-tx=-Rx*tx_temp;
+tx_temp = so3_vec(((Rx'*SigA(1:3,1:3)*Rx)^-1*(SigB(1:3,4:6)-Rx'*SigA(1:3,4:6)*Rx))');
+tx = -Rx*tx_temp;
 
-X_batchNoise=[Rx tx; [0 0 0] 1];
+X_batchNoise = [Rx tx; [0 0 0] 1];
 
 a=0;
 

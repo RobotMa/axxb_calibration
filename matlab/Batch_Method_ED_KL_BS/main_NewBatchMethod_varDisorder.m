@@ -1,47 +1,40 @@
-    %AXXB - Fixing Temporal Misalignment
+%AXXB - Fixing Temporal Misalignment
+clear; 
+clc; 
+close all;
 
-%Required function list:
-%AB_gen().m
-%noise_Gauss().m
-%param_extract().m
-%se3_vec().m
-%so3_vec().m
+%% Add file dependencies
+addpath ../../rvctools/robot
+addpath ../../rvctools/common
+addpath ../../kinematics/kinematics/lie_group
 
-clear; clc; close all;
-
-addpath('C:\Users\HAIYUAN\Documents\MATLAB\Tools\rvctools\robot')
-addpath('C:\Users\HAIYUAN\Documents\MATLAB\Tools\rvctools\common')
-
-%Editable Variables
-%------------------------------------------------------
-
-num = 50;	%Number of steps
+%% Initialize Parameters
+num = 50; % Number of steps
 
 gmean = [0;0;0;0;0;0];	%Gaussian Noise Mean
 
-nstd = 0;	%Gaussian Noise standard deviation Range
+cov = 0.9*eye(6,6);
 
-shift = 0; %step shift
+nstd = 0; % Gaussian Noise standard deviation Range
 
-n = 1;      %VP(n)
+shift = 0; % step shift
 
-window = 0;    %target correlation area
+n = 1; % VP(n)
 
-model = 5;        %noise model
+window = 0; %target correlation area
 
+model = 5; %noise model
 
 t2 = (0:(2*pi)/((num+shift)):2*pi);
 twist = 0.0*sin(16*t2);
 
 ElipseParam = [10, 20, 30];
 
-trials = 10;%60;a
-
-%------------------------------------------------------
-
+trials = 10; %60
 
 x = randn(6,1); x = x./norm(x); X= expm(se3_vec(x));    %Generate a Random X
 
+%% Initialize error containers
 Roterror_batch_all = [];
 Roterror_batch_all_New_1 = [];
 Roterror_batch_all_New_2 = [];
@@ -51,7 +44,6 @@ Tranerror_batch_all = [];
 Tranerror_batch_all_New_1 = [];
 Tranerror_batch_all_New_2 = [];
 Tranerror_kron_all = [];
-
 
 Roterror_batch_avg = [];
 Roterror_kron_avg = [];
@@ -64,23 +56,21 @@ Tranerror_batch_avg_New_1 = [];
 Tranerror_kron_avg = [];
 
 t_Error_avg = [];
-%Computation Loops
-%---------------------------------------------------------------------------------------------------------
 
+%% Computation Loops
 A_noise = [];
 B = [];
 
-Mean = [0; 0; 0; 0; 0; 0];
-% Mean = [0.5; 0.5; 0.5; 0.5; 0.5; 0.5];
-
-Cov = 0.9*eye(6,6);
 % for ii = 1:1:6  % added by haiyuan
 %     Cov(ii,ii) = rand;
 % end
 % [A, B] = AB_genRand(X, Mean, Cov, num);
 opt = 2;
+optPDf = 1; % select the distribution for A and B
+optNoise = 0; % select the distribution for A and B
 
-skip = 10;%10;
+
+skip = 10; %10;
 for j = 1:skip:101
     
     Roterror_batch = [];
@@ -94,10 +84,11 @@ for j = 1:skip:101
     
     t_Error = [];
     
+    [A, B] = generateAB(num, optPDF, X, gmean, cov);
     
     if opt == 1
         
-        [A, B] = AB_genRand(X, Mean, Cov, num);
+        [A, B] = AB_genRand(num, X, Mean, Cov, num);
         
     elseif opt == 2
         
