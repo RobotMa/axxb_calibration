@@ -1,6 +1,7 @@
 function [ M, Sig ] = distibutionProps( X, aug )
 
 
+%%
 Xsum = zeros(4);
 
 % 1. Use X to calculate the mean of se(3) Lie algebra

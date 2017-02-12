@@ -1,17 +1,20 @@
-% This function calculates the 2nd order approximation of the mean of a
-% bunch of matrices based on the Taylor expansion of the matrix logarithm
-% and the definition of mean of a probability density function.
-
-% Input: X is a cell of 4 by 4*n rigid transformation matrices
-% Output: M_T1 is the mean of the 1st order approximation of Taylor
-% expansion
-
-% Output: MX is the 2nd order approximation of the Taylor expansion
-
 function MX = mean_Taylor_2nd( X, noise, num ) %#codegen
-
+%% Calculate the 2nd order approximation of the mean of a bunch of matrices 
+% based on the Taylor expansion of the matrix logarithm and the definition 
+% of mean of a probability density function.
+%
+% Input: 
+%       X : a cell of 4 x 4 x n SE3 matrices
+% Output: 
+%       MX : the 2nd order approximation of the Taylor expansion
+%
+% Note : M_T1 is the mean of the 1st order approximation of Taylor
+% expansion
+%
+%
 % coder.extrinsic('mean_Taylor_1st_mex');
 
+%%
 M_t1 = zeros(4);
 
 M_t1 = mean_Taylor_1st( X );
@@ -38,7 +41,7 @@ MX = M_t1;
 count = 0;
 
 if noise == 0
-    m = 4;
+    m = 4; % Search along the translational part of Lie algebra only
 elseif noise == 1
     m = 1;
 else

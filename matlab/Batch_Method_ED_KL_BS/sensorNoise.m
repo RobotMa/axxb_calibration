@@ -1,11 +1,8 @@
-%Function to add Gaussian noise to a g \in SE(3)
-
-%files needed:
-%se3_vec().m
-
 function g_noise = sensorNoise(g, gmean, std, model)
+%% Add Gaussian noise to a g \in SE(3)
+% This can also be used to generate a SE3 point cloud around the given mean
 
-
+%%
 switch model
     case 1
         
@@ -115,10 +112,6 @@ switch model
                 noise_old2=[0.01*(temp/norm(temp)); 0*randn(3,1)]+gmean;
                 
                 g_noise(:,:,i)=g(:,:,i)*expm(se3_vec(noise_old1))*expm(se3_vec(noise_old2));
-                
-                
-                %             elseif ((i==12) || (i==13))
-                %                 g_noise(:,:,i)=g(:,:,i);
                 
             else
                 noise_old1=[std*randn(3,1); 0*std*randn(3,1)]+gmean;

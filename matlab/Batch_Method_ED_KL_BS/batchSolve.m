@@ -6,12 +6,12 @@ function [ X, MeanA, MeanB] = batchSolve(A, B)
 A_mex = reshape(A, a1, a2*a3);
 B_mex = reshape(B, a1, a2*a3);
 
-[ MeanA, SigA ] = distibutionPropsMex(A_mex); %_mex
-[ MeanB, SigB ] = distibutionPropsMex(B_mex); %_mex
+[ MeanA, SigA ] = distibutionPropsMex_mex(A_mex); %_mex
+[ MeanB, SigB ] = distibutionPropsMex_mex(B_mex); %_mex
 
 % New Batch augmented 
-% [MeanA, ~] = mean_Taylor_1st( A_mex );
-% [MeanB, ~] = mean_Taylor_1st( B_mex );
+% [MeanA, ~] = mean_Taylor_1st_mex( A_mex );
+% [MeanB, ~] = mean_Taylor_1st_mex( B_mex );
 
 % [ MeanA, SigA ] = distibutionProps(A, 0);
 % [ MeanB, SigB ] = distibutionProps(B, 0);

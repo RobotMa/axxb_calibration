@@ -69,7 +69,7 @@ step = 1; % Change the step lengths if descent direction is not found
 % fprintf('Search gradient descent direction from %f to 6 \n', m)
 % fprintf('---------------------------------------------- \n')
 
-    %% added by haiyuan
+%% added by haiyuan
 %      figure;
 %      v = VideoWriter('display.avi');
 %      open(v);
@@ -139,9 +139,7 @@ while( abs(CA) > costfun_min )
             end
         end
         
-        %% added by haiyuan
-        
-        
+%% added by haiyuan     
 %         if(array_num <= max_num)        
 %             
 %             array_plot(array_num) = CA;

@@ -1,34 +1,34 @@
-function [ X, MeanA, MeanB, SigA, SigB, t_error ] = batchSolveNew(A, B, order)
+function [ X, MeanA, MeanB, SigA, SigB, t_error ] = batchSolveNew(A, B, opt)
+%% Mixed version for solving AX = XB
 
-% A half mex version of the batchSolve
-
+%%
 [a1,a2,a3]  = size(A);
 A_mex = reshape(A, a1, a2*a3);
 B_mex = reshape(B, a1, a2*a3);
 
 n_search = int16(2*10^2);
 
-if order == 1
+if opt == 1
 
-    [MeanA, ~] = mean_Taylor_1st( A_mex ); %_mex
-    [MeanB, ~] = mean_Taylor_1st( B_mex ); %_mex
+    [MeanA, ~] = mean_Taylor_1st_mex( A_mex ); %_mex
+    [MeanB, ~] = mean_Taylor_1st_mex( B_mex ); %_mex
 
-elseif order == 2
+elseif opt == 2
 
     MeanA = mean_Taylor_2nd_adv( A_mex, 0, n_search ); %_mex
     MeanB = mean_Taylor_2nd_adv( B_mex, 0, n_search ); %_mex
     
-elseif order == 3
+elseif opt == 3
     
     [ MeanA, ~ ] = distibutionProps( A, 1 );
     [ MeanB, ~ ] = distibutionProps( B, 1 );
     
-elseif order == 4
+elseif opt == 4
     
     MeanA = mean_Taylor_2nd_adv_recursive( A_mex, 1, n_search ); %_mex
     MeanB = mean_Taylor_2nd_adv_recursive( B_mex, 1, n_search ); %_mex
     
-elseif order == 5
+elseif opt == 5
     
     MeanA = mean_Taylor_2nd_adv_original( A_mex, 0, n_search ); %_mex
     MeanB = mean_Taylor_2nd_adv_original( B_mex, 0, n_search ); %_mex

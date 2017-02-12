@@ -2,13 +2,15 @@ function [ M, Sig ] = distibutionPropsMex( X ) %#codegen
 
 % Note: the Matlab bulit-in function logm() is not convertable
 % into a standalone for c/c++ code generation. Another SE3 to twist matrix
-% logarithm is used instead. 
-% addpath('/home/roma/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws')
-% is needed in the main file that calls this function
+% logarithm is used instead.
 
+% File Dependency
+% addpath ../../../kinematics/kinematics/screws
+
+%%
 Xsum = zeros(4);
 
-coder.extrinsic('logm'); 
+coder.extrinsic('logm');
 
 n = size(X,2)/4; % Number of matrices
 
@@ -32,11 +34,11 @@ diff = 0.05; eps = 0.001;
 
 E = zeros(4,4,6);
 % The six Lie algebra elements for SE(3)
-E(:,:,1) = [0 0 0 0; 0 0 -1 0; 0 1 0 0; 0 0 0 0]; 
-E(:,:,2) = [0 0 1 0; 0 0 0 0; -1 0 0 0; 0 0 0 0]; 
+E(:,:,1) = [0 0 0 0; 0 0 -1 0; 0 1 0 0; 0 0 0 0];
+E(:,:,2) = [0 0 1 0; 0 0 0 0; -1 0 0 0; 0 0 0 0];
 E(:,:,3) = [0 -1 0 0; 1 0 0 0; 0 0 0 0; 0 0 0 0];
-E(:,:,4) = [0 0 0 1; 0 0 0 0; 0 0 0 0; 0 0 0 0]; 
-E(:,:,5) = [0 0 0 0; 0 0 0 1; 0 0 0 0; 0 0 0 0]; 
+E(:,:,4) = [0 0 0 1; 0 0 0 0; 0 0 0 0; 0 0 0 0];
+E(:,:,5) = [0 0 0 0; 0 0 0 1; 0 0 0 0; 0 0 0 0];
 E(:,:,6) = [0 0 0 0; 0 0 0 0; 0 0 0 1; 0 0 0 0];
 
 count = 0;
@@ -91,7 +93,7 @@ while( abs(C-C_old) > diff && count < 10 )
         end
         
     end
-   
+    
     count = count+1;
     
 end
