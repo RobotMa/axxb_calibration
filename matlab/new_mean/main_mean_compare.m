@@ -7,12 +7,13 @@ clear all
 close all
 
 %% ----- Add Extra Worksapce ----- %%
-
-addpath('~/Dropbox/2014Summer/Robotics Research/rvctools/robot','-end')
-addpath('~/Dropbox/2014Summer/Robotics Research/rvctools/common')
-addpath('~/Dropbox/2015Spring/AXXB Journal/Review_AXXB/Matlab_AXXB/Batch Method (ED - GSI)')
-addpath('~/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/screws')
-addpath('~/Dropbox/2014Summer/Robotics Research/kinematics/kinematics/util')
+addpath ../../../rvctools/robot
+addpath ../../../rvctools/common
+addpath ../../../../kinematics/kinematics/screws/
+addpath ../../../../kinematics/kinematics/util/
+addpath ../../../axxb_calibration/matlab/new_mean/codegen/mex/distibutionPropsMex
+addpath ../../../axxb_calibration/matlab/new_mean/codegen/mex/mean_Taylor_1st
+addpath ../../../axxb_calibration/matlab/Batch_Method_ED_KL_BS
 
 %% ---- Initilization ---- %%
 
@@ -74,30 +75,18 @@ for j = 1:length(noise)
         MX2 = mean_Taylor_2nd_adv_mex( X_noise_mex, 1, n_search );
         
         
-        %% ----- Rot and Trans Errors ---- %%
-        R_X_true = X_true(1:3,1:3);
-        R_MX  = MX(1:3,1:3);
-        R_MX1 = MX1(1:3,1:3);
-        R_MX2 = MX2(1:3,1:3);
+        %% ----- Rot and Trans Errors ---- %%     
+        e_RX(i,j) = roterror(X_true, MX);
+        e_RX1(i,j) = roterror(X_true, MX1);
+        e_RX2(i,j) = roterror(X_true, MX2);
+        e_RX1_true(i,j) = roterror(MX1, MX);
+        e_RX2_true(i,j) = roterror(MX2, MX);
         
-        t_X_true = X_true(1:3,4);
-        t_MX  = MX(1:3,4);
-        t_MX1 = MX1(1:3,4);
-        t_MX2 = MX2(1:3,4);
-        
-        e_RX(i,j)  = norm(so3_vec(logm(R_X_true'*R_MX)));
-        e_RX1(i,j) = norm(so3_vec(logm(R_X_true'*R_MX1)));
-        e_RX2(i,j) = norm(so3_vec(logm(R_X_true'*R_MX2)));
-        e_RX1_true(i,j) = norm(so3_vec(logm(R_MX1'*R_MX)));
-        e_RX2_true(i,j) = norm(so3_vec(logm(R_MX2'*R_MX)));
-        
-        
-        e_tX(i,j)  = norm(t_X_true - t_MX) /norm(t_X_true);
-        e_tX1(i,j) = norm(t_X_true - t_MX1)/norm(t_X_true);
-        e_tX2(i,j) = norm(t_X_true - t_MX2)/norm(t_X_true);
-        e_tX1_true(i,j) = norm(t_MX - t_MX1)/norm(t_MX);
-        e_tX2_true(i,j) = norm(t_MX - t_MX2)/norm(t_MX);
-        
+        e_tX(i,j) = tranerror(MX, X_true);
+        e_tX1(i,j) = tranerror(MX1, X_true);
+        e_tX2(i,j) = tranerror(MX2, X_true);
+        e_tX1_true(i,j) = tranerror(MX1, MX);
+        e_tX2_true(i,j) = tranerror(MX2, MX);
         
     end
     
