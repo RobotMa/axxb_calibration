@@ -31,7 +31,6 @@ window = 0; % target correlation area
 
 model = 1;  % noise model
 
-
 t2 = (0 : (2*pi)/((num+shift)) : 2*pi);
 twist = 0.0*sin(16*t2);
 

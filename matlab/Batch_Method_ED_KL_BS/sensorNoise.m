@@ -122,7 +122,15 @@ switch model
             
         end
         %---------------------------------------------------------------       
+    
+    case 6
+         
+        for i = 1:size(g,3)
             
+            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, std*eye(6,6), 1)));
+            
+        end
+        
     otherwise
         disp('error');
 end

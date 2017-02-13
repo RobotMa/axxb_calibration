@@ -5,7 +5,7 @@
 %files needed:
 %none
 
-function [X]=axb_KronSolve(A,B)
+function [X] = axb_KronSolve(A,B)
 
 A_k=[];
 b_k=[];
@@ -32,3 +32,5 @@ X_k=pinv(A_k)*b_k;
 X=[[X_k(1:3), X_k(4:6), X_k(7:9)] X_k(10:12); zeros(1,3) 1];
 
 X(1:3,1:3) = sign(det(X(1:3,1:3)))/abs(det(X(1:3,1:3)))^(1/3)*X(1:3,1:3);
+
+end

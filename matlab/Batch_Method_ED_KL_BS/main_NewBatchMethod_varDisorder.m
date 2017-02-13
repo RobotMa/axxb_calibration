@@ -1,4 +1,7 @@
-%AXXB - Fixing Temporal Misalignment
+% This main fucntion compares three Batch methods with three 
+% corresponding definitions (representations) of mean and the Kronecker
+% product method
+%
 clear; 
 clc; 
 close all;
@@ -75,8 +78,8 @@ for j = 1:n_rate
         B_perm = B(:, :, PB);
         
         [X_batch, MA, MB] = batchSolve(A_perm, B_perm); %batchSolveNew(A_perm, B_perm, 5); %
-        [X_batch_New_2, MA_New, MB_New, ~, ~, t_error] = batchSolveNew(A_perm, B_perm, 4); % 2 is changing step size ,4 is M=M(I+X)
         [X_batch_New_1, ~, ~, ~, ~, ~] = batchSolveNew(A_perm, B_perm, 1);
+        [X_batch_New_2, MA_New, MB_New, ~, ~, t_error] = batchSolveNew(A_perm, B_perm, 4); % 2 is changing step size ,4 is M=M(I+X)
         [X_kron] = batchSolveNew(A_perm, B_perm, 5); % axb_KronSolve(A_perm,B_perm); %
         
         %% Store Errors
@@ -89,16 +92,6 @@ for j = 1:n_rate
         Tranerror_batch_new_1_all(k, j) = tranerror(X_batch_New_1,X);
         Tranerror_batch_new_2_all(k, j) = tranerror(X_batch_New_2,X);
         Tranerror_kron_all(k, j) = tranerror(X_kron,X);
-        
-        
-%         Roterror_batch = [Roterror_batch roterror(X_batch,X)];
-%         Roterror_batch_New_2 = [Roterror_batch_New_2 roterror(X_batch_New_2,X)];
-%         Roterror_batch_New_1 = [Roterror_batch_New_1 roterror(X_batch_New_1,X)];
-%         Roterror_kron = [Roterror_kron roterror(X_kron,X)];
-%         Tranerror_batch = [Tranerror_batch tranerror(X_batch,X)];
-%         Tranerror_batch_New_2 = [Tranerror_batch_New_2 tranerror(X_batch_New_2,X)];
-%         Tranerror_batch_New_1 = [Tranerror_batch_New_1 tranerror(X_batch_New_1,X)];
-%         Tranerror_kron = [Tranerror_kron tranerror(X_kron,X)];
         
         t_Error = [t_Error t_error];
         
