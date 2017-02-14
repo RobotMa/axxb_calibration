@@ -1,0 +1,12 @@
+function [Mean, Sig] = getMeanCovOfSet(M)
+
+n_sets = size(M, 4);
+
+Mean = zeros(4, 4, n_sets);
+Sig  = zeros(6, 6, n_sets);
+
+for i  = 1: n_sets
+    [Mean(:,:,i), Sig(:,:,i)] = getMeanCov(M(:,:,:,i));
+end
+
+end

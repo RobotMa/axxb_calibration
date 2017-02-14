@@ -6,20 +6,36 @@ function g_noise = sensorNoise(g, gmean, std, model)
 switch model
     case 1
         
-        %-----------Independently from Normal Distribution------------
-        for i = 1:size(g,3)
+        %----------- Independently from Normal Distribution------------
+        n_g = size(g, 3);
+        g_noise = zeros(4, 4, n_g);
+        
+        for i = 1:n_g
             
             temp = randn(3,1);
             
             noise_old1 = [0*randn(3,1); std*randn(3,1)] + gmean;
             noise_old2 = [std*(temp/norm(temp)); 0*randn(3,1)] + gmean;
             
-            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(noise_old1))*expm(se3_vec(noise_old2));
+            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(noise_old1))*...
+                                expm(se3_vec(noise_old2));
             
         end
         %--------------------------------------------------------------
         
     case 2
+ 
+        % ---------------- MVG on se3 Lie algebra ---------------------
+        n_g = size(g, 3);
+        g_noise = zeros(4, 4, n_g);
+         
+        for i = 1:n_g
+            
+            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, std*eye(6,6), 1)));
+            
+        end
+        
+    case 3
         
         %-----------Coupling Matrix------------------------------------
         
@@ -53,7 +69,7 @@ switch model
         end
         %--------------------------------------------------------------
         
-    case 3
+    case 4
         
         %-----------Wiener Process------------------------------------
         
@@ -69,7 +85,7 @@ switch model
         end
         %---------------------------------------------------------------
         
-    case 4
+    case 5
         
         %-----------plucker nudge------------------------------------
         
@@ -98,7 +114,7 @@ switch model
         end
         %---------------------------------------------------------------
         
-    case 5
+    case 6
         
         %-----------outlier noise-----------------------------------
         
@@ -122,20 +138,9 @@ switch model
             
         end
         %---------------------------------------------------------------       
-    
-    case 6
-         
-        for i = 1:size(g,3)
-            
-            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, std*eye(6,6), 1)));
-            
-        end
         
     otherwise
         disp('error');
 end
-
-
-
 
 end
