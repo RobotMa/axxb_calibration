@@ -16,7 +16,7 @@ num = 50; % No. of data for each set
 
 gmean = [0; 0; 0; 0; 0; 0];	% Gaussian Noise Mean
 
-coeff1 = 0.1; % std 
+coeff1 = 0.02; % std 
 
 cov = coeff1*eye(6,6);
 
@@ -26,7 +26,7 @@ coeff2 = coeff1*noise_on_cov;
 
 cov_noise = coeff2*eye(6,6);
 
-n_trials = 10; %60
+n_trials = 30; %60
 
 x = randn(6,1); x = x./norm(x); X = expm(se3_vec(x)); % Generate a Random X
 
@@ -80,30 +80,11 @@ for j = 1:n_rate
         A_perm = permutateEachSet(A_noise, permRate(j));
         B_perm = B_noise;
         
-%         PA = (1:size(A,3));
-%         PB = (1:size(B,3));
-%         
-%         for i = 1:length(PA)
-%             if rand <= 0.01*perm_rate(j)
-%                 index = randi(num,1);
-%                 PA([i index]) = PA([index i]);
-%             end
-%         end
-%         
-%         A_perm = A_noise(:, :, PA);
-%         B_perm = B_noise(:, :, PB);
-        
         [X_batch, MA, MB] = batchSolve(A_perm(:,:,:,1), B_perm(:,:,:,1)); %batchSolveNew(A_perm, B_perm, 5); %
         
         [A_mean, SigA] = getMeanCovOfSet(A_perm);
         [B_mean, SigB] = getMeanCovOfSet(B_perm);
-%         [A_mean(:,:,1), SigA] = getMeanCov(A_noise);
-%         [A_mean(:,:,2), SigA1] = getMeanCov(A1_noise);
-%         [A_mean(:,:,3), SigA2] = getMeanCov(A2_noise);
-%         [B_mean(:,:,1), SigB] = getMeanCov(B_noise);
-%         [B_mean(:,:,2), SigB1] = getMeanCov(B1_noise);
-%         [B_mean(:,:,3), SigB2] = getMeanCov(B2_noise);
-        
+
         [X_kron] = axb_KronSolve(A_mean, B_mean); %
         [X_kron_2] = axb_KronSolve(A_perm(:,:,:,1), B_perm(:,:,:,1)); %
         
