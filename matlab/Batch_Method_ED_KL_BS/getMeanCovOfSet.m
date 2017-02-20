@@ -1,4 +1,5 @@
 function [Mean, Sig] = getMeanCovOfSet(M)
+% Compute the mean and covariance given a cloud of SE3 matrices
 
 n_sets = size(M, 4);
 

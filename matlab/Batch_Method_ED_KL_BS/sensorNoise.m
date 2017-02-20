@@ -14,12 +14,15 @@ switch model
             
             temp = randn(3,1);
             
-            noise_old1 = [0*randn(3,1); std*randn(3,1)] + gmean;
-            noise_old2 = [std*(temp/norm(temp)); 0*randn(3,1)] + gmean;
-            
-            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(noise_old1))*...
-                                expm(se3_vec(noise_old2));
-            
+            if std == 0
+                g_noise(:,:,i) = g(:,:,i);
+            else
+                noise_old1 = [0*randn(3,1); std*randn(3,1)] + gmean;
+                noise_old2 = [std*(temp/norm(temp)); 0*randn(3,1)] + gmean;
+
+                g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(noise_old1))*...
+                                    expm(se3_vec(noise_old2));
+            end
         end
         %--------------------------------------------------------------
         
@@ -31,8 +34,11 @@ switch model
          
         for i = 1:n_g
             
-            g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, std*eye(6,6), 1)));
-            
+            if (std == 0)
+                g_noise(:,:,i) = g(:,:,i);
+            else
+                g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, std*eye(6,6), 1)));
+            end
         end
         
     case 3
