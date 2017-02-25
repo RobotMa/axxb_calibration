@@ -49,9 +49,8 @@ end
 tx_temp = so3_vec(((Rx'*SigA(1:3,1:3)*Rx)^-1*(SigB(1:3,4:6)-Rx'*SigA(1:3,4:6)*Rx))');
 tx = -Rx*tx_temp;
 
-% An alternate way of computing tx
-% tx_temp = so3_vec(((Rx'*SigA(1:3,1:3)*Rx)^-1*(SigB(1:3,4:6)-Rx'*SigA(1:3,4:6)*Rx)));
-% tx = Rx*tx_temp;
+%tx_temp = so3_vec(((Rx'*SigA(1:3,1:3)*Rx)^-1*(SigB(1:3,4:6)-Rx'*SigA(1:3,4:6)*Rx)));
+tx2 = Rx*tx_temp
 
 X = [Rx tx; [0 0 0] 1];
 
