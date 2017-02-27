@@ -35,14 +35,15 @@ noiseModel = 2;
 
 opt = 2;
 
-optPDF = 1; % select the distribution for A and B
+optPDF = 1; % Select the distribution for generating A and B. They will have 
+            % zero mean and std as the stand
 
-counter = 0;
+counter = 1;
 %% Computation Loops
 %---------------------------------------------------------------------------------------------------------
 
 A_noise = []; Ainv_noise = []; B = [];
-cost1 = []; o
+cost1 = []; cost2 = [];
 
 [A, B] = generateAB(num, optPDF, Xtrue, gmean, std*cov);
 
@@ -94,29 +95,34 @@ while( abs(costmin) > diff )
         X1 = X*expm( eps*E(:,:,j));
         X2 = X*expm(-eps*E(:,:,j));
         
-        adX1inv = ad(inv(X1));
-        adX2inv = ad(inv(X2));
+        adX1inv = SE3inv_Ad(X1);
+        adX2inv = SE3inv_Ad(X2);
         
         costCov1 = adBinv*adX1inv*SigAinv_noise*adX1inv'*adBinv' + SigB;
-        costMean1 = X1 - MeanAinv_noise*X1*MeanB;
+        costMean1 = MeanA_noise*X1 - X1*MeanB;
         
         costCov2 = adBinv*adX2inv*SigAinv_noise*adX2inv'*adBinv' + SigB;
-        costMean2 = X2 - MeanAinv_noise*X2*MeanB;
+        costMean2 = MeanA_noise*X2 - X2*MeanB;
         
-        cost1 = norm(costCov1, 'fro') + norm(costMean1, 'fro');
-        cost2 = norm(costCov2, 'fro') + norm(costMean2, 'fro');
+        cost1(counter) = norm(costCov1, 'fro') + norm(costMean1, 'fro');
+        cost2(counter) = norm(costCov2, 'fro') + norm(costMean2, 'fro');
         
         if (cost1 <= cost2)
             cost = cost1;
-            X = X1;
+            if cost < costmin
+                costmin = cost;
+                X = X1;
+            end
+        
         else
             cost = cost2;
-            X = X2;
+            if cost < costmin
+                costmin = cost;
+                X = X2;
+            end
         end
         
-        if cost < costmin
-            costmin = cost;
-        end
+
         
         counter = counter + 1;
         

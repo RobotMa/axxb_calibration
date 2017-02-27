@@ -156,8 +156,27 @@ plot(ratio_std, mean(rotErr1, 1))
 hold on
 plot(ratio_std, mean(rotErr2, 1))
 legend('new noise model','original noise-free model')
-xlabel('noise_std/model_std')
-ylabel('')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Rotation error in the mean equation: roterror(MA X - X MB)')
+
+figure
+plot(ratio_std, mean(tranErr1, 1))
+hold on
+plot(ratio_std, mean(tranErr2, 1))
+legend('new noise model','original noise-free model')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Translation error in the mean equation: tranerror(MA X - X MB)')
+
+figure
+plot(ratio_std, mean(covErr1, 1))
+hold on
+plot(ratio_std, mean(covErr2, 1))
+legend('new noise model','original noise-free model')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Error in the covariance equation: Frobenius Norm(L.H.S - R.H.S.)')
 
 %%
 fprintf('Rotation error of the noise correction method is %d \n', mean(rotErr1, 1));

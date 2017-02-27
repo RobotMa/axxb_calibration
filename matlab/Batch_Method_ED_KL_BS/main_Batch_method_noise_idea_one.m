@@ -19,7 +19,7 @@ cov = eye(6,6);
 
 std = 0.1;
 
-nstd = 0.01; % Gaussian Noise standard deviation Range
+nstd = 0.001; % Gaussian Noise standard deviation Range
 
 n_trials = 2; %60
 
@@ -108,15 +108,20 @@ while( abs(costmin) > diff )
         
         if (cost1 <= cost2)
             cost = cost1;
-            X = X1;
+            if cost < costmin
+                costmin = cost;
+                X = X1;
+            end
+        
         else
             cost = cost2;
-            X = X2;
+            if cost < costmin
+                costmin = cost;
+                X = X2;
+            end
         end
         
-        if cost < costmin
-            costmin = cost;
-        end
+
         
         counter = counter + 1;
         
