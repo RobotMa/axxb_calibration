@@ -53,6 +53,8 @@ tranErr2 = [];
 covErr2 = [];
 covErr2Rot = [];
 
+covErr3 = [];
+
 covX1Err = [];
 meanX1Err = [];
 
@@ -68,10 +70,21 @@ for m = 1:length(nstd)
         % Apply noise onto A
         A_noise = sensorNoise(A, gmean, nstd(m), noiseModel);
         
+        % Apply noise onto B
+        B_noise = sensorNoise(A, gmean, nstd(m), noiseModel);
+        
         % Compute the mean and covariance of A_noise
         [a1,a2,a3]  = size(A_noise);
         A_mex = reshape(A_noise, a1, a2*a3);
         [MeanA_noise, SigA_noise] = distibutionPropsMex_mex(A_mex);
+        
+        % Compute the mean and covariance of B_noise
+        B_noise_mex = reshape(B_noise, a1, a2*a3);
+        [MeanB_noise, SigB_noise] = distibutionPropsMex_mex(B_noise_mex);
+        
+        % Compute the mean and covariance of A
+        A_mex_noise_free = reshape(A, a1, a2*a3);
+        [MeanA, SigA] = distibutionPropsMex_mex(A_mex_noise_free);
         
         % Compute the mean and covariance of noise-free B
         B_mex = reshape(B, a1, a2*a3);
@@ -138,8 +151,12 @@ for m = 1:length(nstd)
         covErr1(k,m) = norm(covDiff1, 'fro');
         
         % Covariance error of the noise-free model
-        covDiff2 = adXinv*SigA_noise*adXinv' - SigB;
+        covDiff2 = adXinv*SigA_noise*adXinv' - SigB_noise;
         covErr2(k,m) = norm(covDiff2, 'fro');
+        
+        % Covariance error of the preconditioned noise model
+        covDiff3 = adXinv*(SigA_noise - nstd(m)*cov)*adXinv' - (SigB_noise - nstd(m)*cov);
+        covErr3(k,m) = norm(covDiff3, 'fro');
         
 %         covX1 = adBinv*adXinv*SigAinv_noise*adXinv'*adBinv' + SigB;
 %         covX1Err(k,m) = norm(covX1, 'fro');
@@ -173,7 +190,9 @@ figure
 plot(ratio_std, mean(covErr1, 1))
 hold on
 plot(ratio_std, mean(covErr2, 1))
-legend('new noise model','original noise-free model')
+hold on
+plot(ratio_std, mean(covErr3, 1))
+legend('new noise model','original noise-free model','preconditioned noise-model')
 xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
 ylabel('Error')
 title('Error in the covariance equation: Frobenius Norm(L.H.S - R.H.S.)')

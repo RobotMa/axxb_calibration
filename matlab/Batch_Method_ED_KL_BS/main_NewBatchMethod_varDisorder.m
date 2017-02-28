@@ -77,7 +77,7 @@ for j = 1:n_rate
         A_perm = A(:, :, PA);
         B_perm = B(:, :, PB);
         
-        [X_batch, MA, MB] = batchSolve(A_perm, B_perm); %batchSolveNew(A_perm, B_perm, 5); %
+        [X_batch, MA, MB] = batchSolve(A_perm, B_perm, false, 0); %batchSolveNew(A_perm, B_perm, 5); %
         [X_batch_New_1, ~, ~, ~, ~, ~] = batchSolveNew(A_perm, B_perm, 1);
         [X_batch_New_2, MA_New, MB_New, ~, ~, t_error] = batchSolveNew(A_perm, B_perm, 4); % 2 is changing step size ,4 is M=M(I+X)
         [X_kron] = batchSolveNew(A_perm, B_perm, 5); % axb_KronSolve(A_perm,B_perm); %

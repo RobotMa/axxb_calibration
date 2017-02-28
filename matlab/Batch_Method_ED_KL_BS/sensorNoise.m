@@ -38,6 +38,10 @@ switch model
                 g_noise(:,:,i) = g(:,:,i);
             else
                 g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, std*eye(6,6), 1)));
+%                 cov = [std*eye(3,3) zeros(3,3);
+%                          zeros(3,3) std*1.5*eye(3,3)];
+%                 
+%                 g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, cov, 1)));
             end
         end
         

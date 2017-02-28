@@ -1,0 +1,496 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>main_Batch_method_noise_distri_known</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-02-27"><meta name="DC.source" content="main_Batch_method_noise_distri_known.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Add file dependencies</a></li><li><a href="#3">Initialize Parameters</a></li><li><a href="#4">Data Initialization</a></li><li><a href="#5">Apply noise on Ai only</a></li><li><a href="#7">Verification of the mean and covariance equations</a></li></ul></div><pre class="codeinput"><span class="comment">% This main fucntion tests the new idea for handling noise by using the</span>
+<span class="comment">% distribution as a priori known information</span>
+<span class="comment">%</span>
+clear;
+clc;
+close <span class="string">all</span>;
+</pre><h2 id="2">Add file dependencies</h2><pre class="codeinput">addpath <span class="string">../../../rvctools/robot</span>
+addpath <span class="string">../../../rvctools/common</span>
+addpath <span class="string">../../../kinematics/kinematics/screws</span>
+addpath <span class="string">../../../kinematics/kinematics/util</span>
+addpath <span class="string">../../../kinematics/kinematics/lie_group</span>
+addpath <span class="string">../../../axxb_calibration/matlab/new_mean/codegen/mex/distibutionPropsMex</span>
+</pre><h2 id="3">Initialize Parameters</h2><pre class="codeinput">num = 50; <span class="comment">% number of samples in a cloud</span>
+
+gmean = [0;0;0;0;0;0];	<span class="comment">%Gaussian Noise Mean</span>
+
+cov = eye(6,6);
+
+std = 0.1;    <span class="comment">% std for generating the noise-free sample cloud</span>
+
+ratio_std = 0.005:0.005:0.05; <span class="comment">% noise level 0.5% - 5% on std</span>
+
+nstd = ratio_std*std; <span class="comment">% Gaussian Noise standard deviation Range</span>
+
+n_trials = 2; <span class="comment">%60</span>
+
+x = randn(6,1); x = x./norm(x); X = expm(se3_vec(x)); <span class="comment">% Generate a Random X</span>
+
+noiseModel = 2; <span class="comment">% Select the noise model which has zero mean and nstd as the</span>
+<span class="comment">% standard deviation on lie aglebra</span>
+
+optPDF = 1; <span class="comment">% Select the distribution for generating {A} and {B} sample cloud.</span>
+<span class="comment">% They will have zero mean and std as the standard deviation in</span>
+<span class="comment">% lie algebra</span>
+</pre><h2 id="4">Data Initialization</h2><p>For simplicity, we only apply noise onto {A}</p><pre class="codeinput">A_noise = zeros(4, 4, num); <span class="comment">% A with noise</span>
+B = zeros(4, 4, num);       <span class="comment">% B will be kept noise free</span>
+Ainv_noise = zeros(4, 4, num); <span class="comment">% Calculate {A^-1}</span>
+
+rotErr1 = [];
+tranErr1 = [];
+covErr1 = [];
+covErr1Rot = [];
+
+rotErr2 = [];
+tranErr2 = [];
+covErr2 = [];
+covErr2Rot = [];
+
+covX1Err = [];
+meanX1Err = [];
+</pre><h2 id="5">Apply noise on Ai only</h2><pre class="codeinput"><span class="keyword">for</span> m = 1:length(nstd)
+
+    <span class="keyword">for</span> k = 1: 200
+</pre><pre class="codeinput">        <span class="comment">% Generate num samples of A and B given the ground truth X,</span>
+        <span class="comment">% type of distribution optPDF, mean gmean and covariance std*cov</span>
+        [A, B] = generateAB(num, optPDF, X, gmean, std*cov);
+
+        <span class="comment">% Apply noise onto A</span>
+        A_noise = sensorNoise(A, gmean, nstd(m), noiseModel);
+
+        <span class="comment">% Compute the mean and covariance of A_noise</span>
+        [a1,a2,a3]  = size(A_noise);
+        A_mex = reshape(A_noise, a1, a2*a3);
+        [MeanA_noise, SigA_noise] = distibutionPropsMex_mex(A_mex);
+
+        <span class="comment">% Compute the mean and covariance of noise-free B</span>
+        B_mex = reshape(B, a1, a2*a3);
+        [MeanB, SigB] = distibutionPropsMex_mex(B_mex);
+
+        <span class="comment">% Compute adjoint matrix of Xinv and MeanBinv</span>
+        adXinv = SE3inv_Ad(X);
+        adBinv = SE3inv_Ad(MeanB);
+
+        <span class="comment">% Lie algebra basis</span>
+        E1(:,:,1)=[0 0 0 0; 0 0 -1 0; 0 1 0 0; 0 0 0 0];
+        E1(:,:,2)=[0 0 1 0; 0 0 0 0; -1 0 0 0; 0 0 0 0];
+        E1(:,:,3)=[0 -1 0 0; 1 0 0 0; 0 0 0 0; 0 0 0 0];
+        E1(:,:,4)=[0 0 0 1; 0 0 0 0; 0 0 0 0; 0 0 0 0];
+        E1(:,:,5)=[0 0 0 0; 0 0 0 1; 0 0 0 0; 0 0 0 0];
+        E1(:,:,6)=[0 0 0 0; 0 0 0 0; 0 0 0 1; 0 0 0 0];
+
+        <span class="comment">% ------ Compute the covariance of the noise correcting term ------</span>
+        <span class="comment">% n_A_prime namely,  { exp(\sum (nj Ai Ej Ai^-1)) }</span>
+        N_A_prime = zeros(4, 4, num);
+        <span class="keyword">for</span> i = 1:a3
+
+            temp_se3 = zeros(4,4);
+
+            <span class="comment">% Generate a sample of Lie algebra using zero mean and nstd(m)*cov</span>
+            <span class="comment">% as the covariance</span>
+            lie_algebra = mvg(gmean, nstd(m)*cov, 1);
+
+            <span class="comment">% Assume the noise is really small and use measured data</span>
+            <span class="comment">% A_noise to replace the noise-free data A</span>
+            <span class="keyword">for</span> j = 1:6
+                temp_se3 = temp_se3 + lie_algebra(j)*A_noise(:,:,i)*E1(:,:,j)/A_noise(:,:,i);
+            <span class="keyword">end</span>
+
+            N_A_prime(:,:,i) = expm(temp_se3);
+        <span class="keyword">end</span>
+        <span class="comment">% -----------------------------------------------------------------</span>
+
+        <span class="comment">% Calculate the mean and covariance of the noise correcting term</span>
+        N_A_mex = reshape(N_A_prime, a1, a2*a3);
+        [MeanN_A_prime, SigN_A_prime] = distibutionPropsMex_mex(N_A_mex);
+
+        <span class="comment">% Compute the mean and covariance of the inverse of A_noise</span>
+        <span class="keyword">for</span> s = 1: a3
+            Ainv_noise(:,:,s) = inv(A_noise(:,:,s));
+        <span class="keyword">end</span>
+        Ainv_mex = reshape(Ainv_noise, a1, a2*a3);
+        [MeanAinv_noise, SigAinv_noise] = distibutionPropsMex_mex(Ainv_mex);
+</pre><h2 id="7">Verification of the mean and covariance equations</h2><p>------- Mean Equation Error Analysis ------- % Rotation error of the new model</p><pre class="codeinput">        rotErr1(k,m) = roterror(MeanA_noise*X, MeanN_A_prime*X*MeanB);
+        <span class="comment">% Translation error of the new model</span>
+        tranErr1(k,m) = tranerror(MeanA_noise*X, MeanN_A_prime*X*MeanB);
+        <span class="comment">% Rotation error of the no-noise model</span>
+        rotErr2(k,m) = roterror(MeanA_noise*X, X*MeanB);
+        <span class="comment">% Translation error of the no-noise model</span>
+        tranErr2(k,m) = tranerror(MeanA_noise*X, X*MeanB);
+
+        <span class="comment">% ------- Covariance Equation Error Analysis ------- %</span>
+        <span class="comment">% Covariance error of the new model</span>
+        covDiff1 = adXinv*SigA_noise*adXinv' - adBinv*adXinv*SigN_A_prime*adXinv'*adBinv' + SigB;
+        covErr1(k,m) = norm(covDiff1, <span class="string">'fro'</span>);
+
+        <span class="comment">% Covariance error of the noise-free model</span>
+        covDiff2 = adXinv*SigA_noise*adXinv' - SigB;
+        covErr2(k,m) = norm(covDiff2, <span class="string">'fro'</span>);
+
+<span class="comment">%         covX1 = adBinv*adXinv*SigAinv_noise*adXinv'*adBinv' + SigB;</span>
+<span class="comment">%         covX1Err(k,m) = norm(covX1, 'fro');</span>
+<span class="comment">%</span>
+<span class="comment">%         meanX1 = X - MeanAinv_noise*X*MeanB;</span>
+<span class="comment">%         meanX1Err(k,m) = norm(meanX1, 'fro');</span>
+        <span class="comment">% covariance</span>
+</pre><pre class="codeinput">    <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+</pre><pre class="codeinput">figure
+plot(ratio_std, mean(rotErr1, 1))
+hold <span class="string">on</span>
+plot(ratio_std, mean(rotErr2, 1))
+legend(<span class="string">'new noise model'</span>,<span class="string">'original noise-free model'</span>)
+xlabel(<span class="string">'noise_{std}/model_{std}. Meaning: 0.05 = 5%'</span>)
+ylabel(<span class="string">'Error'</span>)
+title(<span class="string">'Rotation error in the mean equation: roterror(MA X - X MB)'</span>)
+
+figure
+plot(ratio_std, mean(tranErr1, 1))
+hold <span class="string">on</span>
+plot(ratio_std, mean(tranErr2, 1))
+legend(<span class="string">'new noise model'</span>,<span class="string">'original noise-free model'</span>)
+xlabel(<span class="string">'noise_{std}/model_{std}. Meaning: 0.05 = 5%'</span>)
+ylabel(<span class="string">'Error'</span>)
+title(<span class="string">'Translation error in the mean equation: tranerror(MA X - X MB)'</span>)
+
+figure
+plot(ratio_std, mean(covErr1, 1))
+hold <span class="string">on</span>
+plot(ratio_std, mean(covErr2, 1))
+legend(<span class="string">'new noise model'</span>,<span class="string">'original noise-free model'</span>)
+xlabel(<span class="string">'noise_{std}/model_{std}. Meaning: 0.05 = 5%'</span>)
+ylabel(<span class="string">'Error'</span>)
+title(<span class="string">'Error in the covariance equation: Frobenius Norm(L.H.S - R.H.S.)'</span>)
+</pre><img vspace="5" hspace="5" src="main_Batch_method_noise_distri_known_01.png" alt=""> <img vspace="5" hspace="5" src="main_Batch_method_noise_distri_known_02.png" alt=""> <img vspace="5" hspace="5" src="main_Batch_method_noise_distri_known_03.png" alt=""> <pre class="codeinput">fprintf(<span class="string">'Rotation error of the noise correction method is %d \n'</span>, mean(rotErr1, 1));
+fprintf(<span class="string">'Translation error of the noise correction method is %d \n'</span>, mean(tranErr1, 1));
+fprintf(<span class="string">'Rotation error of the normal method is %d \n'</span>, mean(rotErr2, 1));
+fprintf(<span class="string">'Translation error of the normal method is %d \n'</span>, mean(tranErr2, 1));
+fprintf(<span class="string">'##-----------------------------------------------------## \n'</span>)
+fprintf(<span class="string">'Norm of covariance difference for the noise correction method is %d \n'</span>, mean(covErr1, 1));
+fprintf(<span class="string">'Norm of covariance difference is %d \n'</span>, mean(covErr2, 1));
+fprintf(<span class="string">'##-----------------------------------------------------## \n'</span>)
+</pre><pre class="codeoutput">Rotation error of the noise correction method is 8.119667e-03 
+Rotation error of the noise correction method is 1.073701e-02 
+Rotation error of the noise correction method is 1.398092e-02 
+Rotation error of the noise correction method is 1.625891e-02 
+Rotation error of the noise correction method is 1.661829e-02 
+Rotation error of the noise correction method is 1.834305e-02 
+Rotation error of the noise correction method is 2.042868e-02 
+Rotation error of the noise correction method is 2.222981e-02 
+Rotation error of the noise correction method is 2.373309e-02 
+Rotation error of the noise correction method is 2.353192e-02 
+Translation error of the noise correction method is 1.810542e-02 
+Translation error of the noise correction method is 2.599373e-02 
+Translation error of the noise correction method is 3.053538e-02 
+Translation error of the noise correction method is 3.728473e-02 
+Translation error of the noise correction method is 4.024679e-02 
+Translation error of the noise correction method is 4.269150e-02 
+Translation error of the noise correction method is 4.558639e-02 
+Translation error of the noise correction method is 4.920470e-02 
+Translation error of the noise correction method is 5.352657e-02 
+Translation error of the noise correction method is 5.775197e-02 
+Rotation error of the normal method is 5.550455e-03 
+Rotation error of the normal method is 7.258269e-03 
+Rotation error of the normal method is 9.485248e-03 
+Rotation error of the normal method is 1.101411e-02 
+Rotation error of the normal method is 1.064974e-02 
+Rotation error of the normal method is 1.252263e-02 
+Rotation error of the normal method is 1.374080e-02 
+Rotation error of the normal method is 1.477382e-02 
+Rotation error of the normal method is 1.650358e-02 
+Rotation error of the normal method is 1.597227e-02 
+Translation error of the normal method is 1.262789e-02 
+Translation error of the normal method is 1.803892e-02 
+Translation error of the normal method is 2.047413e-02 
+Translation error of the normal method is 2.493527e-02 
+Translation error of the normal method is 2.674216e-02 
+Translation error of the normal method is 2.872414e-02 
+Translation error of the normal method is 3.170920e-02 
+Translation error of the normal method is 3.517425e-02 
+Translation error of the normal method is 3.710820e-02 
+Translation error of the normal method is 4.083126e-02 
+##-----------------------------------------------------## 
+Norm of covariance difference for the noise correction method is 3.205548e-02 
+Norm of covariance difference for the noise correction method is 3.199367e-02 
+Norm of covariance difference for the noise correction method is 3.154694e-02 
+Norm of covariance difference for the noise correction method is 3.182706e-02 
+Norm of covariance difference for the noise correction method is 3.186396e-02 
+Norm of covariance difference for the noise correction method is 3.205745e-02 
+Norm of covariance difference for the noise correction method is 3.213533e-02 
+Norm of covariance difference for the noise correction method is 3.222354e-02 
+Norm of covariance difference for the noise correction method is 3.201090e-02 
+Norm of covariance difference for the noise correction method is 3.201637e-02 
+Norm of covariance difference is 5.964987e-04 
+Norm of covariance difference is 8.765385e-04 
+Norm of covariance difference is 1.078471e-03 
+Norm of covariance difference is 1.229829e-03 
+Norm of covariance difference is 1.409661e-03 
+Norm of covariance difference is 1.546075e-03 
+Norm of covariance difference is 1.719457e-03 
+Norm of covariance difference is 1.840172e-03 
+Norm of covariance difference is 1.951779e-03 
+Norm of covariance difference is 2.100953e-03 
+##-----------------------------------------------------## 
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% This main fucntion tests the new idea for handling noise by using the
+% distribution as a priori known information
+%
+clear;
+clc;
+close all;
+
+%% Add file dependencies
+addpath ../../../rvctools/robot
+addpath ../../../rvctools/common
+addpath ../../../kinematics/kinematics/screws
+addpath ../../../kinematics/kinematics/util
+addpath ../../../kinematics/kinematics/lie_group
+addpath ../../../axxb_calibration/matlab/new_mean/codegen/mex/distibutionPropsMex
+
+%% Initialize Parameters
+num = 50; % number of samples in a cloud
+
+gmean = [0;0;0;0;0;0];	%Gaussian Noise Mean
+
+cov = eye(6,6);
+
+std = 0.1;    % std for generating the noise-free sample cloud
+
+ratio_std = 0.005:0.005:0.05; % noise level 0.5% - 5% on std
+
+nstd = ratio_std*std; % Gaussian Noise standard deviation Range
+
+n_trials = 2; %60
+
+x = randn(6,1); x = x./norm(x); X = expm(se3_vec(x)); % Generate a Random X
+
+noiseModel = 2; % Select the noise model which has zero mean and nstd as the
+% standard deviation on lie aglebra
+
+optPDF = 1; % Select the distribution for generating {A} and {B} sample cloud.
+% They will have zero mean and std as the standard deviation in
+% lie algebra
+
+%% Data Initialization
+% For simplicity, we only apply noise onto {A}
+A_noise = zeros(4, 4, num); % A with noise
+B = zeros(4, 4, num);       % B will be kept noise free
+Ainv_noise = zeros(4, 4, num); % Calculate {A^-1}
+
+rotErr1 = [];
+tranErr1 = [];
+covErr1 = [];
+covErr1Rot = [];
+
+rotErr2 = [];
+tranErr2 = [];
+covErr2 = [];
+covErr2Rot = [];
+
+covX1Err = [];
+meanX1Err = [];
+
+%% Apply noise on Ai only
+for m = 1:length(nstd)
+    
+    for k = 1: 200
+        
+        % Generate num samples of A and B given the ground truth X,
+        % type of distribution optPDF, mean gmean and covariance std*cov
+        [A, B] = generateAB(num, optPDF, X, gmean, std*cov);
+        
+        % Apply noise onto A
+        A_noise = sensorNoise(A, gmean, nstd(m), noiseModel);
+        
+        % Compute the mean and covariance of A_noise
+        [a1,a2,a3]  = size(A_noise);
+        A_mex = reshape(A_noise, a1, a2*a3);
+        [MeanA_noise, SigA_noise] = distibutionPropsMex_mex(A_mex);
+        
+        % Compute the mean and covariance of noise-free B
+        B_mex = reshape(B, a1, a2*a3);
+        [MeanB, SigB] = distibutionPropsMex_mex(B_mex);
+        
+        % Compute adjoint matrix of Xinv and MeanBinv
+        adXinv = SE3inv_Ad(X);
+        adBinv = SE3inv_Ad(MeanB);
+        
+        % Lie algebra basis
+        E1(:,:,1)=[0 0 0 0; 0 0 -1 0; 0 1 0 0; 0 0 0 0];
+        E1(:,:,2)=[0 0 1 0; 0 0 0 0; -1 0 0 0; 0 0 0 0];
+        E1(:,:,3)=[0 -1 0 0; 1 0 0 0; 0 0 0 0; 0 0 0 0];
+        E1(:,:,4)=[0 0 0 1; 0 0 0 0; 0 0 0 0; 0 0 0 0];
+        E1(:,:,5)=[0 0 0 0; 0 0 0 1; 0 0 0 0; 0 0 0 0];
+        E1(:,:,6)=[0 0 0 0; 0 0 0 0; 0 0 0 1; 0 0 0 0];
+
+        % REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH Compute the covariance of the noise correcting term REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH 
+        % n_A_prime namely,  { exp(\sum (nj Ai Ej Ai^-1)) }
+        N_A_prime = zeros(4, 4, num);
+        for i = 1:a3
+            
+            temp_se3 = zeros(4,4);
+            
+            % Generate a sample of Lie algebra using zero mean and nstd(m)*cov
+            % as the covariance
+            lie_algebra = mvg(gmean, nstd(m)*cov, 1); 
+            
+            % Assume the noise is really small and use measured data
+            % A_noise to replace the noise-free data A
+            for j = 1:6
+                temp_se3 = temp_se3 + lie_algebra(j)*A_noise(:,:,i)*E1(:,:,j)/A_noise(:,:,i);
+            end
+            
+            N_A_prime(:,:,i) = expm(temp_se3);
+        end
+        % REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+        
+        % Calculate the mean and covariance of the noise correcting term
+        N_A_mex = reshape(N_A_prime, a1, a2*a3);
+        [MeanN_A_prime, SigN_A_prime] = distibutionPropsMex_mex(N_A_mex);
+        
+        % Compute the mean and covariance of the inverse of A_noise
+        for s = 1: a3
+            Ainv_noise(:,:,s) = inv(A_noise(:,:,s));
+        end
+        Ainv_mex = reshape(Ainv_noise, a1, a2*a3);
+        [MeanAinv_noise, SigAinv_noise] = distibutionPropsMex_mex(Ainv_mex);
+        
+        %% Verification of the mean and covariance equations
+        % REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH- Mean Equation Error Analysis REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH- %
+        % Rotation error of the new model
+        rotErr1(k,m) = roterror(MeanA_noise*X, MeanN_A_prime*X*MeanB);
+        % Translation error of the new model
+        tranErr1(k,m) = tranerror(MeanA_noise*X, MeanN_A_prime*X*MeanB);
+        % Rotation error of the no-noise model
+        rotErr2(k,m) = roterror(MeanA_noise*X, X*MeanB);
+        % Translation error of the no-noise model
+        tranErr2(k,m) = tranerror(MeanA_noise*X, X*MeanB);
+        
+        % REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH- Covariance Equation Error Analysis REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH- %
+        % Covariance error of the new model
+        covDiff1 = adXinv*SigA_noise*adXinv' - adBinv*adXinv*SigN_A_prime*adXinv'*adBinv' + SigB;
+        covErr1(k,m) = norm(covDiff1, 'fro');
+        
+        % Covariance error of the noise-free model
+        covDiff2 = adXinv*SigA_noise*adXinv' - SigB;
+        covErr2(k,m) = norm(covDiff2, 'fro');
+        
+%         covX1 = adBinv*adXinv*SigAinv_noise*adXinv'*adBinv' + SigB;
+%         covX1Err(k,m) = norm(covX1, 'fro');
+%         
+%         meanX1 = X - MeanAinv_noise*X*MeanB;
+%         meanX1Err(k,m) = norm(meanX1, 'fro');
+        % covariance
+    end
+    
+end
+%%
+figure
+plot(ratio_std, mean(rotErr1, 1))
+hold on
+plot(ratio_std, mean(rotErr2, 1))
+legend('new noise model','original noise-free model')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Rotation error in the mean equation: roterror(MA X - X MB)')
+
+figure
+plot(ratio_std, mean(tranErr1, 1))
+hold on
+plot(ratio_std, mean(tranErr2, 1))
+legend('new noise model','original noise-free model')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Translation error in the mean equation: tranerror(MA X - X MB)')
+
+figure
+plot(ratio_std, mean(covErr1, 1))
+hold on
+plot(ratio_std, mean(covErr2, 1))
+legend('new noise model','original noise-free model')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Error in the covariance equation: Frobenius Norm(L.H.S - R.H.S.)')
+
+%%
+fprintf('Rotation error of the noise correction method is %d \n', mean(rotErr1, 1));
+fprintf('Translation error of the noise correction method is %d \n', mean(tranErr1, 1));
+fprintf('Rotation error of the normal method is %d \n', mean(rotErr2, 1));
+fprintf('Translation error of the normal method is %d \n', mean(tranErr2, 1));
+fprintf('##REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-## \n')
+fprintf('Norm of covariance difference for the noise correction method is %d \n', mean(covErr1, 1));
+fprintf('Norm of covariance difference is %d \n', mean(covErr2, 1));
+fprintf('##REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-## \n')
+
+##### SOURCE END #####
+--></body></html>

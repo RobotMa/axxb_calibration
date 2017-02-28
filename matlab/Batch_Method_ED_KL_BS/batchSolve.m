@@ -1,4 +1,4 @@
-function [ X, MeanA, MeanB] = batchSolve(A, B)
+function [ X, MeanA, MeanB] = batchSolve(A, B, opt, nstd_A, nstd_B)
 
 % A half mex version of the batchSolve
 
@@ -8,6 +8,12 @@ B_mex = reshape(B, a1, a2*a3);
 
 [ MeanA, SigA ] = distibutionPropsMex_mex(A_mex); %_mex
 [ MeanB, SigB ] = distibutionPropsMex_mex(B_mex); %_mex
+
+if opt
+    SigA = SigA - nstd_A*eye(6, 6);
+    SigB = SigB - nstd_B*eye(6, 6);
+end
+
 
 % New Batch augmented 
 % [MeanA, ~] = mean_Taylor_1st_mex( A_mex );
