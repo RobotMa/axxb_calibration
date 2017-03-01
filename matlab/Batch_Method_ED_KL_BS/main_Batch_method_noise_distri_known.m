@@ -14,7 +14,7 @@ addpath ../../../kinematics/kinematics/lie_group
 addpath ../../../axxb_calibration/matlab/new_mean/codegen/mex/distibutionPropsMex
 
 %% Initialize Parameters
-num = 50; % number of samples in a cloud
+num = 1000; % number of samples in a cloud
 
 gmean = [0;0;0;0;0;0];	%Gaussian Noise Mean
 
@@ -61,7 +61,7 @@ meanX1Err = [];
 %% Apply noise on Ai only
 for m = 1:length(nstd)
     
-    for k = 1: 200
+    for k = 1: 5
         
         % Generate num samples of A and B given the ground truth X,
         % type of distribution optPDF, mean gmean and covariance std*cov

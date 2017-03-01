@@ -13,8 +13,8 @@ meanB=se3_vec(MB);
 va=meanA([4:6]);
 vb=meanB([4:6]);
 
-[VA,DA]=eig(SigA(1:3,1:3));
-[VB,DB]=eig(SigB(1:3,1:3));
+[VA, ~]=eig(SigA(1:3,1:3));
+[VB, ~]=eig(SigB(1:3,1:3));
 
 Q1=eye(3);
 Q2=[-1 0 0; 0 -1 0; 0 0 1];
@@ -52,15 +52,15 @@ for i=1:size(Rx_solved,3)
     end
 end
 
-[mincost,indx]=min(cost5);
+[~, indx]=min(cost5);
 % cost=cost4;
 % cost4(indx)=[];
 % [mincost2,~]=min(cost4);
 
-Rx=Rx_temp(:,:,indx);
-tx=tx_temp(:,indx);
+Rx = Rx_temp(:,:,indx);
+tx = tx_temp(:,indx);
 
- X_calc=[Rx tx; [0 0 0] 1];
+X_calc = [Rx tx; [0 0 0] 1];
 
 % if norm(mincost-mincost2)/norm(mincost)<0.1
 %    skip=1

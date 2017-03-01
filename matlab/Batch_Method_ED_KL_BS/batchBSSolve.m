@@ -26,8 +26,6 @@ R_nbphi=eye(3)+sin(ang)*so3_vec(nb)+(1-cos(ang))*so3_vec(nb)*so3_vec(nb);
 Rx=R_nanb*R_nbphi;
 X(1:3,1:3);
 
-
-
 phimin=0;
 phimax=2*pi;
 phistep=(phimax-phimin)/3600;
