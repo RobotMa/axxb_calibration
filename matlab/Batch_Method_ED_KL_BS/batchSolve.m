@@ -1,4 +1,10 @@
 function [ X, MeanA, MeanB] = batchSolve(A, B, opt, nstd_A, nstd_B)
+% BATCHSOLVE: solve for X given the bacths of {A} and {B}
+% opt:  
+%    - true: the distribution of the noise on {A} and {B} is known to be 
+%            Gaussian in Lie algebra
+%    - false: no a prior knowledge of the noise is known
+
 
 % A half mex version of the batchSolve
 
@@ -9,6 +15,7 @@ B_mex = reshape(B, a1, a2*a3);
 [ MeanA, SigA ] = distibutionPropsMex_mex(A_mex); %_mex
 [ MeanB, SigB ] = distibutionPropsMex_mex(B_mex); %_mex
 
+% 
 % Update SigA and SigB if the distribution of the noise is used in the
 % modeling, namely, (f_A*n_A*delta_X)(H) = (delta_X*f_B*n_B)(H)
 % where the Lie algebra of n_A has zero mean and covariance of 
