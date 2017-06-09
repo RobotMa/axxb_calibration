@@ -40,7 +40,7 @@ optPDF = 1; % Select the distribution for generating {A} and {B} sample cloud.
 % They will have zero mean and std as the standard deviation in
 % lie algebra
 
-std_vec = [0.5, 1, 1.5, 1, 1, 1];
+std_vec = [1, 1, 1, 1, 1, 1];
 
 %% Data Initialization
 % For simplicity, we only apply noise onto {A}
