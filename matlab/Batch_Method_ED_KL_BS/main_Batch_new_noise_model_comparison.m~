@@ -105,8 +105,9 @@ scatter(ratio_std, mean(rotErr1, 1),'b')
 hold on
 scatter(ratio_std, mean(rotErr2, 1),'r')
 legend('noisy model','noise-free model')
-xlabel('$\sigma_{noise}/ \sigma_{model}$','Interpreter','latex')
-ylabel('Error in R')
+xlabel('$noise_{std}/model_{std}. Meaning: 0.02 = 2%')
+ylabel('Error')
+title('Rotation error between the true X and the solved X')
 
 figure
 plot(ratio_std, mean(tranErr1, 1),'b')
@@ -117,8 +118,9 @@ scatter(ratio_std, mean(tranErr2, 1),'r')
 hold on
 scatter(ratio_std, mean(tranErr1, 1),'b')
 legend('noisy model','noise-free model')
-xlabel('$\sigma_{noise}/ \sigma_{model}$','Interpreter','latex')
-ylabel('Error in t')
+xlabel('noise_{std}/model_{std}. Meaning: 0.05 = 5%')
+ylabel('Error')
+title('Translation error between the true X and the solved X')
 
 %%
 fprintf('Rotation error of the noise correction method is %d \n', mean(rotErr1, 1));
