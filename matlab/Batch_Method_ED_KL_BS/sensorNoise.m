@@ -41,6 +41,22 @@ switch model
             end
         end
         
+    case 7
+ 
+        % ---------------- MVG on se3 Lie algebra ---------------------
+        n_g = size(g, 3);
+        g_noise = zeros(4, 4, n_g);
+         
+        for i = 1:n_g
+            
+            if (std == 0)
+                g_noise(:,:,i) = g(:,:,i);
+            else
+                cov = diag(std);
+                g_noise(:,:,i) = g(:,:,i)*expm(se3_vec(mvg(gmean, cov, 1)));
+            end
+        end
+        
     case 3
         
         %-----------Coupling Matrix------------------------------------

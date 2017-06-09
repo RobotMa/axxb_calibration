@@ -21,8 +21,13 @@ B_mex = reshape(B, a1, a2*a3);
 % where the Lie algebra of n_A has zero mean and covariance of 
 % nstd_A*eye(6,6)
 if opt
-    SigA = SigA - nstd_A*eye(6, 6);
-    SigB = SigB - nstd_B*eye(6, 6);
+    if isscalar(nstd_A) && isscalar(nstd_B)
+        SigA = SigA - nstd_A*eye(6, 6);
+        SigB = SigB - nstd_B*eye(6, 6);
+    else
+        SigA = SigA - diag(nstd_A);
+        SigB = SigB - diag(nstd_B);
+    end
 end
 
 % New Batch augmented 

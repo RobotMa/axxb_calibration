@@ -33,12 +33,14 @@ n_trials = 50; %60
 
 x = randn(6,1); x = x./norm(x); X = expm(se3_vec(x)); % Generate a Random X
 
-noiseModel = 2; % Select the noise model which has zero mean and nstd as the
+noiseModel = 7; % Select the noise model which has zero mean and nstd as the
 % standard deviation on lie aglebra
 
 optPDF = 1; % Select the distribution for generating {A} and {B} sample cloud.
 % They will have zero mean and std as the standard deviation in
 % lie algebra
+
+std_vec = [0.5, 1, 1.5, 1, 1, 1];
 
 %% Data Initialization
 % For simplicity, we only apply noise onto {A}
@@ -71,14 +73,14 @@ for m = 1:length(nstd)
         [A, B] = generateAB(num, optPDF, X, gmean, std*cov);
         
         % Apply noise onto A
-        A_noise = sensorNoise(A, gmean, nstd(m), noiseModel);
+        A_noise = sensorNoise(A, gmean, nstd(m)*std_vec, noiseModel);
         
         % Apply noise onto B
-        B_noise = sensorNoise(B, gmean, nstd_B(m), noiseModel);
+        B_noise = sensorNoise(B, gmean, nstd_B(m)*std_vec, noiseModel);
         
         [ X1, ~, ~] = batchSolve(A_noise, B_noise, false, 0, 0);
         
-        [ X2, ~, ~] = batchSolve(A_noise, B_noise, true, nstd(m), nstd_B(m));
+        [ X2, ~, ~] = batchSolve(A_noise, B_noise, true, nstd(m)*std_vec, nstd_B(m)*std_vec);
         
         
         %% Verification of the mean and covariance equations
