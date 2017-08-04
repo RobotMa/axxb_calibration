@@ -25,7 +25,7 @@ n_trials = 2; %60
 
 x = randn(6,1); x = x./norm(x); X = expm(se3_vec(x)); % Generate a Random X
 
-skip = 100; %10;
+skip = 10; %10;
 
 perm_rate = 0:skip:100;
 
